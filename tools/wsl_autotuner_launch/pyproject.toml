@@ -1,0 +1,15 @@
+[project]
+name = "wsl-autotuner-launch"
+version = "1.0.0"
+description = "Windows launcher for the OpenROAD AutoTuner installed in WSL."
+requires-python = ">=3.11"
+
+[project.scripts]
+openroad_autotuner = "wsl_autotuner_launch:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["wsl_autotuner_launch"]

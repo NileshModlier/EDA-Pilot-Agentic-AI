@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title desc">
+  <title id="title">EDA Pilot AI architecture</title>
+  <desc id="desc">Benchmark harness calls a LangGraph agent. The agent uses MCP tools. Those tools launch OpenROAD Flow Scripts inside WSL.</desc>
+  <style>
+    .bg { fill: #f6f7f9; }
+    .card { fill: #ffffff; stroke: #d5dbe3; stroke-width: 1.25; }
+    .title { font: 600 22px "Segoe UI", Helvetica, Arial, sans-serif; fill: #172033; }
+    .sub { font: 400 13px "Segoe UI", Helvetica, Arial, sans-serif; fill: #5c6778; }
+    .h { font: 600 14px "Segoe UI", Helvetica, Arial, sans-serif; fill: #172033; }
+    .b { font: 400 12.5px "Segoe UI", Helvetica, Arial, sans-serif; fill: #3d4758; }
+    .s { font: 600 11px "Segoe UI", Helvetica, Arial, sans-serif; fill: #5c6778; letter-spacing: 0.04em; }
+    .arrow { stroke: #8b97a8; stroke-width: 1.4; fill: none; }
+  </style>
+  <rect class="bg" width="1000" height="760"/>
+  <text class="title" x="40" y="42">EDA Pilot AI</text>
+  <text class="sub" x="40" y="66">Allowlisted search over OpenROAD Flow Scripts. sky130hd. The agent suggests. Code launches.</text>
+
+  <rect class="card" x="250" y="92" width="500" height="58" rx="8"/>
+  <text class="h" x="500" y="116" text-anchor="middle">Benchmark harness</text>
+  <text class="b" x="500" y="136" text-anchor="middle">Default ORFS | Random search | EDA Pilot agent | AutoTuner</text>
+
+  <path class="arrow" d="M500 150 V174"/>
+  <path class="arrow" d="M496 170 L500 178 L504 170"/>
+
+  <text class="s" x="40" y="198">LANGGRAPH AGENT</text>
+  <rect class="card" x="40" y="208" width="168" height="72" rx="8" stroke="#1f7a4d"/>
+  <text class="h" x="124" y="236" text-anchor="middle">analyse</text>
+  <text class="b" x="124" y="256" text-anchor="middle">read metrics</text>
+  <rect class="card" x="224" y="208" width="168" height="72" rx="8" stroke="#1f7a4d"/>
+  <text class="h" x="308" y="236" text-anchor="middle">propose</text>
+  <text class="b" x="308" y="256" text-anchor="middle">at most 3 changes</text>
+  <rect class="card" x="408" y="208" width="168" height="72" rx="8" stroke="#1d4f91"/>
+  <text class="h" x="492" y="236" text-anchor="middle">validate</text>
+  <text class="b" x="492" y="256" text-anchor="middle">allowlist check</text>
+  <rect class="card" x="592" y="208" width="168" height="72" rx="8" stroke="#1d4f91"/>
+  <text class="h" x="676" y="236" text-anchor="middle">run</text>
+  <text class="b" x="676" y="256" text-anchor="middle">call run_flow</text>
+  <rect class="card" x="776" y="208" width="184" height="72" rx="8" stroke="#1d4f91"/>
+  <text class="h" x="868" y="236" text-anchor="middle">check</text>
+  <text class="b" x="868" y="256" text-anchor="middle">signoff or continue</text>
+  <text class="s" x="40" y="302">GREEN SUGGESTS</text>
+  <text class="s" x="408" y="302">BLUE IS CODE</text>
+
+  <path class="arrow" d="M500 314 V338"/>
+  <path class="arrow" d="M496 334 L500 342 L504 334"/>
+
+  <text class="s" x="40" y="362">MCP TOOLS</text>
+  <rect class="card" x="40" y="372" width="220" height="64" rx="8"/>
+  <text class="h" x="150" y="398" text-anchor="middle">list_params</text>
+  <text class="b" x="150" y="418" text-anchor="middle">ranges and defaults</text>
+  <rect class="card" x="276" y="372" width="220" height="64" rx="8"/>
+  <text class="h" x="386" y="398" text-anchor="middle">run_flow</text>
+  <text class="b" x="386" y="418" text-anchor="middle">argv, no shell</text>
+  <rect class="card" x="512" y="372" width="220" height="64" rx="8"/>
+  <text class="h" x="622" y="398" text-anchor="middle">get_metrics</text>
+  <text class="b" x="622" y="418" text-anchor="middle">metadata.json</text>
+  <rect class="card" x="748" y="372" width="212" height="64" rx="8"/>
+  <text class="h" x="854" y="398" text-anchor="middle">read_report</text>
+  <text class="b" x="854" y="418" text-anchor="middle">timing, DRC, congestion</text>
+
+  <path class="arrow" d="M500 436 V460"/>
+  <path class="arrow" d="M496 456 L500 464 L504 456"/>
+
+  <rect class="card" x="40" y="472" width="920" height="70" rx="8" stroke="#9a4d0f"/>
+  <text class="h" x="500" y="498" text-anchor="middle">WSL Ubuntu bridge</text>
+  <text class="b" x="500" y="520" text-anchor="middle">cd to the Linux flow | source env.sh | make finish | metadata-generate</text>
+
+  <path class="arrow" d="M500 542 V566"/>
+  <path class="arrow" d="M496 562 L500 570 L504 562"/>
+
+  <text class="s" x="40" y="590">OPENROAD FLOW SCRIPTS | SKY130HD</text>
+  <rect class="card" x="40" y="600" width="292" height="64" rx="8"/>
+  <text class="h" x="186" y="626" text-anchor="middle">Yosys</text>
+  <text class="b" x="186" y="646" text-anchor="middle">synthesis</text>
+  <rect class="card" x="354" y="600" width="292" height="64" rx="8"/>
+  <text class="h" x="500" y="626" text-anchor="middle">OpenROAD</text>
+  <text class="b" x="500" y="646" text-anchor="middle">floorplan through route</text>
+  <rect class="card" x="668" y="600" width="292" height="64" rx="8"/>
+  <text class="h" x="814" y="626" text-anchor="middle">KLayout</text>
+  <text class="b" x="814" y="646" text-anchor="middle">final GDS</text>
+
+  <text class="sub" x="40" y="700">Stop when the passing clock gap is under 0.05 ns, or when the run budget is exhausted. A rejected proposal never starts make.</text>
+  <text class="sub" x="40" y="722">Signoff: DRC = 0, setup WNS &gt;= 0, hold WNS &gt;= 0. Designs measured: gcd, AES, Ibex.</text>
+</svg>

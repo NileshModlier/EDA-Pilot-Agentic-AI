@@ -1,0 +1,2590 @@
+OPENROAD: /home/administrator/OpenROAD-flow-scripts/tools/OpenROAD
+make: Entering directory '/home/administrator/OpenROAD-flow-scripts/flow'
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/synth.sh /home/administrator/OpenROAD-flow-scripts/flow/scripts/synth_canonicalize.tcl ./logs/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_1_yosys_canonicalize.log
+Using ABC speed script.
+1. Executing Liberty frontend: /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+2. Executing Liberty frontend: /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+3. Executing SLANG frontend.
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+3.2. Executing TRIBUF pass.
+3.3. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+3.4. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+3.5. Executing PROC_INIT pass (extract init attributes).
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+3.8. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+3.9. Executing OPT_EXPR pass (perform const folding).
+4. Executing HIERARCHY pass (managing design hierarchy).
+4.1. Analyzing design hierarchy..
+4.2. Analyzing design hierarchy..
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+6. Executing RTLIL backend.
+End of script. Logfile hash: 69f38bb553, time: 0.34s, user: 0.30s, system: 0.04s, MEM: 62.88 MB peak
+Yosys 0.68+ (git sha1 a5af9d690, Release, GNU /usr/bin/c++ 15.2.0) [github.com/The-OpenROAD-Project/yosys at HEAD]
+Time spent: 36% 4x read_liberty (0 sec), 24% 2x read_slang (0 sec), ...
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+1_1_yosys_canonicalize .rtlil        0        0     1.09       64 cfd703d1e0
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/synth.sh /home/administrator/OpenROAD-flow-scripts/flow/scripts/synth.tcl ./logs/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_2_yosys.log
+Using ABC speed script.
+1. Executing RTLIL frontend.
+2. Executing HIERARCHY pass (managing design hierarchy).
+2.1. Analyzing design hierarchy..
+2.2. Analyzing design hierarchy..
+3. Executing SYNTH pass.
+3.1. Executing HIERARCHY pass (managing design hierarchy).
+3.1.1. Analyzing design hierarchy..
+3.1.2. Analyzing design hierarchy..
+3.2. Executing PROC pass (convert processes to netlists).
+3.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+3.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+3.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+3.2.4. Executing PROC_INIT pass (extract init attributes).
+3.2.5. Executing PROC_ARST pass (detect async resets in processes).
+3.2.6. Executing PROC_ROM pass (convert switches to ROMs).
+3.2.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+3.2.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+3.2.9. Executing PROC_DFF pass (convert process syncs to FFs).
+3.2.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+3.2.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+3.2.12. Executing OPT_EXPR pass (perform const folding).
+3.3. Executing CHECK pass (checking for obvious problems).
+3.4. Executing FLATTEN pass (flatten design).
+3.5. Executing OPT_EXPR pass (perform const folding).
+3.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.7. Executing CHECK pass (checking for obvious problems).
+3.8. Executing OPT pass (performing simple optimizations).
+3.8.1. Executing OPT_EXPR pass (perform const folding).
+3.8.2. Executing OPT_MERGE pass (detect identical cells).
+3.8.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.8.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.8.5. Executing OPT_MERGE pass (detect identical cells).
+3.8.6. Executing OPT_DFF pass (perform DFF optimizations).
+3.8.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.8.8. Executing OPT_EXPR pass (perform const folding).
+3.8.9. Rerunning OPT passes. (Maybe there is more to do..)
+3.8.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.8.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.8.12. Executing OPT_MERGE pass (detect identical cells).
+3.8.13. Executing OPT_DFF pass (perform DFF optimizations).
+3.8.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.8.15. Executing OPT_EXPR pass (perform const folding).
+3.8.16. Rerunning OPT passes. (Maybe there is more to do..)
+3.8.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.8.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.8.19. Executing OPT_MERGE pass (detect identical cells).
+3.8.20. Executing OPT_DFF pass (perform DFF optimizations).
+3.8.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.8.22. Executing OPT_EXPR pass (perform const folding).
+3.8.23. Finished fast OPT passes. (There is nothing left to do.)
+3.9. Executing FSM pass (extract and optimize FSM).
+3.9.1. Executing FSM_DETECT pass (finding FSMs in design).
+3.9.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+3.9.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+3.9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.9.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+3.9.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+3.9.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+3.9.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+3.10. Executing OPT pass (performing simple optimizations).
+3.10.1. Executing OPT_EXPR pass (perform const folding).
+3.10.2. Executing OPT_MERGE pass (detect identical cells).
+3.10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.10.5. Executing OPT_MERGE pass (detect identical cells).
+3.10.6. Executing OPT_DFF pass (perform DFF optimizations).
+3.10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.10.8. Executing OPT_EXPR pass (perform const folding).
+3.10.9. Rerunning OPT passes. (Maybe there is more to do..)
+3.10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.10.12. Executing OPT_MERGE pass (detect identical cells).
+3.10.13. Executing OPT_DFF pass (perform DFF optimizations).
+3.10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.10.15. Executing OPT_EXPR pass (perform const folding).
+3.10.16. Rerunning OPT passes. (Maybe there is more to do..)
+3.10.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.10.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.10.19. Executing OPT_MERGE pass (detect identical cells).
+3.10.20. Executing OPT_DFF pass (perform DFF optimizations).
+3.10.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.10.22. Executing OPT_EXPR pass (perform const folding).
+3.10.23. Rerunning OPT passes. (Maybe there is more to do..)
+3.10.24. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.10.25. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.10.26. Executing OPT_MERGE pass (detect identical cells).
+3.10.27. Executing OPT_DFF pass (perform DFF optimizations).
+3.10.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.10.29. Executing OPT_EXPR pass (perform const folding).
+3.10.30. Finished fast OPT passes. (There is nothing left to do.)
+3.11. Executing WREDUCE pass (reducing word size of cells).
+3.12. Executing PEEPOPT pass (run peephole optimizers).
+3.13. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.14. Executing ALUMACC pass (create $alu and $macc cells).
+3.15. Executing SHARE pass (SAT-based resource sharing).
+3.16. Executing OPT pass (performing simple optimizations).
+3.16.1. Executing OPT_EXPR pass (perform const folding).
+3.16.2. Executing OPT_MERGE pass (detect identical cells).
+3.16.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.16.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.16.5. Executing OPT_MERGE pass (detect identical cells).
+3.16.6. Executing OPT_DFF pass (perform DFF optimizations).
+3.16.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.16.8. Executing OPT_EXPR pass (perform const folding).
+3.16.9. Rerunning OPT passes. (Maybe there is more to do..)
+3.16.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+3.16.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+3.16.12. Executing OPT_MERGE pass (detect identical cells).
+3.16.13. Executing OPT_DFF pass (perform DFF optimizations).
+3.16.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.16.15. Executing OPT_EXPR pass (perform const folding).
+3.16.16. Finished fast OPT passes. (There is nothing left to do.)
+3.17. Executing MEMORY pass.
+3.17.1. Executing OPT_MEM pass (optimize memories).
+3.17.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+3.17.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+3.17.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+3.17.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+3.17.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.17.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+3.17.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+3.17.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+3.17.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+3.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+4. Executing TRIBUF pass.
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+source /home/administrator/OpenROAD-flow-scripts/flow/scripts/synth_wrap_operators.tcl
+6. Executing TECHMAP pass (map to technology primitives).
+6.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+6.2. Continuing TECHMAP pass.
+7. Generating architectural options for $alu
+7.1. Executing WRAPCELL pass. (wrap selected cells)
+7.2. Executing TECHMAP pass (map to technology primitives).
+7.2.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+7.2.2. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v
+7.2.3. Continuing TECHMAP pass.
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100010.\j [4:0]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100010.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$52171': $auto$proc_dlatch.cc:545:proc_dlatch$53491
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100010.\j [31:5]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100010.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$52171': $auto$proc_dlatch.cc:547:proc_dlatch$53494
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100001.\j [4:0]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100001.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$54039': $auto$proc_dlatch.cc:545:proc_dlatch$55299
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100001.\j [31:5]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000100001.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$54039': $auto$proc_dlatch.cc:547:proc_dlatch$55302
+7.3. Executing TECHMAP pass (map to technology primitives).
+7.3.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+7.3.2. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/kogge-stone.v
+7.3.3. Continuing TECHMAP pass.
+7.4. Executing TECHMAP pass (map to technology primitives).
+7.4.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+7.4.2. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/sklansky.v
+7.4.3. Continuing TECHMAP pass.
+7.5. Executing TECHMAP pass (map to technology primitives).
+7.5.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+7.5.2. Continuing TECHMAP pass.
+8. Generating architectural options for $macc
+8.1. Executing WRAPCELL pass. (wrap selected cells)
+8.2. Executing TECHMAP pass (map to technology primitives).
+8.2.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+8.2.2. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/flow/scripts/synth_wrap_operators-booth.v
+8.2.3. Continuing TECHMAP pass.
+8.3. Executing TECHMAP pass (map to technology primitives).
+8.3.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+8.3.2. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v
+8.3.3. Continuing TECHMAP pass.
+9. Executing OPT pass (performing simple optimizations).
+9.1. Executing OPT_EXPR pass (perform const folding).
+9.2. Executing OPT_MERGE pass (detect identical cells).
+9.3. Executing OPT_DFF pass (perform DFF optimizations).
+9.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+9.5. Rerunning OPT passes. (Removed registers in this run.)
+9.6. Executing OPT_EXPR pass (perform const folding).
+9.7. Executing OPT_MERGE pass (detect identical cells).
+9.8. Executing OPT_DFF pass (perform DFF optimizations).
+9.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+9.10. Finished fast OPT passes.
+10. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+11. Executing OPT pass (performing simple optimizations).
+11.1. Executing OPT_EXPR pass (perform const folding).
+11.2. Executing OPT_MERGE pass (detect identical cells).
+11.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+11.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+11.5. Executing OPT_MERGE pass (detect identical cells).
+11.6. Executing OPT_SHARE pass.
+11.7. Executing OPT_DFF pass (perform DFF optimizations).
+11.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+11.9. Executing OPT_EXPR pass (perform const folding).
+11.10. Rerunning OPT passes. (Maybe there is more to do..)
+11.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+11.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+11.13. Executing OPT_MERGE pass (detect identical cells).
+11.14. Executing OPT_SHARE pass.
+11.15. Executing OPT_DFF pass (perform DFF optimizations).
+11.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+11.17. Executing OPT_EXPR pass (perform const folding).
+11.18. Rerunning OPT passes. (Maybe there is more to do..)
+11.19. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+11.20. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+11.21. Executing OPT_MERGE pass (detect identical cells).
+11.22. Executing OPT_SHARE pass.
+11.23. Executing OPT_DFF pass (perform DFF optimizations).
+11.24. Executing OPT_CLEAN pass (remove unused cells and wires).
+11.25. Executing OPT_EXPR pass (perform const folding).
+11.26. Finished fast OPT passes. (There is nothing left to do.)
+12. Executing TECHMAP pass (map to technology primitives).
+12.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/techmap.v
+12.2. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v
+12.3. Continuing TECHMAP pass.
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000001.\j' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000001.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$63572': $auto$proc_dlatch.cc:545:proc_dlatch$63610
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000010.\j' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000010.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$63622': $auto$proc_dlatch.cc:545:proc_dlatch$63675
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011111.\j [3:0]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011111.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$63747': $auto$proc_dlatch.cc:545:proc_dlatch$64923
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011111.\j [31:4]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011111.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$63747': $auto$proc_dlatch.cc:547:proc_dlatch$64926
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000001000000.\j [4:0]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000001000000.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$65187': $auto$proc_dlatch.cc:545:proc_dlatch$67902
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000001000000.\j [31:5]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000001000000.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$65187': $auto$proc_dlatch.cc:547:proc_dlatch$67905
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000101.\j [1:0]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000101.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$68180': $auto$proc_dlatch.cc:545:proc_dlatch$68336
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000101.\j [31:2]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000000101.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$68180': $auto$proc_dlatch.cc:547:proc_dlatch$68339
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011110.\j [3:0]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011110.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$68412': $auto$proc_dlatch.cc:545:proc_dlatch$69555
+Warning: Latch inferred for signal `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011110.\j [31:4]' from process `$paramod\_80_lcu_han_carlson\WIDTH=32'00000000000000000000000000011110.$proc$/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/../share/yosys/choices/han-carlson.v:18$68412': $auto$proc_dlatch.cc:547:proc_dlatch$69558
+13. Executing OPT pass (performing simple optimizations).
+13.1. Executing OPT_EXPR pass (perform const folding).
+13.2. Executing OPT_MERGE pass (detect identical cells).
+13.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+13.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+13.5. Executing OPT_MERGE pass (detect identical cells).
+13.6. Executing OPT_DFF pass (perform DFF optimizations).
+13.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+13.8. Executing OPT_EXPR pass (perform const folding).
+13.9. Rerunning OPT passes. (Maybe there is more to do..)
+13.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+13.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+13.12. Executing OPT_MERGE pass (detect identical cells).
+13.13. Executing OPT_DFF pass (perform DFF optimizations).
+13.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+13.15. Executing OPT_EXPR pass (perform const folding).
+13.16. Finished fast OPT passes. (There is nothing left to do.)
+14. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+15. Executing TECHMAP pass (map to technology primitives).
+15.1. Executing Verilog-2005 frontend: /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/cells_latch_hd.v
+15.2. Continuing TECHMAP pass.
+16. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+16.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+17. Executing OPT pass (performing simple optimizations).
+17.1. Executing OPT_EXPR pass (perform const folding).
+17.2. Executing OPT_MERGE pass (detect identical cells).
+17.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+17.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+17.5. Executing OPT_MERGE pass (detect identical cells).
+17.6. Executing OPT_DFF pass (perform DFF optimizations).
+17.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+17.8. Executing OPT_EXPR pass (perform const folding).
+17.9. Rerunning OPT passes. (Maybe there is more to do..)
+17.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+17.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+17.12. Executing OPT_MERGE pass (detect identical cells).
+17.13. Executing OPT_DFF pass (perform DFF optimizations).
+17.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+17.15. Executing OPT_EXPR pass (perform const folding).
+17.16. Finished fast OPT passes. (There is nothing left to do.)
+18. Executing SETUNDEF pass (replace undef values with defined constants).
+abc_new -liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -dont_use sky130_fd_sc_hd__probe_p_8 -dont_use sky130_fd_sc_hd__probec_p_8 -dont_use sky130_fd_sc_hd__lpflow_bleeder_1 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_1 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_16 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_2 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_1 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_16 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_2 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_12 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_3 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_6 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_inputiso0n_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso0p_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso1n_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso1p_1 -dont_use sky130_fd_sc_hd__lpflow_inputisolatch_1 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_1 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_16 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_2 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_4 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_8 -dont_use sky130_fd_sc_hd__lpflow_isobufsrckapwr_16 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4 -constr ./objects/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/abc.constr
+Warning: Feature 'abc_new' is experimental.
+19. Executing ABC_NEW pass.
+19.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.2. Executing BOX_DERIVE pass. (derive modules for boxes)
+19.3. Executing ABC9_OPS pass (helper functions for ABC9).
+19.4. Executing ABC9_OPS pass (helper functions for ABC9).
+19.5. Mapping module 'ALU_33_0_33_0_33_unused_CO_X_Y[0]_HAN_CARLSON'.
+19.5.1. Executing ABC9_OPS pass (helper functions for ABC9).
+Warning: Feature 'write_xaiger2' is experimental.
+19.5.2. Executing XAIGER2 backend.
+19.5.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.5.4. Executing ABC9.
+Warning: Feature 'read_xaiger2' is experimental.
+19.5.5. Executing XAIGER2 frontend.
+19.6. Executing PORTARCS pass. (derive propagation arcs)
+19.7. Executing ABC9_OPS pass (helper functions for ABC9).
+19.8. Mapping module 'ALU_34_0_34_0_34_HAN_CARLSON'.
+19.8.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.8.2. Executing XAIGER2 backend.
+19.8.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.8.4. Executing ABC9.
+19.8.5. Executing XAIGER2 frontend.
+19.9. Executing PORTARCS pass. (derive propagation arcs)
+19.10. Executing ABC9_OPS pass (helper functions for ABC9).
+19.11. Mapping module 'ibex_core'.
+19.11.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.11.2. Executing XAIGER2 backend.
+19.11.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.11.4. Executing ABC9.
+Warning: ABC: execution of command ""/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys-abc" -s -f /tmp/yosys-abc-HvpO9n/abc.script 2>&1" failed: return code 134.
+19.11.5. Executing XAIGER2 frontend.
+19.12. Mapping module 'ALU_34_0_34_0_34_BRENT_KUNG'.
+19.12.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.12.2. Executing XAIGER2 backend.
+19.12.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.12.4. Executing ABC9.
+19.12.5. Executing XAIGER2 frontend.
+19.13. Executing PORTARCS pass. (derive propagation arcs)
+19.14. Executing ABC9_OPS pass (helper functions for ABC9).
+19.15. Mapping module 'ALU_34_0_34_0_34_SKLANSKY'.
+19.15.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.15.2. Executing XAIGER2 backend.
+19.15.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.15.4. Executing ABC9.
+19.15.5. Executing XAIGER2 frontend.
+19.16. Executing PORTARCS pass. (derive propagation arcs)
+19.17. Executing ABC9_OPS pass (helper functions for ABC9).
+19.18. Mapping module 'ALU_34_0_34_0_34_KOGGE_STONE'.
+19.18.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.18.2. Executing XAIGER2 backend.
+19.18.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.18.4. Executing ABC9.
+19.18.5. Executing XAIGER2 frontend.
+19.19. Executing PORTARCS pass. (derive propagation arcs)
+19.20. Executing ABC9_OPS pass (helper functions for ABC9).
+19.21. Mapping module 'ALU_33_0_33_0_33_unused_CO_X_Y[0]_BRENT_KUNG'.
+19.21.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.21.2. Executing XAIGER2 backend.
+19.21.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.21.4. Executing ABC9.
+19.21.5. Executing XAIGER2 frontend.
+19.22. Executing PORTARCS pass. (derive propagation arcs)
+19.23. Executing ABC9_OPS pass (helper functions for ABC9).
+19.24. Mapping module 'ALU_33_0_33_0_33_unused_CO_X_Y[0]_SKLANSKY'.
+19.24.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.24.2. Executing XAIGER2 backend.
+19.24.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.24.4. Executing ABC9.
+19.24.5. Executing XAIGER2 frontend.
+19.25. Executing PORTARCS pass. (derive propagation arcs)
+19.26. Executing ABC9_OPS pass (helper functions for ABC9).
+19.27. Mapping module 'ALU_33_0_33_0_33_unused_CO_X_Y[0]_KOGGE_STONE'.
+19.27.1. Executing ABC9_OPS pass (helper functions for ABC9).
+19.27.2. Executing XAIGER2 backend.
+19.27.3. Executing ABC9_EXE pass (technology mapping using ABC9).
+19.27.4. Executing ABC9.
+19.27.5. Executing XAIGER2 frontend.
+19.28. Executing PORTARCS pass. (derive propagation arcs)
+19.29. Executing ABC9_OPS pass (helper functions for ABC9).
+19.30. Executing ABC9_OPS pass (helper functions for ABC9).
+Took 61 seconds: abc_new -liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -dont_use sky130_fd_sc_hd__probe_p_8 -dont_use sky130_fd_sc_hd__probec_p_8 -dont_use sky130_fd_sc_hd__lpflow_bleeder_1 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_1 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_16 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_2 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_clkbufkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_1 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_16 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_2 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_clkinvkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_12 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_3 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_4 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_6 -dont_use sky130_fd_sc_hd__lpflow_decapkapwr_8 -dont_use sky130_fd_sc_hd__lpflow_inputiso0n_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso0p_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso1n_1 -dont_use sky130_fd_sc_hd__lpflow_inputiso1p_1 -dont_use sky130_fd_sc_hd__lpflow_inputisolatch_1 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_1 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_16 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_2 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_4 -dont_use sky130_fd_sc_hd__lpflow_isobufsrc_8 -dont_use sky130_fd_sc_hd__lpflow_isobufsrckapwr_16 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 -dont_use sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4 -constr ./objects/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/abc.constr
+20. Executing SPLITNETS pass (splitting up multi-bit signals).
+21. Executing OPT_CLEAN pass (remove unused cells and wires).
+22. Executing HILOMAP pass (mapping to constant drivers).
+23. Executing INSBUF pass (insert buffer cells for connected wires).
+24. Executing CHECK pass (checking for obvious problems).
+25. Printing statistics.
+26. Executing CHECK pass (checking for obvious problems).
+27. Executing Verilog backend.
+27.1. Executing BMUXMAP pass.
+27.2. Executing DEMUXMAP pass.
+Warnings: 18 unique messages, 18 total
+Warnings: 3 experimental features used (not excluded with -x).
+End of script. Logfile hash: a1f1266f82, time: 68.86s, user: 9.34s, system: 0.81s, MEM: 116.89 MB peak
+Yosys 0.68+ (git sha1 a5af9d690, Release, GNU /usr/bin/c++ 15.2.0) [github.com/The-OpenROAD-Project/yosys at HEAD]
+Time spent: 85% 9x abc9_exe (59 sec), 3% 66x opt_expr (2 sec), ...
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+1_2_yosys              .v           68       70     1.02      116 38e4b4a853
+cp .eda_pilot/sdc/f2b1c369b6d64b6395d93143bb0a2e87/constraint.sdc results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_2_yosys.sdc
+touch -r .eda_pilot/sdc/f2b1c369b6d64b6395d93143bb0a2e87/constraint.sdc results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_2_yosys.sdc
+OpenROAD 26Q4-110-g91e5f5ff2f 
+Features included (+) or not (-): -GPU +GUI -Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 12 thread(s).
+mkdir -p ./objects/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 1_synth synth_odb
+Running synth_odb.tcl, stage 1_synth
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+[INFO ODB-0227] LEF file: /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd.tlef, created 13 layers, 25 vias
+[INFO ODB-0227] LEF file: /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lef/sky130_fd_sc_hd_merged.lef, created 441 library cells
+link_design -hier ibex_core
+[WARNING ORD-0011] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_2_yosys.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+eliminate_dead_logic
+Removed 22 unused instances and 22 unused nets.
+Design area 129314 um^2 100% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_synth.odb
+write_sdc -no_timestamp ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_synth.sdc
+Warning: master sky130_ef_sc_hd__decap_12 has signal pins but no liberty cell
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+1_synth                .odb          0        1     1.00      146 328e0b57c4
+1_synth                .sdc                                       45c5db8ae8
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 2_1_floorplan floorplan
+Running floorplan.tcl, stage 2_1_floorplan
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_synth.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/1_synth.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+Master sky130_ef_sc_hd__decap_12 is loaded but not used in the design
+
+==========================================================================
+Floorplan check_setup
+--------------------------------------------------------------------------
+number instances in verilog is 14045
+initialize_floorplan -utilization 48 -aspect_ratio 1.61472 -core_space 1.0 -site unithd
+[INFO IFP-0107] Defining die area using utilization: 48.00% and aspect ratio: 1.61472.
+[WARNING IFP-0028] Core area lower left (1.000, 1.000) snapped to (1.380, 2.720).
+[INFO IFP-0001] Added 241 rows of 887 site unithd.
+[INFO IFP-0100] Die BBox:  (  0.000  0.000 ) ( 410.465 661.555 ) um
+[INFO IFP-0101] Core BBox: (  1.380  2.720 ) ( 409.400 658.240 ) um
+[INFO IFP-0102] Core area:                       267465.270 um^2
+[INFO IFP-0103] Total instances area:            129314.022 um^2
+[INFO IFP-0104] Effective utilization:                0.483
+[INFO IFP-0105] Number of instances:                  14043
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/make_tracks.tcl
+source /home/administrator/OpenROAD-flow-scripts/flow/designs/sky130hd/ibex/fastroute.tcl
+set_dont_use "sky130_fd_sc_hd__probe_p_8 sky130_fd_sc_hd__probec_p_8 sky130_fd_sc_hd__lpflow_bleeder_1 sky130_fd_sc_hd__lpflow_clkbufkapwr_1 sky130_fd_sc_hd__lpflow_clkbufkapwr_16 sky130_fd_sc_hd__lpflow_clkbufkapwr_2 sky130_fd_sc_hd__lpflow_clkbufkapwr_4 sky130_fd_sc_hd__lpflow_clkbufkapwr_8 sky130_fd_sc_hd__lpflow_clkinvkapwr_1 sky130_fd_sc_hd__lpflow_clkinvkapwr_16 sky130_fd_sc_hd__lpflow_clkinvkapwr_2 sky130_fd_sc_hd__lpflow_clkinvkapwr_4 sky130_fd_sc_hd__lpflow_clkinvkapwr_8 sky130_fd_sc_hd__lpflow_decapkapwr_12 sky130_fd_sc_hd__lpflow_decapkapwr_3 sky130_fd_sc_hd__lpflow_decapkapwr_4 sky130_fd_sc_hd__lpflow_decapkapwr_6 sky130_fd_sc_hd__lpflow_decapkapwr_8 sky130_fd_sc_hd__lpflow_inputiso0n_1 sky130_fd_sc_hd__lpflow_inputiso0p_1 sky130_fd_sc_hd__lpflow_inputiso1n_1 sky130_fd_sc_hd__lpflow_inputiso1p_1 sky130_fd_sc_hd__lpflow_inputisolatch_1 sky130_fd_sc_hd__lpflow_isobufsrc_1 sky130_fd_sc_hd__lpflow_isobufsrc_16 sky130_fd_sc_hd__lpflow_isobufsrc_2 sky130_fd_sc_hd__lpflow_isobufsrc_4 sky130_fd_sc_hd__lpflow_isobufsrc_8 sky130_fd_sc_hd__lpflow_isobufsrckapwr_16 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2 sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2 sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4"
+repair_tie_fanout -separation 0 sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__conb_1/LO
+[INFO RSZ-0042] Inserted 15 tie sky130_fd_sc_hd__conb_1 instances.
+repair_tie_fanout -separation 0 sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__conb_1/HI
+[INFO RSZ-0042] Inserted 1 tie sky130_fd_sc_hd__conb_1 instances.
+replace_arith_modules
+replace_arith_modules -path_count 1000 -target setup -slack_threshold 0.0
+[INFO RSZ-0151] Starting arithmetic module replacement to optimize 'setup' target
+[INFO RSZ-0152] Analyzing 1000 critical paths with slack < 0.00
+[INFO RSZ-0153] Identified 1991 violating endpoints
+[INFO RSZ-0154] Identified 2 critical arithmetic instances
+[INFO ODB-0496] swapMaster sanity check passed (0 failures)
+[INFO ODB-0496] swapMaster sanity check passed (0 failures)
+[INFO RSZ-0160] 2 arithmetic instances have swapped to improve 'setup' target
+repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,vt_swap -verbose
+[WARNING EST-0027] no estimated parasitics. Using wire load models.
+[INFO RSZ-0100] Repair move sequence: UnbufferMove SizeUpMove SwapPinsMove 
+[INFO RSZ-0094] Found 1991 endpoints with setup violations.
+[INFO RSZ-0099] Repairing 1991 out of 1991 (100.00%) violating endpoints...
+   Iter   | Removed | Resized | Inserted | Cloned |  Pin  |   Area   |    WNS   |    TNS     |  Viol  |  Worst
+          | Buffers |  Gates  | Buffers  |  Gates | Swaps |          |          |            | Endpts | Endpoint
+------------------------------------------------------------------------------------------------------------------------------
+       0* |       0 |       0 |        0 |      0 |     0 |    +0.0% |  -10.477 |   -10728.2 |   1991 | if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.err_q\[1\]$_DFFE_PP_/DE
+      10* |       0 |       4 |        0 |      0 |     5 |    +0.0% |   -7.797 |   -10360.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      20* |       0 |       7 |        0 |      0 |    12 |    +0.0% |   -7.576 |   -10234.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      30* |       0 |      11 |        0 |      0 |    18 |    +0.0% |   -7.475 |   -10170.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      40* |       0 |      16 |        0 |      0 |    23 |    +0.1% |   -7.448 |   -10147.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      50* |       0 |      18 |        0 |      0 |    31 |    +0.1% |   -7.459 |   -10142.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      60* |       0 |      22 |        0 |      0 |    37 |    +0.1% |   -7.449 |   -10128.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      70* |       0 |      25 |        0 |      0 |    44 |    +0.1% |   -7.425 |   -10117.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      80* |       0 |      29 |        0 |      0 |    50 |    +0.1% |   -7.440 |   -10070.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      80* |       0 |      25 |        0 |      0 |    42 |    +0.1% |   -7.388 |   -10106.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+      90* |       0 |      30 |        0 |      0 |    46 |    +0.1% |   -7.384 |   -10092.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     100* |       0 |      35 |        0 |      0 |    51 |    +0.1% |   -7.384 |   -10083.9 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     107* |       0 |      37 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.1 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     109* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     110* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     110* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     111* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     112* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     113* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     114* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     115* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     116* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     117* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     118* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     119* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     120* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     120* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     121* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     122* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     123* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     124* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     125* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     126* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     127* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     128* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     129* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     130* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     130* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     131* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     132* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     133* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     134* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     135* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     136* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     137* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     138* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     139* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     140* |       0 |      38 |        0 |      0 |    53 |    +0.1% |   -7.385 |   -10075.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     144* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     145* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     146* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     147* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     148* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     149* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     150* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     150* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     151* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     152* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     153* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     154* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     155* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     156* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     157* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     158* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     159* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     160* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     160* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     161* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     162* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     163* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     164* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     165* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     166* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     167* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     168* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     169* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     170* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     170* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     171* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     172* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     173* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     174* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     175* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     176* |       0 |      41 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10057.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     179* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     180* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     180* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     181* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     182* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     183* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     184* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     185* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     186* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     187* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     188* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     189* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     190* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     190* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     191* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     192* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     193* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     194* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     195* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     196* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     197* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     198* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     199* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     200* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     200* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     201* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     202* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     203* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     204* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     205* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     206* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     207* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     208* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     209* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     210* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     210* |       0 |      43 |        0 |      0 |    54 |    +0.1% |   -7.385 |   -10043.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     214* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     216* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     218* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     220* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.1 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     220* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     222* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     224* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     226* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     228* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     230* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.1 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     230* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     232* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     234* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     236* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     238* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     240* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.1 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     240* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     242* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     244* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     246* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     248* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     250* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.1 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     250* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     252* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     254* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     256* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     258* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     260* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.1 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     260* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     262* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     264* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     266* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     268* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     270* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.1 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     270* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     272* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     274* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     276* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     278* |       0 |      45 |        0 |      0 |    55 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     280* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     280* |       0 |      45 |        0 |      0 |    56 |    +0.1% |   -7.385 |   -10045.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     284* |       0 |      47 |        0 |      0 |    57 |    +0.1% |   -7.385 |   -10046.3 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     290* |       0 |      49 |        0 |      0 |    60 |    +0.1% |   -7.385 |   -10043.4 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     295* |       0 |      50 |        0 |      0 |    64 |    +0.2% |   -7.385 |   -10042.8 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     298* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     300* |       0 |      50 |        0 |      0 |    66 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     300* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     302* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     304* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     306* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     308* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     310* |       0 |      50 |        0 |      0 |    66 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     310* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     312* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     314* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     316* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     318* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     320* |       0 |      50 |        0 |      0 |    66 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     320* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     322* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     324* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     326* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     328* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     330* |       0 |      50 |        0 |      0 |    66 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     330* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     332* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     334* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     336* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     338* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     340* |       0 |      50 |        0 |      0 |    66 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     340* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     342* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     344* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     346* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     348* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     350* |       0 |      50 |        0 |      0 |    66 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     350* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     352* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     354* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     356* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     358* |       0 |      50 |        0 |      0 |    65 |    +0.2% |   -7.385 |   -10040.2 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     360* |       0 |      50 |        0 |      0 |    66 |    +0.2% |   -7.385 |   -10024.0 |   1991 | gen_regfile_ff.register_file_i.rf_reg\[1021\]$_DFFE_PN0P_/D
+     370* |       0 |      57 |        0 |      0 |    69 |    +0.2% |   -7.328 |    -9802.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     380* |       0 |      67 |        0 |      0 |    69 |    +0.2% |   -7.348 |    -9575.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     390* |       0 |      76 |        0 |      0 |    70 |    +0.2% |   -7.348 |    -9478.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     400* |       0 |      84 |        0 |      0 |    72 |    +0.2% |   -7.348 |    -9387.0 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     410* |       0 |      90 |        0 |      0 |    76 |    +0.3% |   -7.374 |    -9382.8 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     411* |       0 |      51 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9935.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     420* |       0 |      59 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9817.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     430* |       0 |      69 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9586.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     440* |       0 |      79 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9447.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     450* |       0 |      83 |        0 |      0 |    72 |    +0.2% |   -7.348 |    -9408.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     460* |       0 |      90 |        0 |      0 |    75 |    +0.3% |   -7.348 |    -9398.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     463* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     470* |       0 |      58 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9854.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     480* |       0 |      68 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9594.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     490* |       0 |      78 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9468.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     500* |       0 |      85 |        0 |      0 |    69 |    +0.2% |   -7.348 |    -9405.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     510* |       0 |      94 |        0 |      0 |    70 |    +0.3% |   -7.348 |    -9406.0 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     514* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     520* |       0 |      57 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9856.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     530* |       0 |      67 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9595.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     540* |       0 |      77 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9484.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     550* |       0 |      85 |        0 |      0 |    68 |    +0.2% |   -7.348 |    -9405.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     560* |       0 |      95 |        0 |      0 |    68 |    +0.3% |   -7.348 |    -9415.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     565* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     570* |       0 |      56 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9862.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     580* |       0 |      66 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9627.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     590* |       0 |      76 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9487.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     600* |       0 |      84 |        0 |      0 |    68 |    +0.2% |   -7.348 |    -9407.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     610* |       0 |      94 |        0 |      0 |    68 |    +0.3% |   -7.348 |    -9407.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     616* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     620* |       0 |      55 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9876.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     630* |       0 |      65 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9630.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     640* |       0 |      75 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9502.0 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     650* |       0 |      84 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9409.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     660* |       0 |      90 |        0 |      0 |    71 |    +0.3% |   -7.348 |    -9406.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     667* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     670* |       0 |      54 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9886.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     680* |       0 |      64 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9631.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     690* |       0 |      74 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9502.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     700* |       0 |      84 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9409.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     710* |       0 |      93 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9407.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     718* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     720* |       0 |      53 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9924.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     730* |       0 |      63 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9689.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     740* |       0 |      73 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9516.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     750* |       0 |      83 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9409.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     760* |       0 |      92 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9406.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     769* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     770* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     780* |       0 |      62 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9709.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     790* |       0 |      72 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9540.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     800* |       0 |      82 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9418.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     810* |       0 |      91 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9405.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     820* |       0 |     101 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9415.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     820* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     830* |       0 |      61 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9751.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     840* |       0 |      71 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9563.8 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     850* |       0 |      81 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9421.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     860* |       0 |      90 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9405.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     870* |       0 |     100 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9419.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     871* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     880* |       0 |      60 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9784.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     890* |       0 |      70 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9577.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     900* |       0 |      80 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9444.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     910* |       0 |      89 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9405.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     920* |       0 |      99 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9420.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     922* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     930* |       0 |      59 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9817.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     940* |       0 |      69 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9586.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     950* |       0 |      79 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9447.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     960* |       0 |      88 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9406.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     970* |       0 |      98 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9415.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     973* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     980* |       0 |      58 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9854.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+     990* |       0 |      68 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9594.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1000* |       0 |      78 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9468.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1010* |       0 |      87 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9405.8 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1020* |       0 |      97 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9407.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1024* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1030* |       0 |      57 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9856.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1040* |       0 |      67 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9595.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1050* |       0 |      77 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9484.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1060* |       0 |      86 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9408.0 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1070* |       0 |      96 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9402.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1075* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1080* |       0 |      56 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9862.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1090* |       0 |      66 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9627.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1100* |       0 |      76 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9487.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1100* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1110* |       0 |      61 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9751.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1120* |       0 |      71 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9563.8 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1130* |       0 |      81 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9421.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1140* |       0 |      90 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9405.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1150* |       0 |     100 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9419.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1151* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1160* |       0 |      60 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9784.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1170* |       0 |      70 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9577.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1180* |       0 |      80 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9444.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1190* |       0 |      89 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9405.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1200* |       0 |      99 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9420.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1202* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1210* |       0 |      59 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9817.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1220* |       0 |      69 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9586.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1230* |       0 |      79 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9447.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1240* |       0 |      88 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9406.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1250* |       0 |      98 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9415.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1253* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1260* |       0 |      58 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9854.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1270* |       0 |      68 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9594.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1280* |       0 |      78 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9468.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1290* |       0 |      87 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9405.8 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1300* |       0 |      97 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9407.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1304* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1310* |       0 |      57 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9856.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1320* |       0 |      67 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9595.3 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1330* |       0 |      77 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9484.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1340* |       0 |      86 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9408.0 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1350* |       0 |      96 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9402.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1355* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1360* |       0 |      56 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9862.1 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1370* |       0 |      66 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9627.5 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1380* |       0 |      76 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9487.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1390* |       0 |      85 |        0 |      0 |    67 |    +0.2% |   -7.348 |    -9410.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1400* |       0 |      95 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9406.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1400* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1410* |       0 |      61 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9751.2 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1420* |       0 |      71 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9563.8 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1430* |       0 |      81 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9421.9 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1440* |       0 |      90 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9405.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1450* |       0 |     100 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9419.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1451* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1460* |       0 |      60 |        0 |      0 |    66 |    +0.2% |   -7.327 |    -9784.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1470* |       0 |      70 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9577.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1480* |       0 |      80 |        0 |      0 |    66 |    +0.2% |   -7.348 |    -9444.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1490* |       0 |      89 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9405.6 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1500* |       0 |      99 |        0 |      0 |    67 |    +0.3% |   -7.348 |    -9420.7 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1500* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    1500* |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+    final |       0 |      52 |        0 |      0 |    66 |    +0.2% |   -7.322 |    -9933.4 |   1991 | cs_registers_i.minstret_counter_i.counter_val_o\[0\]$_DFFE_PN0P_/D
+------------------------------------------------------------------------------------------------------------------------------
+[INFO RSZ-0051] Resized 52 instances: 52 up, 0 up match, 0 down, 0 VT
+[INFO RSZ-0043] Swapped pins on 66 instances.
+[WARNING RSZ-0062] Unable to repair all setup violations.
+[INFO RSZ-0505] Runtime: 84.15s
+Took 84 seconds: repair_timing -setup_margin 0 -hold_margin 0 -repair_tns 100 -match_cell_footprint -setup -skip_last_gasp -sequence unbuffer,sizeup,swap,vt_swap -verbose
+Default units for flow
+ time 1ns
+ capacitance 1pF
+ resistance 1kohm
+ voltage 1v
+ current 1mA
+ power 1nW
+ distance 1um
+   Layer   | Unit Resistance | Unit Capacitance 
+           |       (kohm/um) |          (pF/um)
+------------------------------------------------
+       li1 |        7.18e-02 |         1.50e-04
+      met1 |        1.21e-03 |         1.72e-04
+      met2 |        1.22e-03 |         1.36e-04
+      met3 |        1.66e-04 |         2.15e-04
+      met4 |        1.68e-04 |         1.48e-04
+      met5 |        1.84e-05 |         1.54e-04
+------------------------------------------------
+
+   Layer   | Via Resistance 
+           |         (kohm) 
+----------------------------
+      mcon |       9.25e-03 
+       via |       4.50e-03 
+      via2 |       3.37e-03 
+      via3 |       3.77e-04 
+      via4 |       5.80e-06 
+----------------------------
+Report metrics stage 2, floorplan final...
+
+==========================================================================
+floorplan final report_design_area
+--------------------------------------------------------------------------
+Design area 130008 um^2 49% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_1_floorplan.odb
+write_sdc -no_timestamp ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_1_floorplan.sdc
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_1_floorplan          .odb         89      351     3.92      208 a9cf4a5aa5
+2_1_floorplan          .sdc                                       45c5db8ae8
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 2_2_floorplan_macro macro_place
+Running macro_place.tcl, stage 2_2_floorplan_macro
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_1_floorplan.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_1_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+No macros found: Skipping macro_placement
+Design area 130008 um^2 49% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_2_floorplan_macro.odb
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_2_floorplan_macro    .odb          0        0     1.00      126 a9cf4a5aa5
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 2_3_floorplan_tapcell tapcell
+Running tapcell.tcl, stage 2_3_floorplan_tapcell
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_2_floorplan_macro.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_1_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+[INFO TAP-0005] Inserted 3523 tapcells.
+Design area 134416 um^2 50% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_3_floorplan_tapcell.odb
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_3_floorplan_tapcell  .odb          0        1     0.98      126 7ced7a97d0
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 2_4_floorplan_pdn pdn
+Running pdn.tcl, stage 2_4_floorplan_pdn
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_3_floorplan_tapcell.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_1_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+[WARNING PDN-1051] No instances found for grid (CORE_macro_grid_1).
+[WARNING PDN-1051] No instances found for grid (CORE_macro_grid_2).
+[INFO PDN-0001] Inserting grid: grid
+[INFO PDN-0500] Runtime: 0.10s
+Design area 134416 um^2 50% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_4_floorplan_pdn.odb
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+2_4_floorplan_pdn      .odb          0        1     1.00      135 8fa80a72de
+cp ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_4_floorplan_pdn.odb ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.odb
+cp ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_1_floorplan.sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.sdc
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 3_1_place_gp_skip_io global_place_skip_io
+Running global_place_skip_io.tcl, stage 3_1_place_gp_skip_io
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+[INFO GPL-0190] Using 6 of 12 threads for placement: one per core, SMT siblings idle.
+[INFO GPL-0022] Initialize gpl and calculate uniform density.
+Placement density is 0.6050720107269287, computed from PLACE_DENSITY_LB_ADDON  0.10016 and lower bound 0.550000011920929
+global_placement -skip_io -density 0.6050720107269287 -pad_left 0 -pad_right 0
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  1.380  2.720 ) ( 409.400 658.240 ) um
+[INFO GPL-0016] Core area:                  267465.270 um^2
+[INFO GPL-0036] Movable instances area:     130008.438 um^2
+[INFO GPL-0037] Total instances area:       134416.416 um^2
+[INFO GPL-0035] Pin density area adjust:     13210.736 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:             17741
+[INFO GPL-0007] Movable instances:               14218
+[INFO GPL-0008] Fixed instances:                  3523
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                  14376
+[INFO GPL-0011] Number of pins:                  55030
+[INFO GPL-0012] Die BBox:       (  0.000  0.000 ) ( 410.465 661.555 ) um
+[INFO GPL-0013] Placement BBox: (  1.380  2.720 ) ( 409.400 658.240 ) um
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                267465.270 um^2
+[INFO GPL-0017] Fixed instances area:         4407.978 um^2
+[INFO GPL-0018] Movable instances area:     143219.175 um^2
+[INFO GPL-0019] Utilization:                    54.444 %
+[INFO GPL-0020] Standard cells area:        143219.175 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 14218	Region center = 0
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.6051
+[INFO GPL-0024] Movable insts average area:     10.073 um^2
+[INFO GPL-0025] Ideal bin area:                 16.648 um^2
+[INFO GPL-0026] Ideal bin count:                 16066
+[INFO GPL-0027] Total bin area:             267465.270 um^2
+[INFO GPL-0028] Bin count (X, Y):          64 ,     64
+[INFO GPL-0029] Bin size (W * H):       6.375 * 10.242 um
+[INFO GPL-0030] Number of bins:                   4096
+[INFO GPL-0084] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9988 |  3.218099e+04 |   +0.00% |  3.84e-15 |      
+       10 |   0.9978 |  2.524574e+04 |  -21.55% |  6.26e-15 |      
+       20 |   0.9978 |  2.502896e+04 |   -0.86% |  1.02e-14 |      
+       30 |   0.9978 |  2.493493e+04 |   -0.38% |  1.66e-14 |      
+       40 |   0.9978 |  2.487201e+04 |   -0.25% |  2.71e-14 |      
+       50 |   0.9978 |  2.483724e+04 |   -0.14% |  4.41e-14 |      
+       60 |   0.9972 |  2.483895e+04 |   +0.01% |  7.18e-14 |      
+       70 |   0.9972 |  2.490528e+04 |   +0.27% |  1.17e-13 |      
+       80 |   0.9972 |  2.512921e+04 |   +0.90% |  1.90e-13 |      
+       90 |   0.9965 |  2.574223e+04 |   +2.44% |  3.10e-13 |      
+      100 |   0.9958 |  2.723152e+04 |   +5.79% |  5.05e-13 |      
+      110 |   0.9949 |  3.003575e+04 |  +10.30% |  8.23e-13 |      
+      120 |   0.9923 |  3.424789e+04 |  +14.02% |  1.34e-12 |      
+      130 |   0.9891 |  3.990777e+04 |  +16.53% |  2.18e-12 |      
+      140 |   0.9830 |  4.802995e+04 |  +20.35% |  3.55e-12 |      
+      150 |   0.9757 |  6.054693e+04 |  +26.06% |  5.77e-12 |      
+      160 |   0.9613 |  7.814994e+04 |  +29.07% |  9.39e-12 |      
+      170 |   0.9411 |  9.885369e+04 |  +26.49% |  1.53e-11 |      
+      180 |   0.9211 |  1.206576e+05 |  +22.06% |  2.48e-11 |      
+      190 |   0.8949 |  1.439772e+05 |  +19.33% |  4.03e-11 |      
+      200 |   0.8629 |  1.690653e+05 |  +17.43% |  6.54e-11 |      
+      210 |   0.8288 |  1.930435e+05 |  +14.18% |  1.06e-10 |      
+      220 |   0.7934 |  2.166628e+05 |  +12.24% |  1.73e-10 |      
+      230 |   0.7517 |  2.401475e+05 |  +10.84% |  2.81e-10 |      
+      240 |   0.7131 |  2.603512e+05 |   +8.41% |  4.56e-10 |      
+      250 |   0.6666 |  2.784587e+05 |   +6.96% |  7.41e-10 |      
+      260 |   0.6233 |  2.974144e+05 |   +6.81% |  1.21e-09 |      
+      270 |   0.5712 |  3.156681e+05 |   +6.14% |  1.96e-09 |      
+      280 |   0.5218 |  3.302773e+05 |   +4.63% |  3.19e-09 |      
+      290 |   0.4732 |  3.454755e+05 |   +4.60% |  5.18e-09 |      
+      300 |   0.4228 |  3.556647e+05 |   +2.95% |  8.43e-09 |      
+      310 |   0.3798 |  3.611258e+05 |   +1.54% |  1.37e-08 |      
+      320 |   0.3290 |  3.642420e+05 |   +0.86% |  2.19e-08 |      
+      330 |   0.3000 |  3.675232e+05 |   +0.90% |  3.23e-08 |      
+      340 |   0.2670 |  3.697365e+05 |   +0.60% |  4.75e-08 |      
+      350 |   0.2346 |  3.723140e+05 |   +0.70% |  7.00e-08 |      
+      360 |   0.2089 |  3.741061e+05 |   +0.48% |  1.03e-07 |      
+      370 |   0.1828 |  3.749343e+05 |   +0.22% |  1.52e-07 |      
+      380 |   0.1567 |  3.749124e+05 |   -0.01% |  2.24e-07 |      
+      390 |   0.1341 |  3.750202e+05 |   +0.03% |  3.29e-07 |      
+      400 |   0.1133 |  3.751399e+05 |   +0.03% |  4.85e-07 |      
+      409 |   0.0999 |  3.755711e+05 |          |  7.15e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 409
+[INFO GPL-1002] Placed Cell Area            143219.1748
+[INFO GPL-1003] Available Free Area         263057.2928
+[INFO GPL-1004] Minimum Feasible Density        0.5500 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.6049
+[INFO GPL-1008]     - For 80% usage of free space: 0.6806
+[INFO GPL-1014] Final placement area: 143219.17 (+0.00%)
+[INFO GPL-1018] Final HPWL (um): 375749.21
+Design area 134416 um^2 50% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_1_place_gp_skip_io.odb
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+3_1_place_gp_skip_io   .odb          2        6     2.38      166 825441301b
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 3_2_place_iop io_placement
+Running io_placement.tcl, stage 3_2_place_iop
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_1_place_gp_skip_io.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+place_pins -hor_layers met3 -ver_layers met2
+Found 0 macro blocks.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0001] Number of available slots 1854
+[INFO PPL-0002] Number of I/O             264
+[INFO PPL-0003] Number of I/O w/sink      256
+[INFO PPL-0004] Number of I/O w/o sink    8
+[INFO PPL-0005] Slots per section         200
+[INFO PPL-0008] Successfully assigned pins to sections.
+[INFO PPL-0012] I/O nets HPWL: 40951.04 um.
+Design area 134416 um^2 50% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_2_place_iop.odb
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+3_2_place_iop          .odb          0        0     0.98      131 8664ead8f3
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 3_3_place_gp global_place
+Running global_place.tcl, stage 3_3_place_gp
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_2_place_iop.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+[INFO RSZ-0026] Removed 6 buffers.
+Perform port buffering...
+[INFO RSZ-0027] Inserted 149 sky130_fd_sc_hd__clkdlybuf4s50_1 input buffers.
+[INFO RSZ-0028] Inserted 100 sky130_fd_sc_hd__clkdlybuf4s50_1 output buffers.
+[INFO GPL-0190] Using 6 of 12 threads for placement: one per core, SMT siblings idle.
+[INFO GPL-0022] Initialize gpl and calculate uniform density.
+Placement density is 0.6140704021453858, computed from PLACE_DENSITY_LB_ADDON  0.10016 and lower bound 0.5600000023841858
+global_placement -density 0.6140704021453858 -pad_left 0 -pad_right 0 -routability_driven -timing_driven -force_center_initial_place -min_phi_coef 0.95 -max_phi_coef 1.05
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  1.380  2.720 ) ( 409.400 658.240 ) um
+[INFO GPL-0016] Core area:                  267465.270 um^2
+[INFO GPL-0036] Movable instances area:     132455.786 um^2
+[INFO GPL-0037] Total instances area:       136863.763 um^2
+[INFO GPL-0035] Pin density area adjust:     13356.634 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:             17984
+[INFO GPL-0007] Movable instances:               14461
+[INFO GPL-0008] Fixed instances:                  3523
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                  14619
+[INFO GPL-0011] Number of pins:                  55780
+[INFO GPL-0012] Die BBox:       (  0.000  0.000 ) ( 410.465 661.555 ) um
+[INFO GPL-0013] Placement BBox: (  1.380  2.720 ) ( 409.400 658.240 ) um
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                267465.270 um^2
+[INFO GPL-0017] Fixed instances area:         4407.978 um^2
+[INFO GPL-0018] Movable instances area:     145812.420 um^2
+[INFO GPL-0019] Utilization:                    55.430 %
+[INFO GPL-0020] Standard cells area:        145812.420 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0005] ---- Execute Conjugate Gradient Initial Placement.
+[INFO GPL-0051] Source of initial instance position counters:
+	Odb location = 0	Core center = 14461	Region center = 0
+[InitialPlace]  Iter: 1 conjugate gradient residual: 0.00258154 HPWL: 496953431
+[InitialPlace]  Iter: 2 conjugate gradient residual: 0.00001735 HPWL: 195870286
+[InitialPlace]  Iter: 3 conjugate gradient residual: 0.00025310 HPWL: 189660514
+[InitialPlace]  Iter: 4 conjugate gradient residual: 0.00003976 HPWL: 186639854
+[InitialPlace]  Iter: 5 conjugate gradient residual: 0.00006270 HPWL: 184963375
+[InitialPlace]  Iter: 6 conjugate gradient residual: 0.00000657 HPWL: 184240155
+[INFO GPL-0033] ---- Initialize Nesterov Region: Top-level
+[INFO GPL-0023] Placement target density:       0.6141
+[INFO GPL-0024] Movable insts average area:     10.083 um^2
+[INFO GPL-0025] Ideal bin area:                 16.420 um^2
+[INFO GPL-0026] Ideal bin count:                 16288
+[INFO GPL-0027] Total bin area:             267465.270 um^2
+[INFO GPL-0028] Bin count (X, Y):          64 ,     64
+[INFO GPL-0029] Bin size (W * H):       6.375 * 10.242 um
+[INFO GPL-0030] Number of bins:                   4096
+[INFO GPL-0084] ---- Execute Nesterov Global Placement.
+[INFO GPL-0031] HPWL: Half-Perimeter Wirelength
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+        0 |   0.9765 |  8.679191e+04 |   +0.00% |  1.07e-15 |      
+       10 |   0.9366 |  1.107970e+05 |  +27.66% |  1.73e-15 |      
+       20 |   0.9163 |  1.216214e+05 |   +9.77% |  2.82e-15 |      
+       30 |   0.9095 |  1.258149e+05 |   +3.45% |  4.59e-15 |      
+       40 |   0.9093 |  1.266562e+05 |   +0.67% |  7.47e-15 |      
+       50 |   0.9101 |  1.265433e+05 |   -0.09% |  1.22e-14 |      
+       60 |   0.9100 |  1.266415e+05 |   +0.08% |  1.98e-14 |      
+       70 |   0.9096 |  1.269916e+05 |   +0.28% |  3.23e-14 |      
+       80 |   0.9098 |  1.269936e+05 |   +0.00% |  5.26e-14 |      
+       90 |   0.9095 |  1.267203e+05 |   -0.22% |  8.56e-14 |      
+      100 |   0.9093 |  1.265414e+05 |   -0.14% |  1.40e-13 |      
+      110 |   0.9094 |  1.266787e+05 |   +0.11% |  2.27e-13 |      
+      120 |   0.9088 |  1.271565e+05 |   +0.38% |  3.70e-13 |      
+      130 |   0.9082 |  1.279202e+05 |   +0.60% |  6.03e-13 |      
+      140 |   0.9071 |  1.290629e+05 |   +0.89% |  9.82e-13 |      
+      150 |   0.9060 |  1.308871e+05 |   +1.41% |  1.60e-12 |      
+      160 |   0.9034 |  1.337686e+05 |   +2.20% |  2.60e-12 |      
+      170 |   0.9001 |  1.382479e+05 |   +3.35% |  4.24e-12 |      
+      180 |   0.8938 |  1.451280e+05 |   +4.98% |  6.90e-12 |      
+      190 |   0.8856 |  1.548968e+05 |   +6.73% |  1.12e-11 |      
+      200 |   0.8731 |  1.678760e+05 |   +8.38% |  1.83e-11 |      
+      210 |   0.8563 |  1.838029e+05 |   +9.49% |  2.97e-11 |      
+      220 |   0.8349 |  2.036706e+05 |  +10.81% |  4.83e-11 |      
+      230 |   0.8102 |  2.227299e+05 |   +9.36% |  7.85e-11 |      
+      240 |   0.7805 |  2.415187e+05 |   +8.44% |  1.28e-10 |      
+      250 |   0.7491 |  2.611593e+05 |   +8.13% |  2.07e-10 |      
+      260 |   0.7099 |  2.825022e+05 |   +8.17% |  3.37e-10 |      
+      270 |   0.6689 |  3.013960e+05 |   +6.69% |  5.48e-10 |      
+      280 |   0.6317 |  3.220453e+05 |   +6.85% |  8.90e-10 |      
+[INFO GPL-0100] Timing-driven iteration 1/2, virtual: false.
+[INFO GPL-0101]    Iter: 281, overflow: 0.632, keep resizer changes at: 1, HPWL: 322045283
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     14635
+    final |     +2.4% |     260 |     256 |           223 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 224 slew violations.
+[INFO RSZ-0035] Found 64 fanout violations.
+[INFO RSZ-0036] Found 19 capacitance violations.
+[INFO RSZ-0039] Resized 260 instances.
+[INFO RSZ-0038] Inserted 256 buffers in 223 nets.
+   Iter   |    Area   | Removed | Inserted |   Pins
+          |           | Buffers | Buffers  | Remaining
+-------------------------------------------------------
+        0 |     +0.0% |       0 |        0 |     14424
+     1400 |     -0.1% |      14 |       10 |     13024
+     2800 |     -0.1% |      33 |       29 |     11624
+     4200 |     -0.0% |      64 |       72 |     10224
+     5600 |     +0.1% |      81 |      130 |      8824
+     7000 |     +0.2% |      94 |      152 |      7424
+     8400 |     +0.2% |     109 |      177 |      6024
+     9800 |     +0.2% |     142 |      226 |      4624
+    11200 |     +0.2% |     170 |      283 |      3224
+    12600 |     +0.2% |     216 |      358 |      1824
+    14000 |     +0.3% |     217 |      364 |       424
+    final |     +0.3% |     256 |      408 |         0
+-------------------------------------------------------
+[INFO GPL-0106] Timing-driven: worst slack 1.8213941e-09
+[INFO GPL-0107] Timing-driven: repair_design delta area: 3538.937 um^2 (+2.43%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl delta gcells: 408 (+2.82%)
+[INFO GPL-0109] Timing-driven: repair_design, gcells created: 664, deleted: 256
+[INFO GPL-0110] Timing-driven: new target density: 0.62752354
+[INFO GPL-0038] Routability snapshot saved at iter = 290
+      289 |   0.5996 |  3.670611e+05 |          |           |      
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      290 |   0.5966 |  3.685773e+05 |  +14.45% |  1.44e-09 |      
+      300 |   0.5588 |  3.829611e+05 |   +3.90% |  2.35e-09 |      
+      310 |   0.5022 |  3.934235e+05 |   +2.73% |  3.82e-09 |      
+      320 |   0.4564 |  4.010519e+05 |   +1.94% |  6.21e-09 |      
+      330 |   0.4115 |  4.144929e+05 |   +3.35% |  1.01e-08 |      
+      340 |   0.3646 |  4.238668e+05 |   +2.26% |  1.64e-08 |      
+      350 |   0.3176 |  4.257884e+05 |   +0.45% |  2.52e-08 |      
+[INFO GPL-0040] Routability iteration: 1
+[INFO GPL-0088] Tiles the placer can act on: 3494 of 5605 (62.34%)
+[INFO GPL-0041] Total routing overflow: 207.4888
+[INFO GPL-0042] Number of overflowed tiles: 521 (14.91%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 2.7622
+[INFO GPL-0044] Average top 1.0% routing congestion: 2.4722
+[INFO GPL-0045] Average top 2.0% routing congestion: 2.2129
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.8395
+[INFO GPL-0047] Routability iteration weighted routing congestion: 2.6172
+[INFO GPL-0048] Routing congestion (2.6172) lower than previous minimum (1e+30). Updating minimum.
+[INFO GPL-0099] Routability inflation trimmed to 20.51% of what this iteration asked for; 25.00% of the 30.00% budget still unspent.
+[INFO GPL-0086] Inflated area:                7278.688 um^2 (+4.87%)
+[INFO GPL-0052] Placement target density:       0.6275
+[INFO GPL-0076] Removing fillers, count: Before: 1570, After: 843 (-46.31%)
+[INFO GPL-0077] Filler area (um^2)     : Before: 15723.285, After: 8439.460 (-46.33%)
+[INFO GPL-0078] Removed fillers count: 727, area removed: 7278.158 um^2. Remaining area to be compensated by modifying density: 0.530 um^2
+[INFO GPL-0058] White space area:           263057.293 um^2 (+0.00%)
+[INFO GPL-0059] Movable instances area:     165074.649 um^2 (+0.00%)
+[INFO GPL-0060] Total filler area:            8439.460 um^2 (-46.33%)
+[INFO GPL-0061] Total non-inflated area:    165069.505 um^2 (-0.00%)
+[INFO GPL-0062] Total inflated area:        172348.193 um^2 (-0.00%)
+[INFO GPL-0063] New Target Density:             0.6275
+[INFO GPL-0087] Routability end iteration: increase inflation and revert back to snapshot.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      360 |   0.5999 |  3.774459e+05 |   +0.00% |  1.62e-09 |      
+      370 |   0.5448 |  3.991616e+05 |   +5.75% |  2.38e-09 |      
+      380 |   0.5070 |  4.077427e+05 |   +2.15% |  3.50e-09 |      
+      390 |   0.4727 |  4.166205e+05 |   +2.18% |  5.16e-09 |      
+      400 |   0.4350 |  4.261861e+05 |   +2.30% |  7.59e-09 |      
+      410 |   0.4007 |  4.338606e+05 |   +1.80% |  1.12e-08 |      
+      420 |   0.3598 |  4.371965e+05 |   +0.77% |  1.65e-08 |      
+      430 |   0.3228 |  4.394055e+05 |   +0.51% |  2.42e-08 |      
+[INFO GPL-0040] Routability iteration: 2
+[INFO GPL-0088] Tiles the placer can act on: 3586 of 5605 (63.98%)
+[INFO GPL-0041] Total routing overflow: 139.8198
+[INFO GPL-0042] Number of overflowed tiles: 493 (13.75%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 2.1568
+[INFO GPL-0044] Average top 1.0% routing congestion: 1.9761
+[INFO GPL-0045] Average top 2.0% routing congestion: 1.7985
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.5643
+[INFO GPL-0047] Routability iteration weighted routing congestion: 2.0664
+[INFO GPL-0048] Routing congestion (2.0664) lower than previous minimum (2.617). Updating minimum.
+[INFO GPL-0099] Routability inflation trimmed to 29.43% of what this iteration asked for; 20.01% of the 30.00% budget still unspent.
+[INFO GPL-0086] Inflated area:                7278.871 um^2 (+4.65%)
+[INFO GPL-0052] Placement target density:       0.6275
+[INFO GPL-0076] Removing fillers, count: Before: 843, After: 116 (-86.24%)
+[INFO GPL-0077] Filler area (um^2)     : Before: 8439.460, After: 1161.302 (-86.24%)
+[INFO GPL-0078] Removed fillers count: 727, area removed: 7278.158 um^2. Remaining area to be compensated by modifying density: 0.712 um^2
+[INFO GPL-0058] White space area:           263057.293 um^2 (+0.00%)
+[INFO GPL-0059] Movable instances area:     165074.649 um^2 (+0.00%)
+[INFO GPL-0060] Total filler area:            1161.302 um^2 (-86.24%)
+[INFO GPL-0061] Total non-inflated area:    165070.217 um^2 (+0.00%)
+[INFO GPL-0062] Total inflated area:        172349.087 um^2 (+0.00%)
+[INFO GPL-0063] New Target Density:             0.6275
+[INFO GPL-0087] Routability end iteration: increase inflation and revert back to snapshot.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      440 |   0.6183 |  3.764203e+05 |   +0.00% |  1.56e-09 |      
+      450 |   0.5469 |  4.140023e+05 |   +9.98% |  2.29e-09 |      
+      460 |   0.5106 |  4.254197e+05 |   +2.76% |  3.37e-09 |      
+      470 |   0.4802 |  4.371227e+05 |   +2.75% |  4.95e-09 |      
+      480 |   0.4369 |  4.482381e+05 |   +2.54% |  7.29e-09 |      
+      490 |   0.4027 |  4.566246e+05 |   +1.87% |  1.07e-08 |      
+      500 |   0.3636 |  4.599436e+05 |   +0.73% |  1.58e-08 |      
+      510 |   0.3337 |  4.611398e+05 |   +0.26% |  2.33e-08 |      
+[INFO GPL-0040] Routability iteration: 3
+[INFO GPL-0088] Tiles the placer can act on: 3798 of 5605 (67.76%)
+[INFO GPL-0041] Total routing overflow: 109.4142
+[INFO GPL-0042] Number of overflowed tiles: 511 (13.45%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 1.8171
+[INFO GPL-0044] Average top 1.0% routing congestion: 1.6869
+[INFO GPL-0045] Average top 2.0% routing congestion: 1.5686
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.4090
+[INFO GPL-0047] Routability iteration weighted routing congestion: 1.7520
+[INFO GPL-0048] Routing congestion (1.7520) lower than previous minimum (2.066). Updating minimum.
+[INFO GPL-0099] Routability inflation trimmed to 36.77% of what this iteration asked for; 15.02% of the 30.00% budget still unspent.
+[INFO GPL-0086] Inflated area:                7280.343 um^2 (+4.44%)
+[INFO GPL-0052] Placement target density:       0.6275
+[INFO GPL-0076] Removing fillers, count: Before: 116, After: 0 (-100.00%)
+[INFO GPL-0077] Filler area (um^2)     : Before: 1161.302, After: 0.000 (-100.00%)
+[INFO GPL-0078] Removed fillers count: 116, area removed: 1161.302 um^2. Remaining area to be compensated by modifying density: 6119.042 um^2
+[INFO GPL-0079] New target density: 0.650768
+[INFO GPL-0058] White space area:           263057.293 um^2 (+0.00%)
+[INFO GPL-0059] Movable instances area:     171189.256 um^2 (+3.70%)
+[INFO GPL-0060] Total filler area:               0.000 um^2 (-100.00%)
+[INFO GPL-0061] Total non-inflated area:    171189.259 um^2 (+3.71%)
+[INFO GPL-0062] Total inflated area:        178469.602 um^2 (+3.55%)
+[INFO GPL-0063] New Target Density:             0.6508
+[INFO GPL-0087] Routability end iteration: increase inflation and revert back to snapshot.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      520 |   0.6300 |  3.712728e+05 |   +0.00% |  1.50e-09 |      
+      530 |   0.5438 |  4.202428e+05 |  +13.19% |  2.20e-09 |      
+      540 |   0.5135 |  4.334000e+05 |   +3.13% |  3.24e-09 |      
+      550 |   0.4796 |  4.460701e+05 |   +2.92% |  4.76e-09 |      
+      560 |   0.4360 |  4.549528e+05 |   +1.99% |  7.01e-09 |      
+      570 |   0.4018 |  4.621776e+05 |   +1.59% |  1.03e-08 |      
+      580 |   0.3636 |  4.665931e+05 |   +0.96% |  1.52e-08 |      
+      590 |   0.3311 |  4.665524e+05 |   -0.01% |  2.24e-08 |      
+      600 |   0.2949 |  4.749485e+05 |   +1.80% |  3.30e-08 |      
+[INFO GPL-0040] Routability iteration: 4
+[INFO GPL-0088] Tiles the placer can act on: 3837 of 5605 (68.46%)
+[INFO GPL-0041] Total routing overflow: 79.3165
+[INFO GPL-0042] Number of overflowed tiles: 432 (11.26%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 1.6055
+[INFO GPL-0044] Average top 1.0% routing congestion: 1.5214
+[INFO GPL-0045] Average top 2.0% routing congestion: 1.4409
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.3169
+[INFO GPL-0047] Routability iteration weighted routing congestion: 1.5634
+[INFO GPL-0048] Routing congestion (1.5634) lower than previous minimum (1.752). Updating minimum.
+[INFO GPL-0099] Routability inflation trimmed to 49.55% of what this iteration asked for; 10.02% of the 30.00% budget still unspent.
+[INFO GPL-0086] Inflated area:                7280.902 um^2 (+4.25%)
+[INFO GPL-0052] Placement target density:       0.6508
+[INFO GPL-0076] Removing fillers, count: Before: 0, After: 0 (+0.00%)
+[INFO GPL-0077] Filler area (um^2)     : Before: 0.000, After: 0.000 (+0.00%)
+[INFO GPL-0078] Removed fillers count: 0, area removed: 0.000 um^2. Remaining area to be compensated by modifying density: 7280.903 um^2
+[INFO GPL-0079] New target density: 0.67844594
+[INFO GPL-0058] White space area:           263057.293 um^2 (+0.00%)
+[INFO GPL-0059] Movable instances area:     178470.158 um^2 (+4.25%)
+[INFO GPL-0060] Total filler area:               0.000 um^2 (+0.00%)
+[INFO GPL-0061] Total non-inflated area:    178470.161 um^2 (+4.25%)
+[INFO GPL-0062] Total inflated area:        185751.064 um^2 (+4.08%)
+[INFO GPL-0063] New Target Density:             0.6784
+[INFO GPL-0087] Routability end iteration: increase inflation and revert back to snapshot.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      610 |   0.5532 |  4.220560e+05 |   +0.00% |  2.04e-09 |      
+      620 |   0.5172 |  4.376221e+05 |   +3.69% |  2.99e-09 |      
+      630 |   0.4860 |  4.510855e+05 |   +3.08% |  4.40e-09 |      
+      640 |   0.4413 |  4.626674e+05 |   +2.57% |  6.48e-09 |      
+      650 |   0.4081 |  4.708452e+05 |   +1.77% |  9.54e-09 |      
+      660 |   0.3691 |  4.756707e+05 |   +1.02% |  1.41e-08 |      
+      670 |   0.3364 |  4.762633e+05 |   +0.12% |  2.07e-08 |      
+      680 |   0.2977 |  4.847746e+05 |   +1.79% |  3.05e-08 |      
+[INFO GPL-0040] Routability iteration: 5
+[INFO GPL-0088] Tiles the placer can act on: 3838 of 5605 (68.47%)
+[INFO GPL-0041] Total routing overflow: 69.1714
+[INFO GPL-0042] Number of overflowed tiles: 436 (11.36%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 1.5799
+[INFO GPL-0044] Average top 1.0% routing congestion: 1.4973
+[INFO GPL-0045] Average top 2.0% routing congestion: 1.4139
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.2860
+[INFO GPL-0047] Routability iteration weighted routing congestion: 1.5386
+[INFO GPL-0048] Routing congestion (1.5386) lower than previous minimum (1.563). Updating minimum.
+[INFO GPL-0099] Routability inflation trimmed to 47.01% of what this iteration asked for; 5.03% of the 30.00% budget still unspent.
+[INFO GPL-0086] Inflated area:                7281.072 um^2 (+4.08%)
+[INFO GPL-0052] Placement target density:       0.6784
+[INFO GPL-0076] Removing fillers, count: Before: 0, After: 0 (+0.00%)
+[INFO GPL-0077] Filler area (um^2)     : Before: 0.000, After: 0.000 (+0.00%)
+[INFO GPL-0078] Removed fillers count: 0, area removed: 0.000 um^2. Remaining area to be compensated by modifying density: 7281.072 um^2
+[INFO GPL-0079] New target density: 0.70612466
+[INFO GPL-0058] White space area:           263057.293 um^2 (+0.00%)
+[INFO GPL-0059] Movable instances area:     185751.241 um^2 (+4.08%)
+[INFO GPL-0060] Total filler area:               0.000 um^2 (+0.00%)
+[INFO GPL-0061] Total non-inflated area:    185751.233 um^2 (+4.08%)
+[INFO GPL-0062] Total inflated area:        193032.306 um^2 (+3.92%)
+[INFO GPL-0063] New Target Density:             0.7061
+[INFO GPL-0087] Routability end iteration: increase inflation and revert back to snapshot.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      690 |   0.5460 |  4.274675e+05 |   +0.00% |  2.03e-09 |      
+      700 |   0.5150 |  4.433345e+05 |   +3.71% |  2.99e-09 |      
+      710 |   0.4809 |  4.585314e+05 |   +3.43% |  4.40e-09 |      
+      720 |   0.4386 |  4.663756e+05 |   +1.71% |  6.48e-09 |      
+      730 |   0.3998 |  4.737993e+05 |   +1.59% |  9.54e-09 |      
+      740 |   0.3639 |  4.755969e+05 |   +0.38% |  1.41e-08 |      
+      750 |   0.3307 |  4.801015e+05 |   +0.95% |  2.07e-08 |      
+[INFO GPL-0040] Routability iteration: 6
+[INFO GPL-0088] Tiles the placer can act on: 3813 of 5605 (68.03%)
+[INFO GPL-0041] Total routing overflow: 75.4693
+[INFO GPL-0042] Number of overflowed tiles: 412 (10.81%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 1.6859
+[INFO GPL-0044] Average top 1.0% routing congestion: 1.5818
+[INFO GPL-0045] Average top 2.0% routing congestion: 1.4725
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.3213
+[INFO GPL-0047] Routability iteration weighted routing congestion: 1.6339
+[INFO GPL-0049] Routing congestion (1.6339) higher than minimum (1.5386). Consecutive non-improvement count: 1.
+[INFO GPL-0099] Routability inflation trimmed to 43.99% of what this iteration asked for; 0.04% of the 30.00% budget still unspent.
+[INFO GPL-0086] Inflated area:                7280.590 um^2 (+3.92%)
+[INFO GPL-0052] Placement target density:       0.7061
+[INFO GPL-0076] Removing fillers, count: Before: 0, After: 0 (+0.00%)
+[INFO GPL-0077] Filler area (um^2)     : Before: 0.000, After: 0.000 (+0.00%)
+[INFO GPL-0078] Removed fillers count: 0, area removed: 0.000 um^2. Remaining area to be compensated by modifying density: 7280.590 um^2
+[INFO GPL-0079] New target density: 0.7338015
+[INFO GPL-0058] White space area:           263057.293 um^2 (+0.00%)
+[INFO GPL-0059] Movable instances area:     193031.832 um^2 (+3.92%)
+[INFO GPL-0060] Total filler area:               0.000 um^2 (+0.00%)
+[INFO GPL-0061] Total non-inflated area:    193031.824 um^2 (+3.92%)
+[INFO GPL-0062] Total inflated area:        200312.414 um^2 (+3.77%)
+[INFO GPL-0063] New Target Density:             0.7338
+[INFO GPL-0087] Routability end iteration: increase inflation and revert back to snapshot.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      760 |   0.6368 |  3.726684e+05 |   +0.00% |  1.50e-09 |      
+      770 |   0.5266 |  4.375282e+05 |  +17.40% |  2.20e-09 |      
+      780 |   0.5083 |  4.564895e+05 |   +4.33% |  3.23e-09 |      
+      790 |   0.4702 |  4.684905e+05 |   +2.63% |  4.75e-09 |      
+      800 |   0.4256 |  4.767034e+05 |   +1.75% |  7.00e-09 |      
+      810 |   0.3915 |  4.848254e+05 |   +1.70% |  1.03e-08 |      
+      820 |   0.3576 |  4.838724e+05 |   -0.20% |  1.52e-08 |      
+      830 |   0.3165 |  4.881486e+05 |   +0.88% |  2.23e-08 |      
+[INFO GPL-0040] Routability iteration: 7
+[INFO GPL-0088] Tiles the placer can act on: 3848 of 5605 (68.65%)
+[INFO GPL-0041] Total routing overflow: 79.4774
+[INFO GPL-0042] Number of overflowed tiles: 463 (12.03%)
+[INFO GPL-0043] Average top 0.5% routing congestion: 1.6039
+[INFO GPL-0044] Average top 1.0% routing congestion: 1.5233
+[INFO GPL-0045] Average top 2.0% routing congestion: 1.4373
+[INFO GPL-0046] Average top 5.0% routing congestion: 1.3102
+[INFO GPL-0047] Routability iteration weighted routing congestion: 1.5636
+[INFO GPL-0049] Routing congestion (1.5636) higher than minimum (1.5386). Consecutive non-improvement count: 2.
+[INFO GPL-0099] Routability inflation trimmed to 0.36% of what this iteration asked for; 0.00% of the 30.00% budget still unspent.
+[INFO GPL-0086] Inflated area:                  53.407 um^2 (+0.03%)
+[INFO GPL-0052] Placement target density:       0.7338
+[INFO GPL-0076] Removing fillers, count: Before: 0, After: 0 (+0.00%)
+[INFO GPL-0077] Filler area (um^2)     : Before: 0.000, After: 0.000 (+0.00%)
+[INFO GPL-0078] Removed fillers count: 0, area removed: 0.000 um^2. Remaining area to be compensated by modifying density: 53.407 um^2
+[INFO GPL-0079] New target density: 0.73400444
+[INFO GPL-0058] White space area:           263057.293 um^2 (+0.00%)
+[INFO GPL-0059] Movable instances area:     193085.227 um^2 (+0.03%)
+[INFO GPL-0060] Total filler area:               0.000 um^2 (+0.00%)
+[INFO GPL-0061] Total non-inflated area:    193085.231 um^2 (+0.03%)
+[INFO GPL-0062] Total inflated area:        193138.638 um^2 (+0.03%)
+[INFO GPL-0063] New Target Density:             0.7340
+[INFO GPL-0097] Total routability inflation 29.99% of the movable area spent the 30.00% budget, ending routability.
+[INFO GPL-0055] Reverting inflation values and target density from the iteration with minimum observed routing congestion.
+[INFO GPL-0056] Minimum observed routing congestion: 1.5386
+[INFO GPL-0057] Target density at minimum routing congestion: 0.6784
+[INFO GPL-0080] Restoring 0 previously removed fillers.
+[INFO GPL-0089] Routability finished. Reverting to minimal observed routing congestion, could not reach target.
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      840 |   0.5674 |  3.879560e+05 |   +0.00% |  1.68e-09 |      
+      850 |   0.5096 |  4.151460e+05 |   +7.01% |  2.47e-09 |      
+      860 |   0.4804 |  4.316803e+05 |   +3.98% |  3.64e-09 |      
+      870 |   0.4461 |  4.467989e+05 |   +3.50% |  5.35e-09 |      
+      880 |   0.4014 |  4.609069e+05 |   +3.16% |  7.87e-09 |      
+      890 |   0.3711 |  4.725910e+05 |   +2.54% |  1.16e-08 |      
+      900 |   0.3374 |  4.728327e+05 |   +0.05% |  1.71e-08 |      
+      910 |   0.3012 |  4.751082e+05 |   +0.48% |  2.51e-08 |      
+      920 |   0.2643 |  4.860406e+05 |   +2.30% |  3.70e-08 |      
+      930 |   0.2293 |  4.916292e+05 |   +1.15% |  5.44e-08 |      
+      940 |   0.2075 |  4.908102e+05 |   -0.17% |  8.02e-08 |      
+[INFO GPL-0100] Timing-driven iteration 2/2, virtual: false.
+[INFO GPL-0101]    Iter: 945, overflow: 0.195, keep resizer changes at: 1, HPWL: 492181256
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     15043
+    final |     +0.7% |      63 |      49 |            73 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 65 slew violations.
+[INFO RSZ-0036] Found 11 capacitance violations.
+[INFO RSZ-0039] Resized 63 instances.
+[INFO RSZ-0038] Inserted 49 buffers in 73 nets.
+   Iter   |    Area   | Removed | Inserted |   Pins
+          |           | Buffers | Buffers  | Remaining
+-------------------------------------------------------
+        0 |     +0.0% |       0 |        0 |     14424
+     1400 |     +0.0% |      11 |       20 |     13024
+     2800 |     +0.0% |      33 |       48 |     11624
+     4200 |     +0.1% |      79 |      104 |     10224
+     5600 |     +0.1% |     147 |      183 |      8824
+     7000 |     +0.2% |     175 |      229 |      7424
+     8400 |     +0.2% |     203 |      272 |      6024
+     9800 |     +0.4% |     264 |      387 |      4624
+    11200 |     +0.5% |     332 |      494 |      3224
+    12600 |     +0.7% |     407 |      602 |      1824
+    14000 |     +0.8% |     413 |      625 |       424
+    final |     +0.8% |     457 |      671 |         0
+-------------------------------------------------------
+[INFO GPL-0106] Timing-driven: worst slack 1.6983064e-09
+[INFO GPL-0107] Timing-driven: repair_design delta area: 1496.383 um^2 (+0.77%)
+[INFO GPL-0108] Timing-driven: repair_design, gpl delta gcells: 263 (+1.77%)
+[INFO GPL-0109] Timing-driven: repair_design, gcells created: 720, deleted: 457
+[INFO GPL-0110] Timing-driven: new target density: 0.73969287
+Iteration | Overflow |     HPWL (um) |  HPWL(%) |   Penalty | Group
+---------------------------------------------------------------
+      950 |   0.1629 |  4.992556e+05 |   +1.72% |  1.18e-07 |      
+      960 |   0.1384 |  4.973167e+05 |   -0.39% |  1.74e-07 |      
+      970 |   0.1173 |  4.964923e+05 |   -0.17% |  2.56e-07 |      
+      978 |   0.0991 |  4.960162e+05 |          |  3.63e-07 |      
+---------------------------------------------------------------
+[INFO GPL-1001] Global placement finished at iteration 978
+[INFO GPL-1017] Routability mode iteration count: 614
+[INFO GPL-1005] Routability final weighted congestion: 1.4587
+[INFO GPL-1002] Placed Cell Area            179966.5444
+[INFO GPL-1003] Available Free Area         263057.2928
+[INFO GPL-1004] Minimum Feasible Density        0.5600 (cell_area / free_area)
+[INFO GPL-1006]   Suggested Target Densities:
+[INFO GPL-1007]     - For 90% usage of free space: 0.7601
+[INFO GPL-1008]     - For 80% usage of free space: 0.8552
+[INFO GPL-1011] Original area (um^2): 145812.42
+[INFO GPL-1012] Total routability artificial inflation: 29118.80 (+19.97%)
+[INFO GPL-1013] Total timing-driven delta area: 5035.32 (+3.45%)
+[INFO GPL-1014] Final placement area: 179966.54 (+23.42%)
+[INFO GPL-1018] Final HPWL (um): 496241.21
+Took 21 seconds: global_placement -density 0.6140704021453858 -pad_left 0 -pad_right 0 -routability_driven -timing_driven -force_center_initial_place -min_phi_coef 0.95 -max_phi_coef 1.05
+estimate_parasitics -placement
+Report metrics stage 3, global place...
+
+==========================================================================
+global place report_design_area
+--------------------------------------------------------------------------
+Design area 142867 um^2 53% utilization.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_3_place_gp.odb
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+3_3_place_gp           .odb         26       58     2.23      385 ee35c116f3
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 3_4_place_resized resize
+Running resize.tcl, stage 3_4_place_resized
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_3_place_gp.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+estimate_parasitics -placement
+[INFO GPL-0098] Initialize gpl and estimate target density.
+[WARNING GPL-0186] Binary search didn't converge after 20 iterations. The best density found was 1, with an overflow of 0.14449.
+replace_arith_modules
+replace_arith_modules -path_count 1000 -target setup -slack_threshold 0.0
+[INFO RSZ-0151] Starting arithmetic module replacement to optimize 'setup' target
+[INFO RSZ-0152] Analyzing 1000 critical paths with slack < 0.00
+[INFO RSZ-0153] Identified 0 violating endpoints
+[INFO RSZ-0154] Identified 0 critical arithmetic instances
+global_placement -incremental -density 0.9999995827674866
+[INFO GPL-0190] Using 6 of 12 threads for placement: one per core, SMT siblings idle.
+[INFO GPL-0083] Execute incremental mode global placement.
+[INFO GPL-0001] ---- Initialize GPL Main Data Structures
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: (  0.460  2.720 ) um
+[INFO GPL-0004] CoreBBox: (  1.380  2.720 ) ( 409.400 658.240 ) um
+[INFO GPL-0016] Core area:                  267465.270 um^2
+[INFO GPL-0036] Movable instances area:     138459.043 um^2
+[INFO GPL-0037] Total instances area:       142867.021 um^2
+[INFO GPL-0035] Pin density area adjust:     13354.970 um^2
+[INFO GPL-0032] ---- Initialize Region: Top-level
+[INFO GPL-0006] Number of instances:             18655
+[INFO GPL-0007] Movable instances:               15132
+[INFO GPL-0008] Fixed instances:                  3523
+[INFO GPL-0009] Dummy instances:                     0
+[INFO GPL-0010] Number of nets:                  15290
+[INFO GPL-0011] Number of pins:                  57122
+[INFO GPL-0012] Die BBox:       (  0.000  0.000 ) ( 410.465 661.555 ) um
+[INFO GPL-0013] Placement BBox: (  1.380  2.720 ) ( 409.400 658.240 ) um
+[INFO GPL-0014] Region name: top-level.
+[INFO GPL-0015] Region area:                267465.270 um^2
+[INFO GPL-0017] Fixed instances area:         4407.978 um^2
+[INFO GPL-0018] Movable instances area:     151814.014 um^2
+[INFO GPL-0019] Utilization:                    57.711 %
+[INFO GPL-0020] Standard cells area:        151814.014 um^2
+[INFO GPL-0021] Large instances area:            0.000 um^2
+[INFO GPL-0154] Identified 15132 placed instances
+[INFO GPL-0155] Identified 0 not placed instances
+[INFO GPL-0156] Identified all instances as placed. Skipping incremental mode
+Perform buffer insertion and gate resizing...
+repair_design -verbose -match_cell_footprint
+Iteration |   Area    | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------------------
+        0 |     +0.0% |       0 |       0 |             0 |     15306
+     1000 |     +0.0% |       0 |       0 |             0 |     14306
+     2000 |     +0.0% |       0 |       0 |             0 |     13306
+     3000 |     +0.0% |       0 |       0 |             0 |     12306
+     4000 |     +0.0% |       0 |       0 |             0 |     11306
+     5000 |     +0.0% |       0 |       0 |             0 |     10306
+     6000 |     +0.0% |       1 |       0 |             0 |      9306
+     7000 |     +0.0% |       1 |       0 |             0 |      8306
+     8000 |     +0.0% |       1 |       0 |             0 |      7306
+     9000 |     +0.0% |       1 |       0 |             0 |      6306
+    10000 |     +0.0% |       1 |       0 |             0 |      5306
+    11000 |     +0.0% |       1 |       0 |             0 |      4306
+    12000 |     +0.0% |       1 |       0 |             0 |      3306
+    13000 |     +0.0% |       1 |       0 |             0 |      2306
+    14000 |     +0.0% |       1 |       0 |             0 |      1306
+    15000 |     +0.0% |       1 |       0 |             0 |       306
+    final |     +0.0% |       1 |       0 |             0 |         0
+---------------------------------------------------------------------
+[INFO RSZ-0034] Found 1 slew violations.
+[INFO RSZ-0039] Resized 1 instances.
+[INFO RSZ-0504] Runtime: 0.91s
+Floating nets: 
+Report metrics stage 3, resizer...
+
+==========================================================================
+resizer report_design_area
+--------------------------------------------------------------------------
+Design area 142875 um^2 53% utilization.
+Instance count before 18655, after 18655
+Pin count before 56874, after 56874
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_4_place_resized.odb
+Log                    Ext     Elapsed      CPU     CPU/ Peak Mem sha1sum
+                                     s        s  Elapsed       MB [0:10)
+3_4_place_resized      .odb         10       19     1.82      239 f13cd8d62b
+/home/administrator/OpenROAD-flow-scripts/flow/scripts/flow.sh 3_5_place_dp detail_place
+Running detail_place.tcl, stage 3_5_place_dp
+read_liberty /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_db -hier ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_4_place_resized.odb
+[WARNING ORD-0012] Hierarchical flow (-hier) is currently in development and may cause multiple issues. Do not use in production environments.
+read_sdc ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/2_floorplan.sdc
+source /home/administrator/OpenROAD-flow-scripts/flow/platforms/sky130hd/setRC.tcl
+detailed_placement
+[INFO DPL-0006] Core area: 267465.27 um^2
+[INFO DPL-0007] Movable instances area: 138466.55 um^2
+[INFO DPL-0008] Fixed instances area within core: 4407.98 um^2
+[INFO DPL-0009] Utilization: 53.4%
+[INFO DPL-0005] Diamond search max displacement: +/- 500 sites horizontally, +/- 100 rows vertically.
+[INFO DPL-1102] Legalizing using negotiation legalizer.
+[INFO DPL-1103] Negotiation base search window: +/-20 sites horizontally, +/-5 rows vertically 
+	Automatic search window extension enabled.
+	Search window extendable up to the max displacement cap of +/-500 sites, +/-100 rows near walls.
+[INFO DPL-1104] NegotiationLegalizer DRC penalty: 5.
+[INFO DPL-0392] Negotiation cell height distribution (1 unique row-count(s)):
+[INFO DPL-0393]   height 1 row(s): 18655 cells
+          |      Total |  Illegal |  Illegal
+Iteration | Violations |    Cells |    Sites
+---------------------------------------------
+        0 |      27815 |      8691 |     18379
+        1 |      18095 |      6417 |     11420
+        2 |      16365 |      5097 |     11049
+        3 |      14380 |      4500 |      9676
+        4 |      12005 |      4313 |      7437
+        5 |      11081 |      4241 |      6663
+        6 |       9670 |      4072 |      5529
+        7 |       8546 |      3992 |      4536
+        8 |       8034 |      3876 |      4056
+        9 |       7621 |      3865 |      3708
+       10 |       7490 |      3828 |      3602
+       20 |       4927 |      3423 |      1504
+       30 |       4766 |      3356 |      1410
+       40 |       3969 |      3149 |       820
+       50 |       3787 |      3171 |       616
+       60 |       3506 |      3048 |       458
+       70 |       3526 |      3016 |       504
+       80 |       3460 |      3016 |       444
+       90 |       3427 |      2935 |       492
+      100 |       3186 |      2920 |       266
+      110 |       3196 |      2846 |       350
+      120 |       3228 |      2852 |       376
+      130 |       2974 |      2738 |       236
+      140 |       2868 |      2660 |       208
+      150 |       2894 |      2658 |       236
+      160 |       2916 |      2730 |       186
+      170 |       2705 |      2573 |       132
+      180 |       2749 |      2613 |       136
+      190 |       2754 |      2534 |       220
+      200 |       2512 |      2414 |        98
+      210 |       2633 |      2489 |       144
+      220 |       2511 |      2411 |       100
+      230 |       2570 |      2414 |       156
+      240 |       2524 |      2382 |       142
+      250 |       2506 |      2332 |       174
+      260 |       2415 |      2293 |       122
+      270 |       2444 |      2316 |       128
+      280 |       2408 |      2280 |       128
+      290 |       2342 |      2294 |        48
+      300 |       2312 |      2258 |        54
+      310 |       2199 |      2143 |        56
+      320 |       2305 |      2121 |       169
+      330 |       2154 |      2092 |        62
+      340 |       2180 |      2134 |        46
+      350 |       2121 |      2033 |        88
+      360 |       1985 |      1947 |        38
+      370 |       2143 |      2039 |       104
+      380 |       2105 |      1977 |       128
+      390 |       2093 |      1995 |        98
+      399 |       2065 |      1989 |        76
+Negotiation phase 2: isolation point active, 1000 iterations.
+      400 |       2074 |      1998 |        76
+      410 |       1972 |      1920 |        52
+      420 |       1851 |      1815 |        36
+      430 |       1833 |      1765 |        68
+      440 |       1752 |      1712 |        40
+      450 |       1807 |      1739 |        68
+      460 |       1718 |      1644 |        74
+      470 |       1735 |      1687 |        48
+      480 |       1747 |      1699 |        48
+      490 |       1796 |      1738 |        58
+      500 |       1800 |      1736 |        64
+      510 |       1803 |      1743 |        60
+      520 |       1667 |      1605 |        59
+      530 |       1860 |      1730 |       130
+      540 |       1693 |      1661 |        32
+      550 |       1606 |      1572 |        34
+      560 |       1635 |      1605 |        30
+      570 |       1589 |      1567 |        22
+      580 |       1654 |      1614 |        40
+      590 |       1719 |      1675 |        44
+      600 |       1648 |      1562 |        86
+      610 |       1543 |      1475 |        68
+      620 |       1575 |      1519 |        56
+      630 |       1530 |      1488 |        42
+      640 |       1648 |      1532 |       116
+      650 |       1511 |      1467 |        44
+      660 |       1413 |      1389 |        24
+      670 |       1415 |      1401 |        14
+      680 |       1355 |      1311 |        44
+      690 |       1449 |      1347 |       102
+      700 |       1388 |      1326 |        62
+      710 |       1553 |      1427 |       126
+      720 |       1355 |      1323 |        32
+      730 |       1227 |      1213 |        14
+      740 |       1227 |      1219 |         8
+      750 |       1202 |      1178 |        24
+      760 |       1257 |      1229 |        28
+      770 |       1221 |      1189 |        32
+      780 |       1177 |      1139 |        38
+      790 |       1124 |      1070 |        54
+      800 |       1092 |      1060 |        32
+      810 |       1073 |      1023 |        50
+      820 |       1198 |      1112 |        86
+      830 |       1108 |      1098 |        10
+      840 |       1026 |      1008 |        18
+      850 |       1099 |      1081 |        18
+      860 |       1227 |      1119 |       108
+      870 |       1184 |      1134 |        50
+      880 |       1201 |      1141 |        60
+      890 |       1118 |      1098 |        20
+      900 |       1118 |      1072 |        46
+      910 |       1127 |      1093 |        34
+      920 |       1168 |      1080 |        88
+      930 |       1080 |      1048 |        32
+      940 |       1054 |      1014 |        40
+      950 |        986 |       956 |        30
+      960 |        977 |       963 |        14
+      970 |        975 |       929 |        46
+      980 |        853 |       833 |        20
+      990 |        921 |       873 |        48
+     1000 |        851 |       811 |        40
+     1010 |        826 |       808 |        18
+     1020 |        865 |       843 |        22
+     1030 |        883 |       805 |        78
+     1040 |        864 |       836 |        28
+     1050 |        863 |       841 |        22
+     1060 |        920 |       876 |        44
+     1070 |        933 |       867 |        66
+     1080 |        840 |       820 |        20
+     1090 |        884 |       810 |        74
+     1100 |        800 |       778 |        22
+     1110 |        744 |       742 |         2
+     1120 |        763 |       745 |        18
+     1130 |        768 |       768 |         0
+     1140 |        837 |       783 |        54
+     1150 |        665 |       665 |         0
+     1160 |        686 |       636 |        50
+     1170 |        693 |       681 |        12
+     1180 |        700 |       678 |        22
+     1190 |        724 |       720 |         4
+     1200 |        794 |       720 |        74
+     1210 |        777 |       727 |        50
+     1220 |        677 |       641 |        36
+     1230 |        686 |       650 |        36
+     1240 |        640 |       640 |         0
+     1250 |        654 |       618 |        36
+     1260 |        653 |       653 |         0
+     1270 |        685 |       633 |        52
+     1280 |        706 |       670 |        36
+     1290 |        712 |       708 |         4
+     1300 |        640 |       626 |        14
+     1310 |        648 |       618 |        30
+     1320 |        743 |       661 |        82
+     1330 |        645 |       637 |         8
+     1340 |        568 |       548 |        20
+     1350 |        544 |       520 |        24
+     1360 |        479 |       471 |         8
+     1370 |        499 |       455 |        44
+     1380 |        506 |       506 |         0
+     1390 |        485 |       465 |        20
+     1399 |        427 |       421 |         6
+[WARNING DPL-0701] NegotiationLegalizer did not fully converge. Violations remain: 421
+[INFO DPL-0500] Runtime: 407.38s
+Detailed Placement Analysis
+---------------------------------
+legalizer            negotiation
+total moves             2409261
+total displacement     206181.2 u
+average displacement       11.1 u
+max displacement          219.6 u
+original HPWL          496241.2 u
+legalized HPWL         737911.0 u
+delta HPWL                   49 %
+
+Took 407 seconds: detailed_placement
+improve_placement -max_displacement "5 1"
+Detailed placement improvement.
+[INFO DPL-0401] Setting random seed to 1.
+[INFO DPL-0402] Setting maximum displacement 5 1 to 13600 2720 units.
+[INFO DPL-0320] Collected 3787 fixed cells.
+[INFO DPL-0318] Collected 15132 single height cells.
+[INFO DPL-0321] Collected 0 wide cells.
+[INFO DPL-0322] Image (1380, 2720) - (409400, 658240)
+[INFO DPL-0310] Assigned 15132 cells into segments.  Movement in X-direction is 85100.000000, movement in Y-direction is 0.000000.
+[WARNING DPL-0200] Unexpected displacement during legalization.
+[INFO DPL-0313] Found 0 cells in wrong regions.
+[INFO DPL-0315] Found 0 row alignment problems.
+[INFO DPL-0314] Found 42 site alignment problems.
+[INFO DPL-0311] Found 23 overlaps between adjacent cells.
+Violation in _20238_
+Violation in _16488_
+Violation in _16697_
+Violation in _16543_
+Violation in _16544_
+Violation in _16336_
+Violation in _23125_
+Violation in _23228_
+Violation in _23404_
+Violation in _16463_
+Violation in _16422_
+Violation in _23331_
+Violation in _23275_
+Violation in _13726_
+Violation in _16556_
+Violation in _16552_
+Violation in _18560_
+Violation in _22138_
+Violation in _22135_
+Violation in _23250_
+Violation in _23234_
+Violation in _23260_
+Violation in _23413_
+Violation in _13613_
+Violation in _16207_
+Violation in _16470_
+Violation in _16699_
+Violation in _16698_
+Violation in _23242_
+Violation in _23421_
+Violation in _23246_
+Violation in _23408_
+Violation in _16398_
+Violation in _22125_
+Violation in _16300_
+Violation in _16245_
+Violation in _16242_
+Violation in _16404_
+Violation in _16392_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[254\]$_DFFE_PN0P_
+Violation in _23235_
+Violation in _23236_
+Violation in _23249_
+Violation in _23416_
+Violation in _23411_
+Violation in _23400_
+Violation in _16281_
+Violation in _16322_
+Violation in _16433_
+Violation in _16581_
+Violation in _16250_
+Violation in ex_block_i.gen_multdiv_fast.multdiv_i.op_numerator_q\[24\]$_DFFE_PN0P_
+Violation in _22196_
+Violation in _22190_
+Violation in place1209
+Violation in _18534_
+Violation in _18549_
+Violation in _23222_
+Violation in _20683_
+Violation in _20302_
+Violation in _22203_
+Violation in _22057_
+Violation in _22157_
+Violation in _18564_
+Violation in _16024_
+Violation in _16947_
+Violation in _20682_
+Violation in _21659_
+Violation in _22321_
+Violation in _16313_
+Violation in _16314_
+Violation in _20277_
+Violation in _13557_
+Violation in _13556_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[950\]$_DFFE_PN0P_
+Violation in _13855_
+Violation in _16173_
+Violation in _13850_
+Violation in _16040_
+Violation in _16189_
+Violation in _13554_
+Violation in _20673_
+Violation in _16756_
+Violation in _16609_
+Violation in _23083_
+Violation in _22579_
+Violation in _13743_
+Violation in _13738_
+Violation in _13741_
+Violation in _22042_
+Violation in place1587
+Violation in _22047_
+Violation in _22879_
+Violation in _22877_
+Violation in _16432_
+Violation in _16600_
+Violation in _16856_
+Violation in _22568_
+Violation in _22533_
+Violation in _22538_
+Violation in _18578_
+Violation in _22323_
+Violation in _13835_
+Violation in _13838_
+Violation in place1582
+Violation in _22372_
+Violation in _21406_
+Violation in _21201_
+Violation in _16735_
+Violation in _16726_
+Violation in _16156_
+Violation in _16148_
+Violation in _21728_
+Violation in _21794_
+Violation in _21533_
+Violation in _21534_
+Violation in _21596_
+Violation in _20151_
+Violation in _21727_
+Violation in _16896_
+Violation in _16911_
+Violation in _18941_
+Violation in ex_block_i.gen_multdiv_fast.multdiv_i.op_numerator_q\[23\]$_DFFE_PN0P_
+Violation in _18946_
+Violation in _18897_
+Violation in _16271_
+Violation in _16192_
+Violation in _16723_
+Violation in _16900_
+Violation in place1170
+Violation in _22504_
+Violation in _22491_
+Violation in _13531_
+Violation in _21921_
+Violation in _16122_
+Violation in _16266_
+Violation in _13518_/_460_
+Violation in _16891_
+Violation in _20428_
+Violation in _20618_
+Violation in _20617_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[756\]$_DFFE_PN0P_
+Violation in _16115_
+Violation in _16180_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[468\]$_DFFE_PN0P_
+Violation in _16055_
+Violation in _15902_
+Violation in _15904_
+Violation in _16090_
+Violation in _15108_
+Violation in _16265_
+Violation in _16183_
+Violation in _15851_
+Violation in _13604_
+Violation in _20614_
+Violation in _20613_
+Violation in _21071_
+Violation in _13655_
+Violation in _13534_
+Violation in _21266_
+Violation in _13731_
+Violation in _16072_
+Violation in _16087_
+Violation in _13651_
+Violation in _19327_
+Violation in _20740_
+Violation in _20674_
+Violation in _13708_
+Violation in _20293_
+Violation in _21004_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[341\]$_DFFE_PN0P_
+Violation in _15667_
+Violation in _15575_
+Violation in place1426
+Violation in _21923_
+Violation in _13772_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[59\]$_DFFE_PN0P_
+Violation in _21129_
+Violation in _21852_
+Violation in _21455_
+Violation in _20474_
+Violation in _21454_
+Violation in _13909_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[859\]$_DFFE_PN0P_
+Violation in _14384_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[166\]$_DFFE_PN0P_
+Violation in _13898_
+Violation in _20282_
+Violation in _13901_
+Violation in _15094_
+Violation in _15326_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[327\]$_DFFE_PN0P_
+Violation in _15477_
+Violation in _15479_
+Violation in _24964_
+Violation in _24991_
+Violation in _21497_
+Violation in _21366_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[391\]$_DFFE_PN0P_
+Violation in place1613
+Violation in _16931_
+Violation in _15270_
+Violation in _13518_/_404_
+Violation in _21692_
+Violation in _20968_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[871\]$_DFFE_PN0P_
+Violation in place1062
+Violation in place1056
+Violation in _19897_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[888\]$_DFFE_PN0P_
+Violation in _17736_
+Violation in _17793_
+Violation in place1030
+Violation in _25045_
+Violation in _20435_
+Violation in _24668_
+Violation in _17786_
+Violation in _18081_
+Violation in _18042_
+Violation in _17000_
+Violation in _17730_
+Violation in _17148_
+Violation in _16996_
+Violation in _21018_
+Violation in _25035_
+Violation in _20116_
+Violation in _25033_
+Violation in _25031_
+Violation in _24604_
+Violation in _17310_
+Violation in _16984_
+Violation in _16999_
+Violation in _18617_
+Violation in _24486_
+Violation in _18211_
+Violation in _20182_
+Violation in _21083_
+Violation in _20499_
+Violation in _21547_
+Violation in _21610_
+Violation in _21609_
+Violation in _20888_
+Violation in _20507_
+Violation in _14467_
+Violation in _13927_
+Violation in _20697_
+Violation in _21155_
+Violation in _18230_
+Violation in _20680_
+Violation in _21009_
+Violation in _23455_
+Violation in _17822_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[250\]$_DFFE_PN0P_
+Violation in _17722_
+Violation in _17818_
+Violation in _18022_
+Violation in _13579_
+Violation in _13574_
+Violation in _17835_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[218\]$_DFFE_PN0P_
+Violation in _13575_
+Violation in _13583_
+Violation in _19754_
+Violation in _18017_
+Violation in _17690_
+Violation in _17934_
+Violation in _17468_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[754\]$_DFFE_PN0P_
+Violation in _17853_
+Violation in _17870_
+Violation in _17851_
+Violation in _17933_
+Violation in _21215_
+Violation in _14541_
+Violation in _22006_
+Violation in _22023_
+Violation in _17972_
+Violation in _24060_
+Violation in _17863_
+Violation in _17862_
+Violation in _24058_
+Violation in _17315_
+Violation in _17317_
+Violation in _17478_
+Violation in _17513_
+Violation in _18087_
+Violation in _23968_
+Violation in _18099_
+Violation in _17516_
+Violation in _23986_
+Violation in _23987_
+Violation in _18115_
+Violation in cs_registers_i.u_mepc_csr.rd_data_o\[4\]$_DFFE_PN0P_
+Violation in _24345_
+Violation in _20437_
+Violation in _20310_
+Violation in _22008_
+Violation in _23716_
+Violation in _23718_
+Violation in _24534_
+Violation in _23646_
+Violation in _23740_
+Violation in _23645_
+Violation in _20759_
+Violation in _20249_
+Violation in _20250_
+Violation in _14514_
+Violation in _23704_
+Violation in _21909_
+Violation in _13924_
+Violation in _14522_
+Violation in _21696_
+Violation in _20971_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[933\]$_DFFE_PN0P_
+Violation in _18182_
+Violation in _18191_
+Violation in _18198_
+Violation in _21252_
+Violation in _21254_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[896\]$_DFFE_PN0P_
+Violation in _20113_
+Violation in _25085_
+Violation in _18394_
+Violation in _18403_
+Violation in _21014_
+Violation in _21319_
+Violation in _13943_
+Violation in _20527_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[832\]$_DFFE_PN0P_
+Violation in _20305_
+Violation in _20178_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[848\]$_DFFE_PN0P_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[613\]$_DFFE_PN0P_
+Violation in if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.rdata_q\[84\]$_DFFE_PP_
+Violation in output251
+Violation in output252
+Violation in _18344_
+Violation in input113
+Violation in _20822_
+[INFO DPL-0312] Found 339 edge spacing violations and 273 padding violations.
+[WARNING DPL-0201] Placement check failure during legalization.
+[INFO DPL-0303] Running algorithm for independent set matching.
+[INFO DPL-0300] Set matching objective is wirelength.
+[INFO DPL-0301] Pass   1 of matching; objective is 7.378466e+08.
+[INFO DPL-0302] End of matching; objective is 7.362565e+08, improvement is 0.22 percent.
+[INFO DPL-0303] Running algorithm for global swaps.
+[INFO DPL-0306] Pass   1 of global swaps; hpwl is 7.173444e+08.
+[INFO DPL-0306] Pass   2 of global swaps; hpwl is 7.139628e+08.
+[INFO DPL-0307] End of global swaps; objective is 7.139628e+08, improvement is 3.03 percent.
+[INFO DPL-0303] Running algorithm for vertical swaps.
+[INFO DPL-0308] Pass   1 of vertical swaps; hpwl is 7.121622e+08.
+[INFO DPL-0309] End of vertical swaps; objective is 7.121622e+08, improvement is 0.25 percent.
+[INFO DPL-0303] Running algorithm for reordering.
+[INFO DPL-0304] Pass   1 of reordering; objective is 7.020080e+08.
+[INFO DPL-0304] Pass   2 of reordering; objective is 7.011783e+08.
+[INFO DPL-0305] End of reordering; objective is 7.011783e+08, improvement is 1.54 percent.
+[INFO DPL-0303] Running algorithm for random improvement.
+[INFO DPL-0324] Random improver is using random generator.
+[INFO DPL-0325] Random improver is using hpwl objective.
+[INFO DPL-0326] Random improver cost string is (a).
+[INFO DPL-0332] End of pass, Generator random called 302640 times.
+[INFO DPL-0335] Generator random, Cumulative attempts 302640, swaps 51227, moves  5974 since last reset.
+[INFO DPL-0333] End of pass, Objective hpwl, Initial cost 6.993593e+08, Scratch cost 6.841890e+08, Incremental cost 6.841890e+08, Mismatch? N
+[INFO DPL-0338] End of pass, Total cost is 6.841890e+08.
+[INFO DPL-0327] Pass   1 of random improver; improvement in cost is 2.17 percent.
+[INFO DPL-0332] End of pass, Generator random called 302640 times.
+[INFO DPL-0335] Generator random, Cumulative attempts 605280, swaps 99817, moves 12341 since last reset.
+[INFO DPL-0333] End of pass, Objective hpwl, Initial cost 6.841890e+08, Scratch cost 6.805268e+08, Incremental cost 6.805268e+08, Mismatch? N
+[INFO DPL-0338] End of pass, Total cost is 6.805268e+08.
+[INFO DPL-0327] Pass   2 of random improver; improvement in cost is 0.54 percent.
+[INFO DPL-0328] End of random improver; improvement is 2.692818 percent.
+[INFO DPL-0380] Cell flipping.
+[INFO DPL-0382] Changed 0 cell orientations for row compatibility.
+[INFO DPL-0383] Performed 5230 cell flips.
+[INFO DPL-0384] End of flipping; objective is 6.739709e+08, improvement is 1.23 percent.
+[INFO DPL-0313] Found 0 cells in wrong regions.
+[INFO DPL-0315] Found 0 row alignment problems.
+[INFO DPL-0314] Found 39 site alignment problems.
+[INFO DPL-0311] Found 22 overlaps between adjacent cells.
+Violation in _20238_
+Violation in _16488_
+Violation in _16486_
+Violation in _16697_
+Violation in _16543_
+Violation in _16544_
+Violation in _23125_
+Violation in _23228_
+Violation in _23404_
+Violation in _16463_
+Violation in _16422_
+Violation in _13726_
+Violation in _23250_
+Violation in _23234_
+Violation in _23413_
+Violation in _13616_
+Violation in _23105_
+Violation in _16300_
+Violation in _16245_
+Violation in _16242_
+Violation in _16404_
+Violation in _16392_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[254\]$_DFFE_PN0P_
+Violation in _23235_
+Violation in _23236_
+Violation in _23249_
+Violation in _23416_
+Violation in _23411_
+Violation in _23400_
+Violation in _16581_
+Violation in _16250_
+Violation in ex_block_i.gen_multdiv_fast.multdiv_i.op_numerator_q\[24\]$_DFFE_PN0P_
+Violation in _22196_
+Violation in _22190_
+Violation in _23222_
+Violation in _20683_
+Violation in _20302_
+Violation in _22203_
+Violation in _22057_
+Violation in _22157_
+Violation in _18564_
+Violation in _16947_
+Violation in _20682_
+Violation in _22321_
+Violation in _16313_
+Violation in _16314_
+Violation in _20277_
+Violation in _16173_
+Violation in _13850_
+Violation in _16040_
+Violation in _16189_
+Violation in _13743_
+Violation in _13738_
+Violation in _13741_
+Violation in _22879_
+Violation in _22877_
+Violation in _16432_
+Violation in _16600_
+Violation in _13835_
+Violation in _13838_
+Violation in place1582
+Violation in _22372_
+Violation in _21406_
+Violation in _21201_
+Violation in _16735_
+Violation in _16726_
+Violation in _21728_
+Violation in _21794_
+Violation in _21534_
+Violation in _21596_
+Violation in _20151_
+Violation in _21727_
+Violation in _16896_
+Violation in _16911_
+Violation in _18941_
+Violation in ex_block_i.gen_multdiv_fast.multdiv_i.op_numerator_q\[23\]$_DFFE_PN0P_
+Violation in _18946_
+Violation in _18897_
+Violation in _16900_
+Violation in place1170
+Violation in _22504_
+Violation in _22491_
+Violation in _13531_
+Violation in _21921_
+Violation in _13518_/_460_
+Violation in _16891_
+Violation in _20618_
+Violation in _20617_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[756\]$_DFFE_PN0P_
+Violation in _16115_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[468\]$_DFFE_PN0P_
+Violation in _15904_
+Violation in _16265_
+Violation in _16183_
+Violation in _15851_
+Violation in _20614_
+Violation in _20613_
+Violation in _21071_
+Violation in _13655_
+Violation in _13534_
+Violation in _21266_
+Violation in _13731_
+Violation in _21004_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[341\]$_DFFE_PN0P_
+Violation in _15667_
+Violation in _15575_
+Violation in _21130_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[59\]$_DFFE_PN0P_
+Violation in _21129_
+Violation in _21852_
+Violation in _13909_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[859\]$_DFFE_PN0P_
+Violation in _20282_
+Violation in _13901_
+Violation in _15326_
+Violation in _15477_
+Violation in _15479_
+Violation in _24964_
+Violation in _24991_
+Violation in _21497_
+Violation in _21366_
+Violation in _16931_
+Violation in _15270_
+Violation in id_stage_i.imd_val_q_ex_o\[5\]$_DFFE_PN0P_
+Violation in _21692_
+Violation in _20968_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[871\]$_DFFE_PN0P_
+Violation in place1062
+Violation in place1056
+Violation in gen_regfile_ff.register_file_i.rf_reg\[888\]$_DFFE_PN0P_
+Violation in place1030
+Violation in _25045_
+Violation in _20435_
+Violation in _24668_
+Violation in _17786_
+Violation in _18042_
+Violation in _17000_
+Violation in _17148_
+Violation in _25035_
+Violation in _25033_
+Violation in _25031_
+Violation in _24604_
+Violation in _17310_
+Violation in _16984_
+Violation in _16999_
+Violation in _18617_
+Violation in _21547_
+Violation in _21610_
+Violation in _21609_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[978\]$_DFFE_PN0P_
+Violation in _14467_
+Violation in _13927_
+Violation in _20697_
+Violation in _21155_
+Violation in _23455_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[250\]$_DFFE_PN0P_
+Violation in _17722_
+Violation in _17818_
+Violation in _18022_
+Violation in _13579_
+Violation in _13574_
+Violation in _17835_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[218\]$_DFFE_PN0P_
+Violation in _13583_
+Violation in _19754_
+Violation in _17690_
+Violation in _17934_
+Violation in _17468_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[754\]$_DFFE_PN0P_
+Violation in _17853_
+Violation in _17870_
+Violation in _17851_
+Violation in _17933_
+Violation in _22023_
+Violation in _17972_
+Violation in _17315_
+Violation in _17318_
+Violation in _17513_
+Violation in _18087_
+Violation in _17516_
+Violation in _23986_
+Violation in _23987_
+Violation in _24345_
+Violation in _20437_
+Violation in _20310_
+Violation in _23646_
+Violation in _23740_
+Violation in _23645_
+Violation in _20759_
+Violation in _20249_
+Violation in _20250_
+Violation in _14514_
+Violation in _23704_
+Violation in _14522_
+Violation in _21696_
+Violation in _20971_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[933\]$_DFFE_PN0P_
+Violation in _18191_
+Violation in _18198_
+Violation in _21252_
+Violation in _21254_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[896\]$_DFFE_PN0P_
+Violation in _20113_
+Violation in _25085_
+Violation in _18394_
+Violation in _18403_
+Violation in _21319_
+Violation in _13943_
+Violation in _20305_
+Violation in _20178_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[848\]$_DFFE_PN0P_
+Violation in gen_regfile_ff.register_file_i.rf_reg\[613\]$_DFFE_PN0P_
+Violation in input124
+Violation in output251
+Violation in output252
+Violation in _18344_
+Violation in input113
+Violation in _20822_
+[INFO DPL-0312] Found 218 edge spacing violations and 169 padding violations.
+Place Optimization Analysis
+---------------------------------
+total attempts           907920
+relocated cells           10911
+total displacement      69631.6 u
+average displacement        6.4 u
+max displacement           16.1 u
+original HPWL          737911.0 u
+improved HPWL          674073.5 u
+delta HPWL                   -9 %
+
+optimize_mirroring
+[INFO DPL-0020] Mirrored 909 instances
+[INFO DPL-0021] HPWL before          674073.5 u
+[INFO DPL-0022] HPWL after           673427.3 u
+[INFO DPL-0023] HPWL delta               -0.1 %
+[WARNING DPL-0011] Padding check failed (174).
+ _13554_
+ _13579_
+ _13605_
+ _13616_
+ _13722_
+ _13741_
+ _13743_
+ _13841_
+ _14024_
+ _15114_
+ _15269_
+ _15270_
+ _15469_
+ _15479_
+ _15612_
+ _15667_
+ _15904_
+ _16040_
+ _16041_
+ _16173_
+ _16189_
+ _16239_
+ _16300_
+ _16314_
+ _16404_
+ _16432_
+ _16463_
+ _16488_
+ _16544_
+ _16600_
+ _16685_
+ _16697_
+ _16735_
+ _16891_
+ _16901_
+ _16911_
+ _16931_
+ _16947_
+ _17148_
+ _17310_
+ _17318_
+ _17722_
+ _17784_
+ _17786_
+ _17818_
+ _17870_
+ _17913_
+ _17930_
+ _17934_
+ _17936_
+ _17937_
+ _17972_
+ _18042_
+ _18122_
+ _18191_
+ _18198_
+ _18394_
+ _18403_
+ _18586_
+ _18623_
+ _18946_
+ _19166_
+ _19446_
+ _19465_
+ _19754_
+ _20151_
+ _20238_
+ _20250_
+ _20277_
+ _20282_
+ _20305_
+ _20308_
+ _20501_
+ _20516_
+ _20614_
+ _20625_
+ _20657_
+ _20759_
+ _20764_
+ _20782_
+ _20871_
+ _20882_
+ _20925_
+ _20938_
+ _21071_
+ _21102_
+ _21130_
+ _21201_
+ _21230_
+ _21254_
+ _21319_
+ _21406_
+ _21477_
+ _21497_
+ _21596_
+ _21610_
+ _21692_
+ _21696_
+ _21727_
+ _21794_
+ _21877_
+ _21921_
+ _21933_
+ _21984_
+ _22023_
+ _22125_
+ _22157_
+ _22196_
+ _22321_
+ _22504_
+ _22879_
+ _23105_
+ _23222_
+ _23236_
+ _23249_
+ _23250_
+ _23404_
+ _23406_
+ _23414_
+ _23420_
+ _23455_
+ _23600_
+ _23740_
+ _23743_
+ _23745_
+ _23970_
+ _23986_
+ _23987_
+ _24017_
+ _24105_
+ _24351_
+ _24604_
+ _24668_
+ _24991_
+ _25035_
+ _25045_
+ _25085_
+ cs_registers_i.u_mepc_csr.rd_data_o\[15\]$_DFFE_PN0P_
+ ex_block_i.gen_multdiv_fast.multdiv_i.op_numerator_q\[23\]$_DFFE_PN0P_
+ ex_block_i.gen_multdiv_fast.multdiv_i.op_numerator_q\[24\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[160\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[250\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[374\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[464\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[557\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[59\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[621\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[662\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[754\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[756\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[848\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[871\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[888\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[896\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[933\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[967\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[976\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[978\]$_DFFE_PN0P_
+ id_stage_i.imd_val_q_ex_o\[5\]$_DFFE_PN0P_
+ if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.err_q\[1\]$_DFFE_PP_
+ if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.instr_addr_q\[3\]$_DFFE_PP_
+ if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.instr_addr_q\[7\]$_DFFE_PP_
+ if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.fifo_i.rdata_q\[36\]$_DFFE_PP_
+ if_stage_i.gen_prefetch_buffer.prefetch_buffer_i.stored_addr_q\[2\]$_DFFE_PP_
+ input113
+ input124
+ output215
+ output251
+ output252
+ place1030
+ place1062
+ place1170
+ place1549
+ place1582
+[WARNING DPL-0006] Site aligned check failed (39).
+ _13731_
+ _13835_
+ _13838_
+ _13909_
+ _13927_
+ _14467_
+ _16115_
+ _16183_
+ _16250_
+ _16265_
+ _16581_
+ _17513_
+ _17835_
+ _18087_
+ _20302_
+ _20310_
+ _20437_
+ _20617_
+ _20618_
+ _20683_
+ _20697_
+ _20822_
+ _21004_
+ _21155_
+ _21266_
+ _21578_
+ _22057_
+ _22203_
+ _23125_
+ _23228_
+ _23400_
+ _23411_
+ _25031_
+ _25033_
+ gen_regfile_ff.register_file_i.rf_reg\[218\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[254\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[341\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[380\]$_DFFE_PN0P_
+ gen_regfile_ff.register_file_i.rf_reg\[859\]$_DFFE_PN0P_
+[ERROR DPL-0033] detailed placement checks failed during check placement.
+write_db ./results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_5_place_dp-failed.odb
+DPL-0033
+    while executing
+"error $errMsg"
+    invoked from within
+"if { $result != 0 } {
+  orfs_write_db $::env(RESULTS_DIR)/3_5_place_dp-failed.odb
+  error $errMsg
+}"
+    (file "/home/administrator/OpenROAD-flow-scripts/flow/scripts/detail_place.tcl" line 33)
+make: Leaving directory '/home/administrator/OpenROAD-flow-scripts/flow'

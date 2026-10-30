@@ -1,0 +1,19 @@
+{
+  "run_id": "f2b1c369b6d64b6395d93143bb0a2e87",
+  "design": "ibex",
+  "platform": "sky130hd",
+  "flow_variant": "p1f2b1c369b6d64b6395d93143bb0a2e87",
+  "status": "error",
+  "runtime": 620.548,
+  "params": {
+    "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+    "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+    "CORE_ASPECT_RATIO": 1.61472,
+    "CORE_UTILIZATION": 48.0,
+    "CTS_CLUSTER_DIAMETER": 389.0,
+    "CTS_CLUSTER_SIZE": 192.0,
+    "PLACE_DENSITY_LB_ADDON": 0.10016,
+    "_SDC_CLK_PERIOD": 15.770472
+  },
+  "message": "ORFS exited with status 2"
+}

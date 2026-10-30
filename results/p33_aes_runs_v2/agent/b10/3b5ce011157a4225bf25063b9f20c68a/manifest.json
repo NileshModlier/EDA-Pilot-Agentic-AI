@@ -1,0 +1,12 @@
+{
+  "run_id": "3b5ce011157a4225bf25063b9f20c68a",
+  "design": "aes",
+  "platform": "sky130hd",
+  "flow_variant": "p13b5ce011157a4225bf25063b9f20c68a",
+  "status": "ok",
+  "runtime": 2012.37,
+  "params": {
+    "_SDC_CLK_PERIOD": 3.6
+  },
+  "message": null
+}

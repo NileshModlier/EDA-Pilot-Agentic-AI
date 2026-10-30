@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" role="img" aria-labelledby="title desc">
+  <title id="title">EDA Pilot AI technology stack</title>
+  <desc id="desc">Layers from the sky130hd study down through the agent, the execution bridge, and the OpenROAD tools.</desc>
+  <style>
+    .bg { fill: #f6f7f9; }
+    .card { fill: #ffffff; stroke: #d5dbe3; stroke-width: 1.25; }
+    .title { font: 600 22px "Segoe UI", Helvetica, Arial, sans-serif; fill: #172033; }
+    .sub { font: 400 13px "Segoe UI", Helvetica, Arial, sans-serif; fill: #5c6778; }
+    .label { font: 600 12px "Segoe UI", Helvetica, Arial, sans-serif; fill: #5c6778; letter-spacing: 0.06em; }
+    .h { font: 600 15px "Segoe UI", Helvetica, Arial, sans-serif; fill: #172033; }
+    .b { font: 400 13px "Segoe UI", Helvetica, Arial, sans-serif; fill: #3d4758; }
+  </style>
+  <rect class="bg" width="1000" height="640"/>
+  <text class="title" x="40" y="42">Technology stack</text>
+  <text class="sub" x="40" y="66">What actually ran for the sky130hd gcd, AES, and Ibex study.</text>
+
+  <text class="label" x="40" y="108">STUDY</text>
+  <rect class="card" x="40" y="118" width="920" height="64" rx="8"/>
+  <text class="h" x="64" y="146">sky130hd</text>
+  <text class="b" x="64" y="166">gcd | AES | Ibex | budget 10 | seed 1 | signoff clock is the primary key</text>
+
+  <text class="label" x="40" y="214">AGENT AND HARNESS</text>
+  <rect class="card" x="40" y="224" width="450" height="88" rx="8"/>
+  <text class="h" x="64" y="254">Python 3.11</text>
+  <text class="b" x="64" y="276">LangGraph | MCP SDK 2 | Pydantic 2 | pytest</text>
+  <text class="b" x="64" y="296">Offline clock search, or an optional chat model on analyse and propose</text>
+  <rect class="card" x="510" y="224" width="450" height="88" rx="8"/>
+  <text class="h" x="534" y="254">Benchmark harness</text>
+  <text class="b" x="534" y="276">Default | random.Random(seed) | agent session | AutoTuner row</text>
+  <text class="b" x="534" y="296">Comparison and plots read saved metrics only</text>
+
+  <text class="label" x="40" y="346">POLICY</text>
+  <rect class="card" x="40" y="356" width="920" height="64" rx="8"/>
+  <text class="h" x="64" y="384">Allowlist</text>
+  <text class="b" x="168" y="384">configs/allowed_parameters.json. A design autotuner.json may tighten a range. It cannot add a name.</text>
+  <text class="b" x="64" y="406">shell=False. Unique FLOW_VARIANT per run. Private SDC copy for the clock. Platform Tcl is not rewritten.</text>
+
+  <text class="label" x="40" y="454">EXECUTION</text>
+  <rect class="card" x="40" y="464" width="450" height="72" rx="8"/>
+  <text class="h" x="64" y="494">Windows host</text>
+  <text class="b" x="64" y="516">Python process | UNC path into \\wsl$\Ubuntu</text>
+  <rect class="card" x="510" y="464" width="450" height="72" rx="8"/>
+  <text class="h" x="534" y="494">WSL Ubuntu</text>
+  <text class="b" x="534" y="516">env.sh | GNU Make 4.4 | 7200 s flow timeout</text>
+
+  <text class="label" x="40" y="570">SILICON TOOLS AND EVIDENCE</text>
+  <rect class="card" x="40" y="580" width="292" height="40" rx="8"/>
+  <text class="b" x="186" y="605" text-anchor="middle">Yosys 0.68</text>
+  <rect class="card" x="348" y="580" width="292" height="40" rx="8"/>
+  <text class="b" x="494" y="605" text-anchor="middle">OpenROAD 26Q4</text>
+  <rect class="card" x="656" y="580" width="304" height="40" rx="8"/>
+  <text class="b" x="808" y="605" text-anchor="middle">KLayout 0.30 | metadata.json</text>
+</svg>

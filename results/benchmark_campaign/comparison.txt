@@ -1,0 +1,8 @@
+Smallest clock period with DRC = 0, setup WNS >= 0, and hold WNS >= 0.
+
+gcd / sky130hd / budget 10
+  default: 1 runs, signoff no, clock 1.1, setup -1.45954, hold 0.532397, DRC 0.0, area 5412.69, power 0.00985037, runtime 118.364
+  random: 10 runs, signoff yes, clock 4.112638, setup 0.476453, hold 0.557782, DRC 0.0, area 3361.97, power 0.00157044, runtime 51.032
+  autotuner: unavailable (OpenROAD AutoTuner executable was not found. Set ORFS_AUTOTUNER or install openroad_autotuner. No AutoTuner metrics were recorded.)
+  agent: 8 runs, signoff yes, clock 2.867, setup 8.4821e-05, hold 0.568337, DRC 0.0, area 4146.48, power 0.00268209, runtime 74.979
+  agent has the smallest passing clock, 2.867 ns. Unavailable methods are autotuner.

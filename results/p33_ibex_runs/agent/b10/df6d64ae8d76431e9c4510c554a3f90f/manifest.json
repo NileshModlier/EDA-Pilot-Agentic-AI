@@ -1,0 +1,12 @@
+{
+  "run_id": "df6d64ae8d76431e9c4510c554a3f90f",
+  "design": "ibex",
+  "platform": "sky130hd",
+  "flow_variant": "p1df6d64ae8d76431e9c4510c554a3f90f",
+  "status": "ok",
+  "runtime": 6945.369,
+  "params": {
+    "_SDC_CLK_PERIOD": 9.0
+  },
+  "message": null
+}

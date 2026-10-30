@@ -1,0 +1,12 @@
+{
+  "method": "autotuner",
+  "design": "gcd",
+  "platform": "sky130hd",
+  "budget": 10,
+  "status": "unavailable",
+  "message": "OpenROAD AutoTuner executable was not found. Set ORFS_AUTOTUNER or install openroad_autotuner. No AutoTuner metrics were recorded.",
+  "runs_completed": 0,
+  "stop_reason": null,
+  "trials": [],
+  "best": null
+}

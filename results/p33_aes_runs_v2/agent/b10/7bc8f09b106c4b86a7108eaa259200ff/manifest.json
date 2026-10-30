@@ -1,0 +1,12 @@
+{
+  "run_id": "7bc8f09b106c4b86a7108eaa259200ff",
+  "design": "aes",
+  "platform": "sky130hd",
+  "flow_variant": "p17bc8f09b106c4b86a7108eaa259200ff",
+  "status": "timeout",
+  "runtime": 8032.218,
+  "params": {
+    "_SDC_CLK_PERIOD": 4.768
+  },
+  "message": "flow exceeded timeout of 7200 seconds"
+}

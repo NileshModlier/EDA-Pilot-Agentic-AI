@@ -1,0 +1,10 @@
+{
+  "run_id": "2af1b5759df44b0984ccc3928e2c378c",
+  "design": "gcd",
+  "platform": "sky130hd",
+  "flow_variant": "p12af1b5759df44b0984ccc3928e2c378c",
+  "status": "running",
+  "runtime": null,
+  "params": {},
+  "message": null
+}

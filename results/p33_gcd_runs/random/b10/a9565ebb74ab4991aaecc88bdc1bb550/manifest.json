@@ -1,0 +1,20 @@
+{
+  "run_id": "a9565ebb74ab4991aaecc88bdc1bb550",
+  "design": "gcd",
+  "platform": "sky130hd",
+  "flow_variant": "p1a9565ebb74ab4991aaecc88bdc1bb550",
+  "status": "error",
+  "runtime": 14.331,
+  "params": {
+    "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+    "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+    "CORE_ASPECT_RATIO": 0.8463,
+    "CORE_MARGIN": 1.0,
+    "CORE_UTILIZATION": 44.0,
+    "CTS_CLUSTER_DIAMETER": 255.0,
+    "CTS_CLUSTER_SIZE": 84.0,
+    "PLACE_DENSITY_LB_ADDON": 0.185301,
+    "_SDC_CLK_PERIOD": 2.547956
+  },
+  "message": "ORFS exited with status 2"
+}

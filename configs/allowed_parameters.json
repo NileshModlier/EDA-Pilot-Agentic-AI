@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "source": "OpenROAD-flow-scripts flow/designs/sky130hd/{gcd,aes,ibex}/autotuner.json",
+  "designs": {
+    "gcd": {
+      "platforms": {
+        "sky130hd": {
+          "parameters": {
+            "_SDC_CLK_PERIOD": {
+              "type": "float",
+              "minimum": 0.8,
+              "maximum": 5.0,
+              "default": 1.1,
+              "step": 0,
+              "apply": "sdc_clock",
+              "default_source": "flow/designs/sky130hd/gcd/constraint.sdc sets clk_period 1.1"
+            },
+            "CORE_UTILIZATION": {
+              "type": "int",
+              "minimum": 20,
+              "maximum": 50,
+              "default": 38,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/gcd/config.mk"
+            },
+            "CORE_ASPECT_RATIO": {
+              "type": "float",
+              "minimum": 0.5,
+              "maximum": 2.0,
+              "default": 1.0,
+              "step": 0,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 1.0"
+            },
+            "CORE_MARGIN": {
+              "type": "int",
+              "minimum": 1,
+              "maximum": 3,
+              "default": 1,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 1.0, autotuner type int"
+            },
+            "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": {
+              "type": "int",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 0"
+            },
+            "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": {
+              "type": "int",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 0"
+            },
+            "_FR_LAYER_ADJUST": {
+              "type": "float",
+              "minimum": 0.1,
+              "maximum": 0.3,
+              "default": null,
+              "step": 0,
+              "apply": "unsupported",
+              "default_source": "OpenROAD-flow-scripts autotuner knob; no single Makefile default",
+              "reason": "Changes FastRoute layer adjustments by rewriting a platform Tcl file. P1.0 does not rewrite platform files."
+            },
+            "PLACE_DENSITY_LB_ADDON": {
+              "type": "float",
+              "minimum": 0.0,
+              "maximum": 0.2,
+              "default": 0.0,
+              "step": 0,
+              "apply": "make",
+              "default_source": "Omitted in the gcd config; 0 leaves the placer lower bound unchanged"
+            },
+            "CTS_CLUSTER_SIZE": {
+              "type": "int",
+              "minimum": 10,
+              "maximum": 200,
+              "default": null,
+              "step": 1,
+              "apply": "make",
+              "default_source": "Unset in sky130hd/gcd; omitting it keeps the OpenROAD CTS built-in"
+            },
+            "CTS_CLUSTER_DIAMETER": {
+              "type": "int",
+              "minimum": 20,
+              "maximum": 400,
+              "default": null,
+              "step": 1,
+              "apply": "make",
+              "default_source": "Unset in sky130hd/gcd; omitting it keeps the OpenROAD CTS built-in"
+            }
+          }
+        }
+      }
+    },
+    "aes": {
+      "platforms": {
+        "sky130hd": {
+          "parameters": {
+            "_SDC_CLK_PERIOD": {
+              "type": "float",
+              "minimum": 3.5,
+              "maximum": 7.0,
+              "default": 3.6,
+              "step": 0,
+              "apply": "sdc_clock",
+              "default_source": "flow/designs/sky130hd/aes/constraint.sdc sets clk_period 3.6"
+            },
+            "CORE_UTILIZATION": {
+              "type": "int",
+              "minimum": 20,
+              "maximum": 50,
+              "default": 35,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/aes/config.mk"
+            },
+            "CORE_ASPECT_RATIO": {
+              "type": "float",
+              "minimum": 0.5,
+              "maximum": 2.0,
+              "default": 1.0,
+              "step": 0,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/aes/config.mk sets 1"
+            },
+            "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": {
+              "type": "int",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 0"
+            },
+            "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": {
+              "type": "int",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 0"
+            },
+            "_FR_LAYER_ADJUST": {
+              "type": "float",
+              "minimum": 0.1,
+              "maximum": 0.3,
+              "default": null,
+              "step": 0,
+              "apply": "unsupported",
+              "default_source": "OpenROAD-flow-scripts autotuner knob; no single Makefile default",
+              "reason": "Changes FastRoute layer adjustments by rewriting a platform Tcl file. P1.0 does not rewrite platform files."
+            },
+            "PLACE_DENSITY_LB_ADDON": {
+              "type": "float",
+              "minimum": 0.0,
+              "maximum": 0.2,
+              "default": 0.2,
+              "step": 0,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/aes/config.mk"
+            },
+            "CTS_CLUSTER_SIZE": {
+              "type": "int",
+              "minimum": 10,
+              "maximum": 200,
+              "default": 20,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/aes/config.mk"
+            },
+            "CTS_CLUSTER_DIAMETER": {
+              "type": "int",
+              "minimum": 20,
+              "maximum": 400,
+              "default": 50,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/aes/config.mk"
+            }
+          }
+        }
+      }
+    },
+    "ibex": {
+      "platforms": {
+        "sky130hd": {
+          "parameters": {
+            "_SDC_CLK_PERIOD": {
+              "type": "float",
+              "minimum": 9.0,
+              "maximum": 16.0,
+              "default": null,
+              "step": 0,
+              "apply": "sdc_clock",
+              "default_source": "flow/designs/sky130hd/ibex/constraint.sdc sets clk_period 8.0, which is below the autotuner sweep of 9 to 16. Omitting the knob keeps that SDC period."
+            },
+            "CORE_UTILIZATION": {
+              "type": "int",
+              "minimum": 20,
+              "maximum": 50,
+              "default": 50,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/ibex/config.mk"
+            },
+            "CORE_ASPECT_RATIO": {
+              "type": "float",
+              "minimum": 0.5,
+              "maximum": 2.0,
+              "default": 1.0,
+              "step": 0,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 1.0"
+            },
+            "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": {
+              "type": "int",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 0"
+            },
+            "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": {
+              "type": "int",
+              "minimum": 0,
+              "maximum": 3,
+              "default": 0,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/scripts/variables.yaml default 0"
+            },
+            "_FR_LAYER_ADJUST": {
+              "type": "float",
+              "minimum": 0.1,
+              "maximum": 0.3,
+              "default": null,
+              "step": 0,
+              "apply": "unsupported",
+              "default_source": "OpenROAD-flow-scripts autotuner knob; no single Makefile default",
+              "reason": "Changes FastRoute layer adjustments by rewriting a platform Tcl file. P1.0 does not rewrite platform files."
+            },
+            "PLACE_DENSITY_LB_ADDON": {
+              "type": "float",
+              "minimum": 0.0,
+              "maximum": 0.2,
+              "default": null,
+              "step": 0,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/ibex/config.mk sets 0.25, which is above the autotuner sweep of 0 to 0.2. Omitting the knob keeps that config value."
+            },
+            "CTS_CLUSTER_SIZE": {
+              "type": "int",
+              "minimum": 10,
+              "maximum": 200,
+              "default": 20,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/ibex/config.mk"
+            },
+            "CTS_CLUSTER_DIAMETER": {
+              "type": "int",
+              "minimum": 20,
+              "maximum": 400,
+              "default": 50,
+              "step": 1,
+              "apply": "make",
+              "default_source": "flow/designs/sky130hd/ibex/config.mk"
+            }
+          }
+        }
+      }
+    }
+  }
+}

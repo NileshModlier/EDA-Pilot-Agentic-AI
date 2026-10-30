@@ -1,0 +1,60 @@
+{
+  "method": "default",
+  "design": "gcd",
+  "platform": "sky130hd",
+  "budget": null,
+  "status": "ok",
+  "message": "",
+  "runs_completed": 1,
+  "stop_reason": "default configuration",
+  "trials": [
+    {
+      "index": 1,
+      "parameters": {},
+      "metrics": {
+        "setup_wns": -1.45954,
+        "setup_tns": -64.9417,
+        "hold_wns": 0.532397,
+        "hold_tns": 0.0,
+        "power": 0.00985037,
+        "area": 5412.69,
+        "utilization": 0.919643,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": false,
+      "clock_period": 1.1,
+      "area": 5412.69,
+      "power": 0.00985037,
+      "runtime": 118.364,
+      "drc_count": 0.0,
+      "setup_wns": -1.45954,
+      "hold_wns": 0.532397
+    }
+  ],
+  "best": {
+    "index": 1,
+    "parameters": {},
+    "metrics": {
+      "setup_wns": -1.45954,
+      "setup_tns": -64.9417,
+      "hold_wns": 0.532397,
+      "hold_tns": 0.0,
+      "power": 0.00985037,
+      "area": 5412.69,
+      "utilization": 0.919643,
+      "drc_count": 0.0,
+      "runtime": null
+    },
+    "flow_status": "ok",
+    "passed": false,
+    "clock_period": 1.1,
+    "area": 5412.69,
+    "power": 0.00985037,
+    "runtime": 118.364,
+    "drc_count": 0.0,
+    "setup_wns": -1.45954,
+    "hold_wns": 0.532397
+  }
+}

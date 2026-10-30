@@ -1,0 +1,14 @@
+Elapsed time: 0:00.35[h:]min:sec. CPU time: user 0.33 sys 0.05 (106%). Peak memory: 66032KB.
+Elapsed time: 1:08.91[h:]min:sec. CPU time: user 68.94 sys 1.03 (101%). Peak memory: 119700KB.
+Elapsed time: 0:00.84[h:]min:sec. CPU time: user 0.76 sys 0.08 (99%). Peak memory: 149760KB.
+Elapsed time: 1:29.51[h:]min:sec. CPU time: user 248.07 sys 103.20 (392%). Peak memory: 213184KB.
+Elapsed time: 0:00.50[h:]min:sec. CPU time: user 0.42 sys 0.08 (99%). Peak memory: 129280KB.
+Elapsed time: 0:00.52[h:]min:sec. CPU time: user 0.47 sys 0.04 (97%). Peak memory: 129536KB.
+Elapsed time: 0:00.83[h:]min:sec. CPU time: user 0.77 sys 0.06 (99%). Peak memory: 138880KB.
+Elapsed time: 0:02.72[h:]min:sec. CPU time: user 5.47 sys 1.01 (238%). Peak memory: 170240KB.
+Elapsed time: 0:00.51[h:]min:sec. CPU time: user 0.45 sys 0.05 (99%). Peak memory: 134400KB.
+Elapsed time: 0:26.25[h:]min:sec. CPU time: user 45.60 sys 12.82 (222%). Peak memory: 395260KB.
+Elapsed time: 0:10.35[h:]min:sec. CPU time: user 15.49 sys 3.37 (182%). Peak memory: 245752KB.
+Elapsed time: 6:51.93[h:]min:sec. CPU time: user 411.75 sys 0.12 (99%). Peak memory: 178048KB.
+make[1]: *** [Makefile:525: do-3_5_place_dp] Error 1
+make: *** [Makefile:525: results/sky130hd/ibex/p1f2b1c369b6d64b6395d93143bb0a2e87/3_5_place_dp.odb] Error 2

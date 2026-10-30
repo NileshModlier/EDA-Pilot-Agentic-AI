@@ -1,0 +1,16 @@
+Elapsed time: 0:00.25[h:]min:sec. CPU time: user 0.16 sys 0.06 (87%). Peak memory: 59648KB.
+Elapsed time: 0:56.90[h:]min:sec. CPU time: user 56.59 sys 0.50 (100%). Peak memory: 84424KB.
+Elapsed time: 0:00.87[h:]min:sec. CPU time: user 0.69 sys 0.13 (95%). Peak memory: 134528KB.
+Elapsed time: 0:03.79[h:]min:sec. CPU time: user 8.78 sys 3.48 (323%). Peak memory: 181640KB.
+Elapsed time: 0:00.43[h:]min:sec. CPU time: user 0.35 sys 0.08 (98%). Peak memory: 117760KB.
+Elapsed time: 0:00.45[h:]min:sec. CPU time: user 0.39 sys 0.05 (98%). Peak memory: 118400KB.
+Elapsed time: 0:00.77[h:]min:sec. CPU time: user 0.63 sys 0.13 (97%). Peak memory: 126976KB.
+Elapsed time: 0:02.90[h:]min:sec. CPU time: user 5.05 sys 1.42 (223%). Peak memory: 151680KB.
+Elapsed time: 0:00.48[h:]min:sec. CPU time: user 0.41 sys 0.05 (97%). Peak memory: 123264KB.
+Elapsed time: 0:22.87[h:]min:sec. CPU time: user 39.65 sys 12.43 (227%). Peak memory: 450060KB.
+Elapsed time: 0:05.71[h:]min:sec. CPU time: user 8.93 sys 2.08 (192%). Peak memory: 300688KB.
+Elapsed time: 0:08.90[h:]min:sec. CPU time: user 11.55 sys 1.80 (149%). Peak memory: 288688KB.
+Elapsed time: 0:09.64[h:]min:sec. CPU time: user 16.64 sys 3.64 (210%). Peak memory: 322908KB.
+Elapsed time: 1:09.91[h:]min:sec. CPU time: user 599.48 sys 19.03 (884%). Peak memory: 391916KB.
+make[1]: *** [Makefile:607: do-5_1_grt] Error 1
+make: *** [Makefile:607: results/sky130hd/aes/p12c8aeec3501340edb0464ceca7cef189/5_1_grt.odb] Error 2

@@ -1,0 +1,6 @@
+# Normalize text files to LF in the repository; check out with native endings.
+* text=auto
+*.png binary
+*.gds binary
+*.drawio text
+*.svg text

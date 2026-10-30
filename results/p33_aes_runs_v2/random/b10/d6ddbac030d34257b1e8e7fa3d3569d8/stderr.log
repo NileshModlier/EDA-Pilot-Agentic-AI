@@ -1,0 +1,12 @@
+Elapsed time: 0:00.17[h:]min:sec. CPU time: user 0.14 sys 0.03 (99%). Peak memory: 60032KB.
+Elapsed time: 0:46.13[h:]min:sec. CPU time: user 46.01 sys 0.47 (100%). Peak memory: 84076KB.
+Elapsed time: 0:00.65[h:]min:sec. CPU time: user 0.60 sys 0.05 (99%). Peak memory: 135296KB.
+Elapsed time: 0:03.04[h:]min:sec. CPU time: user 6.96 sys 3.36 (339%). Peak memory: 182884KB.
+Elapsed time: 0:00.40[h:]min:sec. CPU time: user 0.36 sys 0.04 (99%). Peak memory: 118016KB.
+Elapsed time: 0:00.40[h:]min:sec. CPU time: user 0.33 sys 0.07 (99%). Peak memory: 118400KB.
+Elapsed time: 0:00.62[h:]min:sec. CPU time: user 0.55 sys 0.06 (99%). Peak memory: 125696KB.
+Elapsed time: 0:02.83[h:]min:sec. CPU time: user 5.22 sys 1.41 (234%). Peak memory: 148864KB.
+Elapsed time: 0:00.44[h:]min:sec. CPU time: user 0.39 sys 0.04 (98%). Peak memory: 122240KB.
+Elapsed time: 0:00.72[h:]min:sec. CPU time: user 0.64 sys 0.09 (101%). Peak memory: 158976KB.
+make[1]: *** [Makefile:513: do-3_3_place_gp] Error 1
+make: *** [Makefile:513: results/sky130hd/aes/p1d6ddbac030d34257b1e8e7fa3d3569d8/3_3_place_gp.odb] Error 2

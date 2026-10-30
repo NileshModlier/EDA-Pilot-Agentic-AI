@@ -1,0 +1,1389 @@
+{
+  "aes": {
+    "samples": [
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 0.882604,
+        "CORE_UTILIZATION": 35.0,
+        "CTS_CLUSTER_DIAMETER": 250.0,
+        "CTS_CLUSTER_SIZE": 130.0,
+        "PLACE_DENSITY_LB_ADDON": 0.130319,
+        "_SDC_CLK_PERIOD": 6.260532
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+        "CORE_ASPECT_RATIO": 0.542521,
+        "CORE_UTILIZATION": 46.0,
+        "CTS_CLUSTER_DIAMETER": 219.0,
+        "CTS_CLUSTER_SIZE": 120.0,
+        "PLACE_DENSITY_LB_ADDON": 0.121488,
+        "_SDC_CLK_PERIOD": 6.185052
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+        "CORE_ASPECT_RATIO": 1.58231,
+        "CORE_UTILIZATION": 27.0,
+        "CTS_CLUSTER_DIAMETER": 322.0,
+        "CTS_CLUSTER_SIZE": 36.0,
+        "PLACE_DENSITY_LB_ADDON": 0.180285,
+        "_SDC_CLK_PERIOD": 3.607065
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 1.908724,
+        "CORE_UTILIZATION": 32.0,
+        "CTS_CLUSTER_DIAMETER": 371.0,
+        "CTS_CLUSTER_SIZE": 65.0,
+        "PLACE_DENSITY_LB_ADDON": 0.193808,
+        "_SDC_CLK_PERIOD": 6.040484
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+        "CORE_ASPECT_RATIO": 1.908751,
+        "CORE_UTILIZATION": 37.0,
+        "CTS_CLUSTER_DIAMETER": 139.0,
+        "CTS_CLUSTER_SIZE": 98.0,
+        "PLACE_DENSITY_LB_ADDON": 0.046173,
+        "_SDC_CLK_PERIOD": 4.265734
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+        "CORE_ASPECT_RATIO": 1.88976,
+        "CORE_UTILIZATION": 33.0,
+        "CTS_CLUSTER_DIAMETER": 304.0,
+        "CTS_CLUSTER_SIZE": 174.0,
+        "PLACE_DENSITY_LB_ADDON": 0.02,
+        "_SDC_CLK_PERIOD": 5.702735
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 1.61472,
+        "CORE_UTILIZATION": 48.0,
+        "CTS_CLUSTER_DIAMETER": 389.0,
+        "CTS_CLUSTER_SIZE": 192.0,
+        "PLACE_DENSITY_LB_ADDON": 0.10016,
+        "_SDC_CLK_PERIOD": 6.885236
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+        "CORE_ASPECT_RATIO": 0.926239,
+        "CORE_UTILIZATION": 48.0,
+        "CTS_CLUSTER_DIAMETER": 275.0,
+        "CTS_CLUSTER_SIZE": 139.0,
+        "PLACE_DENSITY_LB_ADDON": 0.078671,
+        "_SDC_CLK_PERIOD": 6.486508
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 1.0,
+        "CORE_ASPECT_RATIO": 1.615596,
+        "CORE_UTILIZATION": 32.0,
+        "CTS_CLUSTER_DIAMETER": 232.0,
+        "CTS_CLUSTER_SIZE": 180.0,
+        "PLACE_DENSITY_LB_ADDON": 0.034601,
+        "_SDC_CLK_PERIOD": 5.420796
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 1.158442,
+        "CORE_UTILIZATION": 36.0,
+        "CTS_CLUSTER_DIAMETER": 75.0,
+        "CTS_CLUSTER_SIZE": 51.0,
+        "PLACE_DENSITY_LB_ADDON": 0.104188,
+        "_SDC_CLK_PERIOD": 4.876393
+      }
+    ],
+    "default": {
+      "method": "default",
+      "design": "aes",
+      "platform": "sky130hd",
+      "budget": null,
+      "status": "ok",
+      "message": "",
+      "runs_completed": 1,
+      "stop_reason": "default configuration",
+      "trials": [
+        {
+          "index": 1,
+          "parameters": {},
+          "metrics": {
+            "setup_wns": -0.0805747,
+            "setup_tns": -0.491536,
+            "hold_wns": 0.483049,
+            "hold_tns": 0.0,
+            "power": 0.572873,
+            "area": 130617.0,
+            "utilization": 0.59329,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": false,
+          "clock_period": 3.6,
+          "area": 130617.0,
+          "power": 0.572873,
+          "runtime": 2046.323,
+          "drc_count": 0.0,
+          "setup_wns": -0.0805747,
+          "hold_wns": 0.483049
+        }
+      ],
+      "best": {
+        "index": 1,
+        "parameters": {},
+        "metrics": {
+          "setup_wns": -0.0805747,
+          "setup_tns": -0.491536,
+          "hold_wns": 0.483049,
+          "hold_tns": 0.0,
+          "power": 0.572873,
+          "area": 130617.0,
+          "utilization": 0.59329,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": false,
+        "clock_period": 3.6,
+        "area": 130617.0,
+        "power": 0.572873,
+        "runtime": 2046.323,
+        "drc_count": 0.0,
+        "setup_wns": -0.0805747,
+        "hold_wns": 0.483049
+      }
+    },
+    "random_trials": [
+      {
+        "index": 1,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 0.882604,
+          "CORE_UTILIZATION": 35.0,
+          "CTS_CLUSTER_DIAMETER": 250.0,
+          "CTS_CLUSTER_SIZE": 130.0,
+          "PLACE_DENSITY_LB_ADDON": 0.130319,
+          "_SDC_CLK_PERIOD": 6.260532
+        },
+        "metrics": {
+          "setup_wns": 0.610598,
+          "setup_tns": 0.0,
+          "hold_wns": 0.517489,
+          "hold_tns": 0.0,
+          "power": 0.237907,
+          "area": 92547.5,
+          "utilization": 0.419271,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 6.260532,
+        "area": 92547.5,
+        "power": 0.237907,
+        "runtime": 1490.845,
+        "drc_count": 0.0,
+        "setup_wns": 0.610598,
+        "hold_wns": 0.517489
+      },
+      {
+        "index": 2,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+          "CORE_ASPECT_RATIO": 0.542521,
+          "CORE_UTILIZATION": 46.0,
+          "CTS_CLUSTER_DIAMETER": 219.0,
+          "CTS_CLUSTER_SIZE": 120.0,
+          "PLACE_DENSITY_LB_ADDON": 0.121488,
+          "_SDC_CLK_PERIOD": 6.185052
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 6.185052,
+        "area": null,
+        "power": null,
+        "runtime": 84.389,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 3,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+          "CORE_ASPECT_RATIO": 1.58231,
+          "CORE_UTILIZATION": 27.0,
+          "CTS_CLUSTER_DIAMETER": 322.0,
+          "CTS_CLUSTER_SIZE": 36.0,
+          "PLACE_DENSITY_LB_ADDON": 0.180285,
+          "_SDC_CLK_PERIOD": 3.607065
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 3.607065,
+        "area": null,
+        "power": null,
+        "runtime": null,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 4,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 1.908724,
+          "CORE_UTILIZATION": 32.0,
+          "CTS_CLUSTER_DIAMETER": 371.0,
+          "CTS_CLUSTER_SIZE": 65.0,
+          "PLACE_DENSITY_LB_ADDON": 0.193808,
+          "_SDC_CLK_PERIOD": 6.040484
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 6.040484,
+        "area": null,
+        "power": null,
+        "runtime": 193.685,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 5,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+          "CORE_ASPECT_RATIO": 1.908751,
+          "CORE_UTILIZATION": 37.0,
+          "CTS_CLUSTER_DIAMETER": 139.0,
+          "CTS_CLUSTER_SIZE": 98.0,
+          "PLACE_DENSITY_LB_ADDON": 0.046173,
+          "_SDC_CLK_PERIOD": 4.265734
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 4.265734,
+        "area": null,
+        "power": null,
+        "runtime": 181.515,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 6,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+          "CORE_ASPECT_RATIO": 1.88976,
+          "CORE_UTILIZATION": 33.0,
+          "CTS_CLUSTER_DIAMETER": 304.0,
+          "CTS_CLUSTER_SIZE": 174.0,
+          "PLACE_DENSITY_LB_ADDON": 0.02,
+          "_SDC_CLK_PERIOD": 5.702735
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 5.702735,
+        "area": null,
+        "power": null,
+        "runtime": 652.435,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 7,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 1.61472,
+          "CORE_UTILIZATION": 48.0,
+          "CTS_CLUSTER_DIAMETER": 389.0,
+          "CTS_CLUSTER_SIZE": 192.0,
+          "PLACE_DENSITY_LB_ADDON": 0.10016,
+          "_SDC_CLK_PERIOD": 6.885236
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 6.885236,
+        "area": null,
+        "power": null,
+        "runtime": 1214.27,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 8,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+          "CORE_ASPECT_RATIO": 0.926239,
+          "CORE_UTILIZATION": 48.0,
+          "CTS_CLUSTER_DIAMETER": 275.0,
+          "CTS_CLUSTER_SIZE": 139.0,
+          "PLACE_DENSITY_LB_ADDON": 0.078671,
+          "_SDC_CLK_PERIOD": 6.486508
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 6.486508,
+        "area": null,
+        "power": null,
+        "runtime": 62.198,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 9,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 1.0,
+          "CORE_ASPECT_RATIO": 1.615596,
+          "CORE_UTILIZATION": 32.0,
+          "CTS_CLUSTER_DIAMETER": 232.0,
+          "CTS_CLUSTER_SIZE": 180.0,
+          "PLACE_DENSITY_LB_ADDON": 0.034601,
+          "_SDC_CLK_PERIOD": 5.420796
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 5.420796,
+        "area": null,
+        "power": null,
+        "runtime": 354.522,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 10,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 1.158442,
+          "CORE_UTILIZATION": 36.0,
+          "CTS_CLUSTER_DIAMETER": 75.0,
+          "CTS_CLUSTER_SIZE": 51.0,
+          "PLACE_DENSITY_LB_ADDON": 0.104188,
+          "_SDC_CLK_PERIOD": 4.876393
+        },
+        "metrics": {
+          "setup_wns": -0.385631,
+          "setup_tns": -2.04401,
+          "hold_wns": 0.505085,
+          "hold_tns": 0.0,
+          "power": 0.344963,
+          "area": 99839.5,
+          "utilization": 0.465356,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": false,
+        "clock_period": 4.876393,
+        "area": 99839.5,
+        "power": 0.344963,
+        "runtime": 1672.63,
+        "drc_count": 0.0,
+        "setup_wns": -0.385631,
+        "hold_wns": 0.505085
+      }
+    ],
+    "failures": [
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 2,
+        "run_id": "3514e403ea784cbda77f48e272aa53d0",
+        "cause": "[ERROR FLW-0024] Place density exceeds 1.0 (current PLACE_DENSITY_LB_ADDON =  0.121488). Please check if the value of  PLACE_DENSITY_LB_ADDON is between 0 and 0.99."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 3,
+        "run_id": "aa931b086b6a46ba97a04c29c7ee18cd",
+        "cause": "The benchmark process exited during floorplan repair_timing. Synthesis had finished. Placement, CTS, routing, and GDS were not produced."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 4,
+        "run_id": "2c8aeec3501340edb0464ceca7cef189",
+        "cause": "[ERROR GRT-0116] Global routing finished with congestion. Check the congestion regions in the DRC Viewer."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 5,
+        "run_id": "bdda874ec8b344f0830b6946baf95456",
+        "cause": "[ERROR GRT-0116] Global routing finished with congestion. Check the congestion regions in the DRC Viewer."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 6,
+        "run_id": "1a0603d83ef14789abbb3d835f527e60",
+        "cause": "[ERROR DPL-0033] detailed placement checks failed during check placement."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 7,
+        "run_id": "46290ebcd29e43a7a6acd1bdca7ed173",
+        "cause": "make: *** [Makefile:525: results/sky130hd/aes/p146290ebcd29e43a7a6acd1bdca7ed173/3_5_place_dp.odb] Error 2"
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 8,
+        "run_id": "d6ddbac030d34257b1e8e7fa3d3569d8",
+        "cause": "[ERROR FLW-0024] Place density exceeds 1.0 (current PLACE_DENSITY_LB_ADDON =  0.078671). Please check if the value of  PLACE_DENSITY_LB_ADDON is between 0 and 0.99."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 9,
+        "run_id": "c9e698bc87f64585af37948742034ff6",
+        "cause": "The benchmark process exited during detailed placement. This attempt was not scored. The same sample continued in a new flow."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 9,
+        "run_id": "fac5b1a41b8045b59968493728a14dc8",
+        "cause": "[ERROR DPL-0033] detailed placement checks failed during check placement."
+      },
+      {
+        "design": "aes",
+        "method": "random",
+        "index": 10,
+        "run_id": "03dec53f6d8f47049a5ae041b94fc4e5",
+        "cause": "The benchmark process exited during detailed routing. This attempt was not scored. The same sample continued in a new flow."
+      },
+      {
+        "design": "aes",
+        "method": "agent",
+        "index": 3,
+        "run_id": "adc4c72ed8fe46fead60f04ec14eda88",
+        "cause": "The paused benchmark process exited during detailed routing. This attempt was not scored. The agent session continued in a new run."
+      },
+      {
+        "design": "aes",
+        "method": "agent",
+        "index": 5,
+        "run_id": "62ec77a66e2b42208a45effc1ba0b6d6",
+        "cause": "The paused benchmark process exited during detailed routing. This attempt was not scored. The same clock search continued in a new flow."
+      }
+    ],
+    "agent": {
+      "method": "agent",
+      "design": "aes",
+      "platform": "sky130hd",
+      "budget": 10,
+      "status": "ok",
+      "message": "",
+      "runs_completed": 10,
+      "stop_reason": "run budget exhausted",
+      "trials": [
+        {
+          "index": 1,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 3.6
+          },
+          "metrics": {
+            "setup_wns": -0.0805747,
+            "setup_tns": -0.491536,
+            "hold_wns": 0.483049,
+            "hold_tns": 0.0,
+            "power": 0.572873,
+            "area": 130617.0,
+            "utilization": 0.59329,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": false,
+          "clock_period": 3.6,
+          "area": 130617.0,
+          "power": 0.572873,
+          "runtime": 1959.659,
+          "drc_count": 0.0,
+          "setup_wns": -0.0805747,
+          "hold_wns": 0.483049
+        },
+        {
+          "index": 2,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 5.3
+          },
+          "metrics": {
+            "setup_wns": 0.0183964,
+            "setup_tns": 0.0,
+            "hold_wns": 0.475605,
+            "hold_tns": 0.0,
+            "power": 0.291916,
+            "area": 98121.6,
+            "utilization": 0.445691,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": true,
+          "clock_period": 5.3,
+          "area": 98121.6,
+          "power": 0.291916,
+          "runtime": 2280.964,
+          "drc_count": 0.0,
+          "setup_wns": 0.0183964,
+          "hold_wns": 0.475605
+        },
+        {
+          "index": 3,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.45
+          },
+          "metrics": {
+            "setup_wns": -0.0292886,
+            "setup_tns": -0.0292886,
+            "hold_wns": 0.505799,
+            "hold_tns": 0.0,
+            "power": 0.369274,
+            "area": 105055.0,
+            "utilization": 0.477182,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": false,
+          "clock_period": 4.45,
+          "area": 105055.0,
+          "power": 0.369274,
+          "runtime": 1909.513,
+          "drc_count": 0.0,
+          "setup_wns": -0.0292886,
+          "hold_wns": 0.505799
+        },
+        {
+          "index": 4,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.875
+          },
+          "metrics": {
+            "setup_wns": 0.0190288,
+            "setup_tns": 0.0,
+            "hold_wns": 0.45468,
+            "hold_tns": 0.0,
+            "power": 0.32702,
+            "area": 101346.0,
+            "utilization": 0.460337,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": true,
+          "clock_period": 4.875,
+          "area": 101346.0,
+          "power": 0.32702,
+          "runtime": 6290.715,
+          "drc_count": 0.0,
+          "setup_wns": 0.0190288,
+          "hold_wns": 0.45468
+        },
+        {
+          "index": 5,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.662
+          },
+          "metrics": {
+            "setup_wns": -0.0482245,
+            "setup_tns": -0.0504832,
+            "hold_wns": 0.475483,
+            "hold_tns": 0.0,
+            "power": 0.347504,
+            "area": 102686.0,
+            "utilization": 0.466423,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": false,
+          "clock_period": 4.662,
+          "area": 102686.0,
+          "power": 0.347504,
+          "runtime": 2210.109,
+          "drc_count": 0.0,
+          "setup_wns": -0.0482245,
+          "hold_wns": 0.475483
+        },
+        {
+          "index": 6,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.768
+          },
+          "metrics": {
+            "setup_wns": -0.114132,
+            "setup_tns": -0.114132,
+            "hold_wns": 0.47139,
+            "hold_tns": 0.0,
+            "power": 0.342891,
+            "area": 103382.0,
+            "utilization": 0.469583,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "timeout",
+          "passed": false,
+          "clock_period": 4.768,
+          "area": 103382.0,
+          "power": 0.342891,
+          "runtime": 8032.218,
+          "drc_count": 0.0,
+          "setup_wns": -0.114132,
+          "hold_wns": 0.47139
+        },
+        {
+          "index": 7,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.822
+          },
+          "metrics": {
+            "setup_wns": 0.0166596,
+            "setup_tns": 0.0,
+            "hold_wns": 0.479924,
+            "hold_tns": 0.0,
+            "power": 0.329286,
+            "area": 101032.0,
+            "utilization": 0.45891,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": true,
+          "clock_period": 4.822,
+          "area": 101032.0,
+          "power": 0.329286,
+          "runtime": 2459.98,
+          "drc_count": 0.0,
+          "setup_wns": 0.0166596,
+          "hold_wns": 0.479924
+        },
+        {
+          "index": 8,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.742
+          },
+          "metrics": {
+            "setup_wns": -0.0547353,
+            "setup_tns": -0.135901,
+            "hold_wns": 0.521834,
+            "hold_tns": 0.0,
+            "power": 0.343013,
+            "area": 103050.0,
+            "utilization": 0.468077,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": false,
+          "clock_period": 4.742,
+          "area": 103050.0,
+          "power": 0.343013,
+          "runtime": 2579.178,
+          "drc_count": 0.0,
+          "setup_wns": -0.0547353,
+          "hold_wns": 0.521834
+        },
+        {
+          "index": 9,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.782
+          },
+          "metrics": {
+            "setup_wns": -0.0817617,
+            "setup_tns": -0.0817617,
+            "hold_wns": 0.458693,
+            "hold_tns": 0.0,
+            "power": 0.337387,
+            "area": 102498.0,
+            "utilization": 0.465571,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "timeout",
+          "passed": false,
+          "clock_period": 4.782,
+          "area": 102498.0,
+          "power": 0.337387,
+          "runtime": 9933.135,
+          "drc_count": 0.0,
+          "setup_wns": -0.0817617,
+          "hold_wns": 0.458693
+        },
+        {
+          "index": 10,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 4.832
+          },
+          "metrics": {
+            "setup_wns": -0.00557376,
+            "setup_tns": -0.00606359,
+            "hold_wns": 0.507689,
+            "hold_tns": 0.0,
+            "power": 0.327552,
+            "area": 100936.0,
+            "utilization": 0.458473,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": false,
+          "clock_period": 4.832,
+          "area": 100936.0,
+          "power": 0.327552,
+          "runtime": 4554.795,
+          "drc_count": 0.0,
+          "setup_wns": -0.00557376,
+          "hold_wns": 0.507689
+        }
+      ],
+      "best": {
+        "index": 7,
+        "parameters": {
+          "_SDC_CLK_PERIOD": 4.822
+        },
+        "metrics": {
+          "setup_wns": 0.0166596,
+          "setup_tns": 0.0,
+          "hold_wns": 0.479924,
+          "hold_tns": 0.0,
+          "power": 0.329286,
+          "area": 101032.0,
+          "utilization": 0.45891,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 4.822,
+        "area": 101032.0,
+        "power": 0.329286,
+        "runtime": 2459.98,
+        "drc_count": 0.0,
+        "setup_wns": 0.0166596,
+        "hold_wns": 0.479924
+      }
+    },
+    "autotuner": {
+      "method": "autotuner",
+      "design": "aes",
+      "platform": "sky130hd",
+      "budget": 10,
+      "status": "unavailable",
+      "message": "OpenROAD AutoTuner executable was not found. Set ORFS_AUTOTUNER or install openroad_autotuner. No AutoTuner metrics were recorded.",
+      "runs_completed": 0,
+      "stop_reason": null,
+      "trials": [],
+      "best": null
+    }
+  },
+  "ibex": {
+    "default": {
+      "method": "default",
+      "design": "ibex",
+      "platform": "sky130hd",
+      "budget": null,
+      "status": "ok",
+      "message": "",
+      "runs_completed": 1,
+      "stop_reason": "default configuration",
+      "trials": [
+        {
+          "index": 1,
+          "parameters": {},
+          "metrics": {
+            "setup_wns": -0.551246,
+            "setup_tns": -321.743,
+            "hold_wns": 0.420976,
+            "hold_tns": 0.0,
+            "power": 0.0655049,
+            "area": 172822.0,
+            "utilization": 0.672652,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": false,
+          "clock_period": null,
+          "area": 172822.0,
+          "power": 0.0655049,
+          "runtime": 3080.309,
+          "drc_count": 0.0,
+          "setup_wns": -0.551246,
+          "hold_wns": 0.420976
+        }
+      ],
+      "best": {
+        "index": 1,
+        "parameters": {},
+        "metrics": {
+          "setup_wns": -0.551246,
+          "setup_tns": -321.743,
+          "hold_wns": 0.420976,
+          "hold_tns": 0.0,
+          "power": 0.0655049,
+          "area": 172822.0,
+          "utilization": 0.672652,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": false,
+        "clock_period": null,
+        "area": 172822.0,
+        "power": 0.0655049,
+        "runtime": 3080.309,
+        "drc_count": 0.0,
+        "setup_wns": -0.551246,
+        "hold_wns": 0.420976
+      }
+    },
+    "random_trials": [
+      {
+        "index": 1,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 0.882604,
+          "CORE_UTILIZATION": 35.0,
+          "CTS_CLUSTER_DIAMETER": 250.0,
+          "CTS_CLUSTER_SIZE": 130.0,
+          "PLACE_DENSITY_LB_ADDON": 0.130319,
+          "_SDC_CLK_PERIOD": 14.521063
+        },
+        "metrics": {
+          "setup_wns": 1.35273,
+          "setup_tns": 0.0,
+          "hold_wns": 0.374557,
+          "hold_tns": 0.0,
+          "power": 0.029383,
+          "area": 146409.0,
+          "utilization": 0.398491,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 14.521063,
+        "area": 146409.0,
+        "power": 0.029383,
+        "runtime": 1380.245,
+        "drc_count": 0.0,
+        "setup_wns": 1.35273,
+        "hold_wns": 0.374557
+      },
+      {
+        "index": 2,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+          "CORE_ASPECT_RATIO": 0.542521,
+          "CORE_UTILIZATION": 46.0,
+          "CTS_CLUSTER_DIAMETER": 219.0,
+          "CTS_CLUSTER_SIZE": 120.0,
+          "PLACE_DENSITY_LB_ADDON": 0.121488,
+          "_SDC_CLK_PERIOD": 14.370103
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 14.370103,
+        "area": null,
+        "power": null,
+        "runtime": 133.045,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 3,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+          "CORE_ASPECT_RATIO": 1.58231,
+          "CORE_UTILIZATION": 27.0,
+          "CTS_CLUSTER_DIAMETER": 322.0,
+          "CTS_CLUSTER_SIZE": 36.0,
+          "PLACE_DENSITY_LB_ADDON": 0.180285,
+          "_SDC_CLK_PERIOD": 9.21413
+        },
+        "metrics": {
+          "setup_wns": -0.074885,
+          "setup_tns": -0.232046,
+          "hold_wns": 0.449047,
+          "hold_tns": 0.0,
+          "power": 0.0567977,
+          "area": 169186.0,
+          "utilization": 0.354715,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": false,
+        "clock_period": 9.21413,
+        "area": 169186.0,
+        "power": 0.0567977,
+        "runtime": 1152.365,
+        "drc_count": 0.0,
+        "setup_wns": -0.074885,
+        "hold_wns": 0.449047
+      },
+      {
+        "index": 4,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 1.908724,
+          "CORE_UTILIZATION": 32.0,
+          "CTS_CLUSTER_DIAMETER": 371.0,
+          "CTS_CLUSTER_SIZE": 65.0,
+          "PLACE_DENSITY_LB_ADDON": 0.193808,
+          "_SDC_CLK_PERIOD": 14.080968
+        },
+        "metrics": {
+          "setup_wns": 0.132672,
+          "setup_tns": 0.0,
+          "hold_wns": 0.444171,
+          "hold_tns": 0.0,
+          "power": 0.0318002,
+          "area": 147956.0,
+          "utilization": 0.367607,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 14.080968,
+        "area": 147956.0,
+        "power": 0.0318002,
+        "runtime": 1898.806,
+        "drc_count": 0.0,
+        "setup_wns": 0.132672,
+        "hold_wns": 0.444171
+      },
+      {
+        "index": 5,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+          "CORE_ASPECT_RATIO": 1.908751,
+          "CORE_UTILIZATION": 37.0,
+          "CTS_CLUSTER_DIAMETER": 139.0,
+          "CTS_CLUSTER_SIZE": 98.0,
+          "PLACE_DENSITY_LB_ADDON": 0.046173,
+          "_SDC_CLK_PERIOD": 10.531467
+        },
+        "metrics": {
+          "setup_wns": 0.0987077,
+          "setup_tns": 0.0,
+          "hold_wns": 0.316812,
+          "hold_tns": 0.0,
+          "power": 0.0435235,
+          "area": 150786.0,
+          "utilization": 0.433857,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 10.531467,
+        "area": 150786.0,
+        "power": 0.0435235,
+        "runtime": 1256.824,
+        "drc_count": 0.0,
+        "setup_wns": 0.0987077,
+        "hold_wns": 0.316812
+      },
+      {
+        "index": 6,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+          "CORE_ASPECT_RATIO": 1.88976,
+          "CORE_UTILIZATION": 33.0,
+          "CTS_CLUSTER_DIAMETER": 304.0,
+          "CTS_CLUSTER_SIZE": 174.0,
+          "PLACE_DENSITY_LB_ADDON": 0.02,
+          "_SDC_CLK_PERIOD": 13.40547
+        },
+        "metrics": {
+          "setup_wns": -0.461235,
+          "setup_tns": -7.97819,
+          "hold_wns": 0.448124,
+          "hold_tns": 0.0,
+          "power": 0.0350426,
+          "area": 147903.0,
+          "utilization": 0.379441,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": false,
+        "clock_period": 13.40547,
+        "area": 147903.0,
+        "power": 0.0350426,
+        "runtime": 2027.469,
+        "drc_count": 0.0,
+        "setup_wns": -0.461235,
+        "hold_wns": 0.448124
+      },
+      {
+        "index": 7,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 1.61472,
+          "CORE_UTILIZATION": 48.0,
+          "CTS_CLUSTER_DIAMETER": 389.0,
+          "CTS_CLUSTER_SIZE": 192.0,
+          "PLACE_DENSITY_LB_ADDON": 0.10016,
+          "_SDC_CLK_PERIOD": 15.770472
+        },
+        "metrics": {},
+        "flow_status": "error",
+        "passed": false,
+        "clock_period": 15.770472,
+        "area": null,
+        "power": null,
+        "runtime": 620.548,
+        "drc_count": null,
+        "setup_wns": null,
+        "hold_wns": null
+      },
+      {
+        "index": 8,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+          "CORE_ASPECT_RATIO": 0.926239,
+          "CORE_UTILIZATION": 48.0,
+          "CTS_CLUSTER_DIAMETER": 275.0,
+          "CTS_CLUSTER_SIZE": 139.0,
+          "PLACE_DENSITY_LB_ADDON": 0.078671,
+          "_SDC_CLK_PERIOD": 14.973016
+        },
+        "metrics": {
+          "setup_wns": 1.23548,
+          "setup_tns": 0.0,
+          "hold_wns": 0.440717,
+          "hold_tns": 0.0,
+          "power": 0.027638,
+          "area": 143624.0,
+          "utilization": 0.535664,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 14.973016,
+        "area": 143624.0,
+        "power": 0.027638,
+        "runtime": 3720.213,
+        "drc_count": 0.0,
+        "setup_wns": 1.23548,
+        "hold_wns": 0.440717
+      },
+      {
+        "index": 9,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 1.0,
+          "CORE_ASPECT_RATIO": 1.615596,
+          "CORE_UTILIZATION": 32.0,
+          "CTS_CLUSTER_DIAMETER": 232.0,
+          "CTS_CLUSTER_SIZE": 180.0,
+          "PLACE_DENSITY_LB_ADDON": 0.034601,
+          "_SDC_CLK_PERIOD": 12.841591
+        },
+        "metrics": {
+          "setup_wns": 0.0879403,
+          "setup_tns": 0.0,
+          "hold_wns": 0.455185,
+          "hold_tns": 0.0,
+          "power": 0.036155,
+          "area": 148739.0,
+          "utilization": 0.369808,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 12.841591,
+        "area": 148739.0,
+        "power": 0.036155,
+        "runtime": 1282.316,
+        "drc_count": 0.0,
+        "setup_wns": 0.0879403,
+        "hold_wns": 0.455185
+      },
+      {
+        "index": 10,
+        "parameters": {
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+          "CORE_ASPECT_RATIO": 1.158442,
+          "CORE_UTILIZATION": 36.0,
+          "CTS_CLUSTER_DIAMETER": 75.0,
+          "CTS_CLUSTER_SIZE": 51.0,
+          "PLACE_DENSITY_LB_ADDON": 0.104188,
+          "_SDC_CLK_PERIOD": 11.752786
+        },
+        "metrics": {
+          "setup_wns": 0.158749,
+          "setup_tns": 0.0,
+          "hold_wns": 0.416232,
+          "hold_tns": 0.0,
+          "power": 0.0404614,
+          "area": 151708.0,
+          "utilization": 0.424955,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 11.752786,
+        "area": 151708.0,
+        "power": 0.0404614,
+        "runtime": 1433.924,
+        "drc_count": 0.0,
+        "setup_wns": 0.158749,
+        "hold_wns": 0.416232
+      }
+    ],
+    "agent": {
+      "method": "agent",
+      "design": "ibex",
+      "platform": "sky130hd",
+      "budget": 10,
+      "status": "ok",
+      "message": "",
+      "runs_completed": 1,
+      "stop_reason": "clock search converged",
+      "trials": [
+        {
+          "index": 1,
+          "parameters": {
+            "_SDC_CLK_PERIOD": 9.0
+          },
+          "metrics": {
+            "setup_wns": 0.0165974,
+            "setup_tns": 0.0,
+            "hold_wns": 0.420391,
+            "hold_tns": 0.0,
+            "power": 0.0564333,
+            "area": 162093.0,
+            "utilization": 0.630893,
+            "drc_count": 0.0,
+            "runtime": null
+          },
+          "flow_status": "ok",
+          "passed": true,
+          "clock_period": 9.0,
+          "area": 162093.0,
+          "power": 0.0564333,
+          "runtime": 6945.369,
+          "drc_count": 0.0,
+          "setup_wns": 0.0165974,
+          "hold_wns": 0.420391
+        }
+      ],
+      "best": {
+        "index": 1,
+        "parameters": {
+          "_SDC_CLK_PERIOD": 9.0
+        },
+        "metrics": {
+          "setup_wns": 0.0165974,
+          "setup_tns": 0.0,
+          "hold_wns": 0.420391,
+          "hold_tns": 0.0,
+          "power": 0.0564333,
+          "area": 162093.0,
+          "utilization": 0.630893,
+          "drc_count": 0.0,
+          "runtime": null
+        },
+        "flow_status": "ok",
+        "passed": true,
+        "clock_period": 9.0,
+        "area": 162093.0,
+        "power": 0.0564333,
+        "runtime": 6945.369,
+        "drc_count": 0.0,
+        "setup_wns": 0.0165974,
+        "hold_wns": 0.420391
+      }
+    },
+    "autotuner": {
+      "method": "autotuner",
+      "design": "ibex",
+      "platform": "sky130hd",
+      "budget": 10,
+      "status": "error",
+      "message": "algorithm(\n                  ^^^^^^^^^^^^^^\n  File \"/home/administrator/OpenROAD-flow-scripts/tools/AutoTuner/src/autotuner/distributed.py\", line 488, in set_algorithm\n    algorithm = HyperOptSearch(\n                ^^^^^^^^^^^^^^^\n  File \"/home/administrator/OpenROAD-flow-scripts/tools/AutoTuner/autotuner_env/lib/python3.12/site-packages/ray/tune/search/hyperopt/hyperopt_search.py\", line 163, in __init__\n    hpo is not None\nAssertionError: HyperOpt must be installed! Run `pip install hyperopt`.",
+      "runs_completed": 0,
+      "stop_reason": null,
+      "trials": [],
+      "best": null
+    },
+    "failures": [
+      {
+        "design": "ibex",
+        "method": "default",
+        "index": 1,
+        "run_id": "cc4130ca382a4ad0a4b939d565636e57",
+        "cause": "The paused benchmark process exited during detailed routing. This attempt was not scored. The default flow continued in a new run."
+      },
+      {
+        "design": "ibex",
+        "method": "random",
+        "index": 2,
+        "run_id": "dcf95fa85d1e4a78b14d4cdfabc9507a",
+        "cause": "[ERROR FLW-0024] Place density exceeds 1.0 (current PLACE_DENSITY_LB_ADDON =  0.121488). Please check if the value of  PLACE_DENSITY_LB_ADDON is between 0 and 0.99."
+      },
+      {
+        "design": "ibex",
+        "method": "random",
+        "index": 7,
+        "run_id": "f2b1c369b6d64b6395d93143bb0a2e87",
+        "cause": "[ERROR DPL-0033] detailed placement checks failed during check placement."
+      }
+    ],
+    "samples": [
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 0.882604,
+        "CORE_UTILIZATION": 35.0,
+        "CTS_CLUSTER_DIAMETER": 250.0,
+        "CTS_CLUSTER_SIZE": 130.0,
+        "PLACE_DENSITY_LB_ADDON": 0.130319,
+        "_SDC_CLK_PERIOD": 14.521063
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+        "CORE_ASPECT_RATIO": 0.542521,
+        "CORE_UTILIZATION": 46.0,
+        "CTS_CLUSTER_DIAMETER": 219.0,
+        "CTS_CLUSTER_SIZE": 120.0,
+        "PLACE_DENSITY_LB_ADDON": 0.121488,
+        "_SDC_CLK_PERIOD": 14.370103
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+        "CORE_ASPECT_RATIO": 1.58231,
+        "CORE_UTILIZATION": 27.0,
+        "CTS_CLUSTER_DIAMETER": 322.0,
+        "CTS_CLUSTER_SIZE": 36.0,
+        "PLACE_DENSITY_LB_ADDON": 0.180285,
+        "_SDC_CLK_PERIOD": 9.21413
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 1.908724,
+        "CORE_UTILIZATION": 32.0,
+        "CTS_CLUSTER_DIAMETER": 371.0,
+        "CTS_CLUSTER_SIZE": 65.0,
+        "PLACE_DENSITY_LB_ADDON": 0.193808,
+        "_SDC_CLK_PERIOD": 14.080968
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+        "CORE_ASPECT_RATIO": 1.908751,
+        "CORE_UTILIZATION": 37.0,
+        "CTS_CLUSTER_DIAMETER": 139.0,
+        "CTS_CLUSTER_SIZE": 98.0,
+        "PLACE_DENSITY_LB_ADDON": 0.046173,
+        "_SDC_CLK_PERIOD": 10.531467
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+        "CORE_ASPECT_RATIO": 1.88976,
+        "CORE_UTILIZATION": 33.0,
+        "CTS_CLUSTER_DIAMETER": 304.0,
+        "CTS_CLUSTER_SIZE": 174.0,
+        "PLACE_DENSITY_LB_ADDON": 0.02,
+        "_SDC_CLK_PERIOD": 13.40547
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 1.61472,
+        "CORE_UTILIZATION": 48.0,
+        "CTS_CLUSTER_DIAMETER": 389.0,
+        "CTS_CLUSTER_SIZE": 192.0,
+        "PLACE_DENSITY_LB_ADDON": 0.10016,
+        "_SDC_CLK_PERIOD": 15.770472
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 2.0,
+        "CORE_ASPECT_RATIO": 0.926239,
+        "CORE_UTILIZATION": 48.0,
+        "CTS_CLUSTER_DIAMETER": 275.0,
+        "CTS_CLUSTER_SIZE": 139.0,
+        "PLACE_DENSITY_LB_ADDON": 0.078671,
+        "_SDC_CLK_PERIOD": 14.973016
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 3.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 1.0,
+        "CORE_ASPECT_RATIO": 1.615596,
+        "CORE_UTILIZATION": 32.0,
+        "CTS_CLUSTER_DIAMETER": 232.0,
+        "CTS_CLUSTER_SIZE": 180.0,
+        "PLACE_DENSITY_LB_ADDON": 0.034601,
+        "_SDC_CLK_PERIOD": 12.841591
+      },
+      {
+        "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 2.0,
+        "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+        "CORE_ASPECT_RATIO": 1.158442,
+        "CORE_UTILIZATION": 36.0,
+        "CTS_CLUSTER_DIAMETER": 75.0,
+        "CTS_CLUSTER_SIZE": 51.0,
+        "PLACE_DENSITY_LB_ADDON": 0.104188,
+        "_SDC_CLK_PERIOD": 11.752786
+      }
+    ]
+  }
+}

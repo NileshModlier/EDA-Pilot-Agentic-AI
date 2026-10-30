@@ -1,0 +1,246 @@
+{
+  "method": "agent",
+  "design": "gcd",
+  "platform": "sky130hd",
+  "budget": 10,
+  "status": "ok",
+  "message": "",
+  "runs_completed": 8,
+  "stop_reason": "clock search converged",
+  "trials": [
+    {
+      "index": 1,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 1.1
+      },
+      "metrics": {
+        "setup_wns": -1.45954,
+        "setup_tns": -64.9417,
+        "hold_wns": 0.532397,
+        "hold_tns": 0.0,
+        "power": 0.00985037,
+        "area": 5412.69,
+        "utilization": 0.919643,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": false,
+      "clock_period": 1.1,
+      "area": 5412.69,
+      "power": 0.00985037,
+      "runtime": 123.996,
+      "drc_count": 0.0,
+      "setup_wns": -1.45954,
+      "hold_wns": 0.532397
+    },
+    {
+      "index": 2,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 3.05
+      },
+      "metrics": {
+        "setup_wns": 0.029081,
+        "setup_tns": 0.0,
+        "hold_wns": 0.576826,
+        "hold_tns": 0.0,
+        "power": 0.00240062,
+        "area": 3862.45,
+        "utilization": 0.65625,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": true,
+      "clock_period": 3.05,
+      "area": 3862.45,
+      "power": 0.00240062,
+      "runtime": 64.306,
+      "drc_count": 0.0,
+      "setup_wns": 0.029081,
+      "hold_wns": 0.576826
+    },
+    {
+      "index": 3,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 2.075
+      },
+      "metrics": {
+        "setup_wns": -0.433274,
+        "setup_tns": -16.1939,
+        "hold_wns": 0.57769,
+        "hold_tns": 0.0,
+        "power": 0.00412201,
+        "area": 4628.19,
+        "utilization": 0.786352,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": false,
+      "clock_period": 2.075,
+      "area": 4628.19,
+      "power": 0.00412201,
+      "runtime": 67.73,
+      "drc_count": 0.0,
+      "setup_wns": -0.433274,
+      "hold_wns": 0.57769
+    },
+    {
+      "index": 4,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 2.562
+      },
+      "metrics": {
+        "setup_wns": -0.0500229,
+        "setup_tns": -0.176376,
+        "hold_wns": 0.569625,
+        "hold_tns": 0.0,
+        "power": 0.00338715,
+        "area": 4616.93,
+        "utilization": 0.784439,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": false,
+      "clock_period": 2.562,
+      "area": 4616.93,
+      "power": 0.00338715,
+      "runtime": 77.314,
+      "drc_count": 0.0,
+      "setup_wns": -0.0500229,
+      "hold_wns": 0.569625
+    },
+    {
+      "index": 5,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 2.806
+      },
+      "metrics": {
+        "setup_wns": -0.0132589,
+        "setup_tns": -0.0132589,
+        "hold_wns": 0.564371,
+        "hold_tns": 0.0,
+        "power": 0.002936,
+        "area": 4359.18,
+        "utilization": 0.740646,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": false,
+      "clock_period": 2.806,
+      "area": 4359.18,
+      "power": 0.002936,
+      "runtime": 62.41,
+      "drc_count": 0.0,
+      "setup_wns": -0.0132589,
+      "hold_wns": 0.564371
+    },
+    {
+      "index": 6,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 2.928
+      },
+      "metrics": {
+        "setup_wns": 0.0613181,
+        "setup_tns": 0.0,
+        "hold_wns": 0.558647,
+        "hold_tns": 0.0,
+        "power": 0.00266174,
+        "area": 4186.52,
+        "utilization": 0.71131,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": true,
+      "clock_period": 2.928,
+      "area": 4186.52,
+      "power": 0.00266174,
+      "runtime": 61.985,
+      "drc_count": 0.0,
+      "setup_wns": 0.0613181,
+      "hold_wns": 0.558647
+    },
+    {
+      "index": 7,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 2.867
+      },
+      "metrics": {
+        "setup_wns": 8.4821e-05,
+        "setup_tns": 0.0,
+        "hold_wns": 0.568337,
+        "hold_tns": 0.0,
+        "power": 0.00268209,
+        "area": 4146.48,
+        "utilization": 0.704507,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": true,
+      "clock_period": 2.867,
+      "area": 4146.48,
+      "power": 0.00268209,
+      "runtime": 74.979,
+      "drc_count": 0.0,
+      "setup_wns": 8.4821e-05,
+      "hold_wns": 0.568337
+    },
+    {
+      "index": 8,
+      "parameters": {
+        "_SDC_CLK_PERIOD": 2.837
+      },
+      "metrics": {
+        "setup_wns": -0.058868,
+        "setup_tns": -0.058868,
+        "hold_wns": 0.573084,
+        "hold_tns": 0.0,
+        "power": 0.00284211,
+        "area": 4305.38,
+        "utilization": 0.731505,
+        "drc_count": 0.0,
+        "runtime": null
+      },
+      "flow_status": "ok",
+      "passed": false,
+      "clock_period": 2.837,
+      "area": 4305.38,
+      "power": 0.00284211,
+      "runtime": 72.642,
+      "drc_count": 0.0,
+      "setup_wns": -0.058868,
+      "hold_wns": 0.573084
+    }
+  ],
+  "best": {
+    "index": 7,
+    "parameters": {
+      "_SDC_CLK_PERIOD": 2.867
+    },
+    "metrics": {
+      "setup_wns": 8.4821e-05,
+      "setup_tns": 0.0,
+      "hold_wns": 0.568337,
+      "hold_tns": 0.0,
+      "power": 0.00268209,
+      "area": 4146.48,
+      "utilization": 0.704507,
+      "drc_count": 0.0,
+      "runtime": null
+    },
+    "flow_status": "ok",
+    "passed": true,
+    "clock_period": 2.867,
+    "area": 4146.48,
+    "power": 0.00268209,
+    "runtime": 74.979,
+    "drc_count": 0.0,
+    "setup_wns": 8.4821e-05,
+    "hold_wns": 0.568337
+  }
+}

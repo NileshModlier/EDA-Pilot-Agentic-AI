@@ -1,0 +1,35 @@
+{
+  "platform": "sky130hd",
+  "flow_variant": "base",
+  "metadata": "flow/reports/sky130hd/<design>/base/metadata.json",
+  "runtime_source": "GNU Make elapsed table, Total column, seconds",
+  "designs": {
+    "gcd": {
+      "area": 5412.69,
+      "power": 0.00985037,
+      "setup_wns": -1.45954,
+      "hold_wns": 0.532397,
+      "drc_count": 0,
+      "runtime": 124,
+      "get_metrics_missing": ["runtime"]
+    },
+    "aes": {
+      "area": 130617.0,
+      "power": 0.572873,
+      "setup_wns": -0.0805747,
+      "hold_wns": 0.483049,
+      "drc_count": 0,
+      "runtime": 2623,
+      "get_metrics_missing": ["runtime"]
+    },
+    "ibex": {
+      "area": 172822.0,
+      "power": 0.0655049,
+      "setup_wns": -0.551246,
+      "hold_wns": 0.420976,
+      "drc_count": 0,
+      "runtime": 4094,
+      "get_metrics_missing": ["runtime"]
+    }
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "configured_flow": "\\\\wsl$\\Ubuntu\\home\\administrator\\OpenROAD-flow-scripts\\flow",
+  "flow_visible": true,
+  "windows_make": null,
+  "windows_wsl": "C:\\WINDOWS\\system32\\wsl.EXE",
+  "agent_entrypoint": true,
+  "harness_entrypoint": true,
+  "designs": {
+    "gcd": {
+      "list_params": {
+        "count": 10,
+        "executable": 9,
+        "names": [
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT",
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT",
+          "CORE_ASPECT_RATIO",
+          "CORE_MARGIN",
+          "CORE_UTILIZATION",
+          "CTS_CLUSTER_DIAMETER",
+          "CTS_CLUSTER_SIZE",
+          "PLACE_DENSITY_LB_ADDON",
+          "_FR_LAYER_ADJUST",
+          "_SDC_CLK_PERIOD"
+        ]
+      },
+      "extract_metrics": {
+        "run_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "setup_wns": -1.45954,
+        "setup_tns": -64.9417,
+        "hold_wns": 0.532397,
+        "hold_tns": 0.0,
+        "power": 0.00985037,
+        "area": 5412.69,
+        "utilization": 0.919643,
+        "drc_count": 0.0,
+        "runtime": null,
+        "missing": [
+          "runtime"
+        ]
+      },
+      "get_metrics": {
+        "run_id": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "setup_wns": -1.45954,
+        "setup_tns": -64.9417,
+        "hold_wns": 0.532397,
+        "hold_tns": 0.0,
+        "power": 0.00985037,
+        "area": 5412.69,
+        "utilization": 0.919643,
+        "drc_count": 0.0,
+        "runtime": null,
+        "missing": [
+          "runtime"
+        ]
+      },
+      "read_report": {
+        "timing": {
+          "source_file": "6_finish.rpt",
+          "line_count": 200,
+          "truncated": true,
+          "empty": false
+        },
+        "drc": {
+          "source_file": "5_route_drc.rpt",
+          "line_count": 0,
+          "truncated": false,
+          "empty": true
+        },
+        "congestion": {
+          "source_file": "5_global_route.rpt",
+          "line_count": 200,
+          "truncated": true,
+          "empty": false
+        }
+      },
+      "make_argv_head": [
+        "make",
+        "-C",
+        "\\\\wsl$\\Ubuntu\\home\\administrator\\OpenROAD-flow-scripts\\flow",
+        "DESIGN_CONFIG=./designs/sky130hd/gcd/config.mk"
+      ],
+      "make_argv_tail": [
+        "FLOW_VARIANT=p1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "finish"
+      ],
+      "run_flow": {
+        "called": false,
+        "status": "skipped",
+        "message": "configured flow directory is visible; live finish was not started"
+      },
+      "total_elapsed_seconds": 46.29
+    },
+    "aes": {
+      "list_params": {
+        "count": 9,
+        "executable": 8,
+        "names": [
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT",
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT",
+          "CORE_ASPECT_RATIO",
+          "CORE_UTILIZATION",
+          "CTS_CLUSTER_DIAMETER",
+          "CTS_CLUSTER_SIZE",
+          "PLACE_DENSITY_LB_ADDON",
+          "_FR_LAYER_ADJUST",
+          "_SDC_CLK_PERIOD"
+        ]
+      },
+      "extract_metrics": {
+        "run_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "setup_wns": -0.0805747,
+        "setup_tns": -0.491536,
+        "hold_wns": 0.483049,
+        "hold_tns": 0.0,
+        "power": 0.572873,
+        "area": 130617.0,
+        "utilization": 0.59329,
+        "drc_count": 0.0,
+        "runtime": null,
+        "missing": [
+          "runtime"
+        ]
+      },
+      "get_metrics": {
+        "run_id": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "setup_wns": -0.0805747,
+        "setup_tns": -0.491536,
+        "hold_wns": 0.483049,
+        "hold_tns": 0.0,
+        "power": 0.572873,
+        "area": 130617.0,
+        "utilization": 0.59329,
+        "drc_count": 0.0,
+        "runtime": null,
+        "missing": [
+          "runtime"
+        ]
+      },
+      "read_report": {
+        "timing": {
+          "source_file": "6_finish.rpt",
+          "line_count": 200,
+          "truncated": true,
+          "empty": false
+        },
+        "drc": {
+          "source_file": "5_route_drc.rpt",
+          "line_count": 0,
+          "truncated": false,
+          "empty": true
+        },
+        "congestion": {
+          "source_file": "5_global_route.rpt",
+          "line_count": 200,
+          "truncated": true,
+          "empty": false
+        }
+      },
+      "make_argv_head": [
+        "make",
+        "-C",
+        "\\\\wsl$\\Ubuntu\\home\\administrator\\OpenROAD-flow-scripts\\flow",
+        "DESIGN_CONFIG=./designs/sky130hd/aes/config.mk"
+      ],
+      "make_argv_tail": [
+        "FLOW_VARIANT=p1bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+        "finish"
+      ],
+      "run_flow": {
+        "called": false,
+        "status": "skipped",
+        "message": "configured flow directory is visible; live finish was not started"
+      },
+      "total_elapsed_seconds": 351.59
+    },
+    "ibex": {
+      "list_params": {
+        "count": 9,
+        "executable": 8,
+        "names": [
+          "CELL_PAD_IN_SITES_DETAIL_PLACEMENT",
+          "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT",
+          "CORE_ASPECT_RATIO",
+          "CORE_UTILIZATION",
+          "CTS_CLUSTER_DIAMETER",
+          "CTS_CLUSTER_SIZE",
+          "PLACE_DENSITY_LB_ADDON",
+          "_FR_LAYER_ADJUST",
+          "_SDC_CLK_PERIOD"
+        ]
+      },
+      "extract_metrics": {
+        "run_id": "cccccccccccccccccccccccccccccccc",
+        "setup_wns": -0.551246,
+        "setup_tns": -321.743,
+        "hold_wns": 0.420976,
+        "hold_tns": 0.0,
+        "power": 0.0655049,
+        "area": 172822.0,
+        "utilization": 0.672652,
+        "drc_count": 0.0,
+        "runtime": null,
+        "missing": [
+          "runtime"
+        ]
+      },
+      "get_metrics": {
+        "run_id": "cccccccccccccccccccccccccccccccc",
+        "setup_wns": -0.551246,
+        "setup_tns": -321.743,
+        "hold_wns": 0.420976,
+        "hold_tns": 0.0,
+        "power": 0.0655049,
+        "area": 172822.0,
+        "utilization": 0.672652,
+        "drc_count": 0.0,
+        "runtime": null,
+        "missing": [
+          "runtime"
+        ]
+      },
+      "read_report": {
+        "timing": {
+          "source_file": "6_finish.rpt",
+          "line_count": 200,
+          "truncated": true,
+          "empty": false
+        },
+        "drc": {
+          "source_file": "5_route_drc.rpt",
+          "line_count": 0,
+          "truncated": false,
+          "empty": true
+        },
+        "congestion": {
+          "source_file": "5_global_route.rpt",
+          "line_count": 200,
+          "truncated": true,
+          "empty": false
+        }
+      },
+      "make_argv_head": [
+        "make",
+        "-C",
+        "\\\\wsl$\\Ubuntu\\home\\administrator\\OpenROAD-flow-scripts\\flow",
+        "DESIGN_CONFIG=./designs/sky130hd/ibex/config.mk"
+      ],
+      "make_argv_tail": [
+        "FLOW_VARIANT=p1cccccccccccccccccccccccccccccccc",
+        "finish"
+      ],
+      "run_flow": {
+        "called": false,
+        "status": "skipped",
+        "message": "configured flow directory is visible; live finish was not started"
+      },
+      "total_elapsed_seconds": 686.62
+    }
+  }
+}

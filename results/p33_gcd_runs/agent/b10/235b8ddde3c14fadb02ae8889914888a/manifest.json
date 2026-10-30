@@ -1,0 +1,12 @@
+{
+  "run_id": "235b8ddde3c14fadb02ae8889914888a",
+  "design": "gcd",
+  "platform": "sky130hd",
+  "flow_variant": "p1235b8ddde3c14fadb02ae8889914888a",
+  "status": "ok",
+  "runtime": 74.979,
+  "params": {
+    "_SDC_CLK_PERIOD": 2.867
+  },
+  "message": null
+}

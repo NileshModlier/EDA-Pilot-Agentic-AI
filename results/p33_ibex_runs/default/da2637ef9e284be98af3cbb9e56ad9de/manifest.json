@@ -1,0 +1,10 @@
+{
+  "run_id": "da2637ef9e284be98af3cbb9e56ad9de",
+  "design": "ibex",
+  "platform": "sky130hd",
+  "flow_variant": "p1da2637ef9e284be98af3cbb9e56ad9de",
+  "status": "ok",
+  "runtime": 3080.309,
+  "params": {},
+  "message": null
+}

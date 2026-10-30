@@ -1,0 +1,10 @@
+Elapsed time: 0:00.25[h:]min:sec. CPU time: user 0.21 sys 0.04 (99%). Peak memory: 60032KB.
+Elapsed time: 1:09.51[h:]min:sec. CPU time: user 69.42 sys 0.47 (100%). Peak memory: 84176KB.
+Elapsed time: 0:00.92[h:]min:sec. CPU time: user 0.83 sys 0.08 (99%). Peak memory: 135168KB.
+Elapsed time: 0:04.17[h:]min:sec. CPU time: user 8.89 sys 3.09 (287%). Peak memory: 182640KB.
+Elapsed time: 0:00.63[h:]min:sec. CPU time: user 0.56 sys 0.06 (99%). Peak memory: 118400KB.
+Elapsed time: 0:00.64[h:]min:sec. CPU time: user 0.57 sys 0.08 (101%). Peak memory: 118400KB.
+Elapsed time: 0:00.94[h:]min:sec. CPU time: user 0.86 sys 0.08 (99%). Peak memory: 126336KB.
+Elapsed time: 0:00.72[h:]min:sec. CPU time: user 0.63 sys 0.11 (104%). Peak memory: 141440KB.
+make[1]: *** [Makefile:507: do-3_1_place_gp_skip_io] Error 1
+make: *** [Makefile:507: results/sky130hd/aes/p13514e403ea784cbda77f48e272aa53d0/3_1_place_gp_skip_io.odb] Error 2

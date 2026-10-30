@@ -1,0 +1,14 @@
+Elapsed time: 0:00.27[h:]min:sec. CPU time: user 0.23 sys 0.04 (99%). Peak memory: 60160KB.
+Elapsed time: 1:10.69[h:]min:sec. CPU time: user 70.45 sys 0.62 (100%). Peak memory: 84356KB.
+Elapsed time: 0:01.08[h:]min:sec. CPU time: user 0.94 sys 0.14 (100%). Peak memory: 135040KB.
+Elapsed time: 0:03.95[h:]min:sec. CPU time: user 7.15 sys 2.33 (240%). Peak memory: 182748KB.
+Elapsed time: 0:00.70[h:]min:sec. CPU time: user 0.59 sys 0.11 (99%). Peak memory: 117888KB.
+Elapsed time: 0:00.73[h:]min:sec. CPU time: user 0.58 sys 0.15 (101%). Peak memory: 118144KB.
+Elapsed time: 0:01.23[h:]min:sec. CPU time: user 1.06 sys 0.16 (99%). Peak memory: 125696KB.
+Elapsed time: 0:03.66[h:]min:sec. CPU time: user 6.38 sys 1.77 (222%). Peak memory: 148864KB.
+Elapsed time: 0:00.66[h:]min:sec. CPU time: user 0.57 sys 0.08 (99%). Peak memory: 121984KB.
+Elapsed time: 0:26.76[h:]min:sec. CPU time: user 44.56 sys 13.59 (217%). Peak memory: 448936KB.
+Elapsed time: 0:07.30[h:]min:sec. CPU time: user 10.29 sys 2.30 (172%). Peak memory: 216352KB.
+Elapsed time: 18:05.40[h:]min:sec. CPU time: user 1085.24 sys 0.14 (99%). Peak memory: 155392KB.
+make[1]: *** [Makefile:525: do-3_5_place_dp] Error 1
+make: *** [Makefile:525: results/sky130hd/aes/p146290ebcd29e43a7a6acd1bdca7ed173/3_5_place_dp.odb] Error 2

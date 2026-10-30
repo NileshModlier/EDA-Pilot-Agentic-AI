@@ -1,0 +1,6 @@
+{
+  "paused_at": "2026-10-20T13:35:00Z",
+  "resume_attempted_at": "2026-10-29T06:03:00Z",
+  "outcome": "The suspended Windows processes had exited, so the frozen IBEX detailed route could not be continued. The IBEX default flow was started again from the checkpoint. AES results were left in place.",
+  "lost_run_id": "cc4130ca382a4ad0a4b939d565636e57"
+}

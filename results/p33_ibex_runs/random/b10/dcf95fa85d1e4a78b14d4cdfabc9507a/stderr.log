@@ -1,0 +1,12 @@
+Elapsed time: 0:00.32[h:]min:sec. CPU time: user 0.29 sys 0.06 (107%). Peak memory: 65800KB.
+Elapsed time: 0:59.08[h:]min:sec. CPU time: user 59.70 sys 0.88 (102%). Peak memory: 119576KB.
+Elapsed time: 0:00.75[h:]min:sec. CPU time: user 0.68 sys 0.07 (99%). Peak memory: 149632KB.
+Elapsed time: 1:00.30[h:]min:sec. CPU time: user 158.10 sys 64.03 (368%). Peak memory: 206672KB.
+Elapsed time: 0:00.44[h:]min:sec. CPU time: user 0.39 sys 0.04 (98%). Peak memory: 129280KB.
+Elapsed time: 0:00.47[h:]min:sec. CPU time: user 0.41 sys 0.06 (99%). Peak memory: 129408KB.
+Elapsed time: 0:00.81[h:]min:sec. CPU time: user 0.75 sys 0.05 (99%). Peak memory: 139264KB.
+Elapsed time: 0:02.95[h:]min:sec. CPU time: user 6.25 sys 1.25 (254%). Peak memory: 167552KB.
+Elapsed time: 0:00.45[h:]min:sec. CPU time: user 0.39 sys 0.05 (98%). Peak memory: 135296KB.
+Elapsed time: 0:00.84[h:]min:sec. CPU time: user 0.75 sys 0.11 (101%). Peak memory: 183680KB.
+make[1]: *** [Makefile:513: do-3_3_place_gp] Error 1
+make: *** [Makefile:513: results/sky130hd/ibex/p1dcf95fa85d1e4a78b14d4cdfabc9507a/3_3_place_gp.odb] Error 2

@@ -1,0 +1,145 @@
+% EDA Pilot AI — BibTeX references
+% Cite the project with raghavan_eda_pilot_ai_2026. The remaining entries are
+% the tools, PDK, designs and methods the project builds on.
+% @software entries follow BibLaTeX. With classic BibTeX styles, change them to @misc.
+
+@software{raghavan_eda_pilot_ai_2026,
+  author       = {Raghavan, Nilesh P},
+  title        = {{EDA Pilot AI}: A Guarded {LangGraph} and {MCP} Agent for
+                  Timing Closure in {OpenROAD}},
+  year         = {2026},
+  month        = oct,
+  version      = {1.0.0},
+  url          = {https://github.com/NileshModlier/EDA-Pilot-AI},
+  note         = {SkyWater SKY130 HD benchmark of gcd, aes and ibex against
+                  default ORFS and seeded random search, budget 10, seed 1}
+}
+
+% --- OpenROAD ---------------------------------------------------------------
+
+@inproceedings{ajayi_openroad_2019,
+  author       = {Ajayi, Tutu and Chhabria, Vidya A. and Foga{\c{c}}a, Mateus and
+                  Hashemi, Soheil and Hosny, Abdelrahman and Kahng, Andrew B. and
+                  Kim, Minsoo and Lee, Jeongsup and Mallappa, Uday and
+                  Neseem, Marina and Pradipta, Geraldo and Reda, Sherief and
+                  Saligane, Mehdi and Sapatnekar, Sachin S. and Sechen, Carl and
+                  Shalan, Mohamed and Swartz, William and Wang, Lutong and
+                  Wang, Zhehong and Woo, Mingyu and Xu, Bangqi},
+  title        = {Toward an Open-Source Digital Flow: First Learnings from the
+                  {OpenROAD} Project},
+  booktitle    = {Proceedings of the 56th ACM/IEEE Design Automation Conference (DAC)},
+  year         = {2019},
+  pages        = {76:1--76:4},
+  doi          = {10.1145/3316781.3326334},
+  note         = {Invited paper}
+}
+
+@inproceedings{jung_metrics21_2021,
+  author       = {Jung, Jinwook and Kahng, Andrew B. and Kim, Seungwon and
+                  Varadarajan, Ravi},
+  title        = {{METRICS2.1} and Flow Tuning in the {IEEE CEDA} Robust Design
+                  Flow and {OpenROAD}},
+  booktitle    = {Proceedings of the ACM/IEEE International Conference on
+                  Computer-Aided Design (ICCAD)},
+  year         = {2021},
+  pages        = {1--9},
+  note         = {Invited paper. Defines the METRICS2.1 keys read by get\_metrics
+                  and describes the AutoTuner flow-tuning approach}
+}
+
+@software{openroad_2026,
+  author       = {{The OpenROAD Project}},
+  title        = {{OpenROAD}: An Integrated Chip Physical Design Tool},
+  year         = {2026},
+  version      = {26Q4-110-g91e5f5ff2f},
+  url          = {https://github.com/The-OpenROAD-Project/OpenROAD},
+  note         = {Version used in the EDA Pilot AI benchmark}
+}
+
+@software{orfs_2026,
+  author       = {{The OpenROAD Project}},
+  title        = {{OpenROAD-flow-scripts}: {RTL}-to-{GDSII} Flow Scripts and
+                  {AutoTuner}},
+  year         = {2026},
+  url          = {https://github.com/The-OpenROAD-Project/OpenROAD-flow-scripts},
+  note         = {Source of the gcd, aes and ibex sky130hd design configurations
+                  and autotuner.json parameter ranges}
+}
+
+% --- PDK and designs ---------------------------------------------------------
+
+@software{skywater_pdk,
+  author       = {{SkyWater Technology Foundry} and {Google}},
+  title        = {{SkyWater SKY130} Open Source Process Design Kit},
+  url          = {https://github.com/google/skywater-pdk},
+  note         = {sky130\_fd\_sc\_hd high-density standard cells, used as the
+                  sky130hd platform}
+}
+
+@software{lowrisc_ibex,
+  author       = {{lowRISC CIC}},
+  title        = {{Ibex}: A Small and Efficient 32-bit {RISC-V} {CPU} Core},
+  url          = {https://github.com/lowRISC/ibex},
+  note         = {Benchmark design ibex, as packaged in OpenROAD-flow-scripts}
+}
+
+% --- Tools in the flow -------------------------------------------------------
+
+@misc{wolf_yosys,
+  author       = {Wolf, Claire and others},
+  title        = {{Yosys} Open {SYnthesis} Suite},
+  howpublished = {\url{https://yosyshq.net/yosys/}},
+  note         = {Version 0.68+ used for synthesis}
+}
+
+@misc{koefferlein_klayout,
+  author       = {K{\"o}fferlein, Matthias},
+  title        = {{KLayout}: High Performance Layout Viewer and Editor},
+  howpublished = {\url{https://www.klayout.de/}},
+  note         = {Version 0.30.0 used for GDS generation}
+}
+
+% --- Agent and protocol ------------------------------------------------------
+
+@software{langgraph,
+  author       = {{LangChain, Inc.}},
+  title        = {{LangGraph}: Build Resilient Language Agents as Graphs},
+  url          = {https://github.com/langchain-ai/langgraph}
+}
+
+@misc{mcp_specification,
+  author       = {{Anthropic}},
+  title        = {Model Context Protocol ({MCP}) Specification},
+  howpublished = {\url{https://modelcontextprotocol.io/}}
+}
+
+@software{mcp_python_sdk,
+  author       = {{Model Context Protocol}},
+  title        = {{MCP} {Python} {SDK}},
+  url          = {https://github.com/modelcontextprotocol/python-sdk},
+  note         = {Version 2.x, MCPServer (formerly FastMCP)}
+}
+
+% --- Search baselines --------------------------------------------------------
+
+@misc{liaw_tune_2018,
+  author       = {Liaw, Richard and Liang, Eric and Nishihara, Robert and
+                  Moritz, Philipp and Gonzalez, Joseph E. and Stoica, Ion},
+  title        = {Tune: A Research Platform for Distributed Model Selection and
+                  Training},
+  year         = {2018},
+  eprint       = {1807.05118},
+  archiveprefix = {arXiv},
+  note         = {Ray Tune, the engine behind OpenROAD AutoTuner}
+}
+
+@inproceedings{bergstra_hyperopt_2013,
+  author       = {Bergstra, James and Yamins, Daniel and Cox, David D.},
+  title        = {Making a Science of Model Search: Hyperparameter Optimization in
+                  Hundreds of Dimensions for Vision Architectures},
+  booktitle    = {Proceedings of the 30th International Conference on Machine
+                  Learning (ICML)},
+  year         = {2013},
+  pages        = {115--123},
+  note         = {HyperOpt, the search algorithm requested from AutoTuner}
+}

@@ -1,0 +1,275 @@
+{
+  "tools": {
+    "openroad": {
+      "argv": [
+        "openroad",
+        "-version"
+      ],
+      "ok": true,
+      "code": 0,
+      "which": "/home/administrator/OpenROAD-flow-scripts/tools/install/OpenROAD/bin/openroad",
+      "text": "26Q4-110-g91e5f5ff2f"
+    },
+    "yosys": {
+      "argv": [
+        "yosys",
+        "-V"
+      ],
+      "ok": true,
+      "code": 0,
+      "which": "/home/administrator/OpenROAD-flow-scripts/tools/install/yosys/bin/yosys",
+      "text": "Yosys 0.68+ (git sha1 a5af9d690, Release, GNU /usr/bin/c++ 15.2.0) [github.com/The-OpenROAD-Project/yosys at HEAD]"
+    },
+    "klayout": {
+      "argv": [
+        "klayout",
+        "-b",
+        "-v"
+      ],
+      "ok": true,
+      "code": 0,
+      "which": "/usr/bin/klayout",
+      "text": "KLayout 0.30.0"
+    },
+    "make": {
+      "argv": [
+        "make",
+        "--version"
+      ],
+      "ok": true,
+      "code": 0,
+      "which": "/usr/bin/make",
+      "text": "GNU Make 4.4.1\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2023 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law."
+    }
+  },
+  "designs": {
+    "gcd": {
+      "files": {
+        "synthesis_netlist": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/1_2_yosys.v",
+          "exists": true,
+          "bytes": 66576
+        },
+        "synthesis_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/1_synth.odb",
+          "exists": true,
+          "bytes": 2573871
+        },
+        "floorplan_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/2_floorplan.odb",
+          "exists": true,
+          "bytes": 2812371
+        },
+        "placement_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/3_place.odb",
+          "exists": true,
+          "bytes": 2877515
+        },
+        "cts_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/4_cts.odb",
+          "exists": true,
+          "bytes": 2911967
+        },
+        "route_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/5_route.odb",
+          "exists": true,
+          "bytes": 3505899
+        },
+        "final_gds": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_final.gds",
+          "exists": true,
+          "bytes": 974128
+        },
+        "merged_gds": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/gcd/base/6_1_merged.gds",
+          "exists": true,
+          "bytes": 974128
+        }
+      },
+      "synth_log_bytes": 19393,
+      "synth_end": true,
+      "metadata_bytes": 26114,
+      "metadata_error": null,
+      "metrics": {
+        "finish__timing__setup__ws": -1.45954,
+        "finish__timing__hold__ws": 0.532397,
+        "finish__power__total": 0.00985037,
+        "finish__design__instance__area": 5412.69,
+        "finish__design__core__area": 5885.64,
+        "detailedroute__route__drc_errors": 0,
+        "finish__runtime__total": "0:04.43",
+        "total_time": "0:00:46.290000"
+      },
+      "copied": [
+        {
+          "name": "6_finish.rpt",
+          "bytes": 33999
+        },
+        {
+          "name": "5_route_drc.rpt",
+          "bytes": 0
+        },
+        {
+          "name": "5_global_route.rpt",
+          "bytes": 35118
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 26114
+        }
+      ]
+    },
+    "aes": {
+      "files": {
+        "synthesis_netlist": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/1_2_yosys.v",
+          "exists": true,
+          "bytes": 1463236
+        },
+        "synthesis_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/1_synth.odb",
+          "exists": true,
+          "bytes": 8535595
+        },
+        "floorplan_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/2_floorplan.odb",
+          "exists": true,
+          "bytes": 9914918
+        },
+        "placement_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/3_place.odb",
+          "exists": true,
+          "bytes": 11917205
+        },
+        "cts_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/4_cts.odb",
+          "exists": true,
+          "bytes": 12024084
+        },
+        "route_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/5_route.odb",
+          "exists": true,
+          "bytes": 31857095
+        },
+        "final_gds": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/6_final.gds",
+          "exists": true,
+          "bytes": 19462484
+        },
+        "merged_gds": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/aes/base/6_1_merged.gds",
+          "exists": true,
+          "bytes": 19462484
+        }
+      },
+      "synth_log_bytes": 20760,
+      "synth_end": true,
+      "metadata_bytes": 27828,
+      "metadata_error": null,
+      "metrics": {
+        "finish__timing__setup__ws": -0.0805747,
+        "finish__timing__hold__ws": 0.483049,
+        "finish__power__total": 0.572873,
+        "finish__design__instance__area": 130617,
+        "finish__design__core__area": 220156,
+        "detailedroute__route__drc_errors": 0,
+        "finish__runtime__total": "0:32.47",
+        "total_time": "0:05:51.590000"
+      },
+      "copied": [
+        {
+          "name": "6_finish.rpt",
+          "bytes": 33482
+        },
+        {
+          "name": "5_route_drc.rpt",
+          "bytes": 0
+        },
+        {
+          "name": "5_global_route.rpt",
+          "bytes": 35397
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 27828
+        }
+      ]
+    },
+    "ibex": {
+      "files": {
+        "synthesis_netlist": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/1_2_yosys.v",
+          "exists": true,
+          "bytes": 2158537
+        },
+        "synthesis_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/1_synth.odb",
+          "exists": true,
+          "bytes": 11926764
+        },
+        "floorplan_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/2_floorplan.odb",
+          "exists": true,
+          "bytes": 14130666
+        },
+        "placement_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/3_place.odb",
+          "exists": true,
+          "bytes": 15772251
+        },
+        "cts_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/4_cts.odb",
+          "exists": true,
+          "bytes": 15924158
+        },
+        "route_odb": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/5_route.odb",
+          "exists": true,
+          "bytes": 37243404
+        },
+        "final_gds": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/6_final.gds",
+          "exists": true,
+          "bytes": 22120568
+        },
+        "merged_gds": {
+          "path": "/home/administrator/OpenROAD-flow-scripts/flow/results/sky130hd/ibex/base/6_1_merged.gds",
+          "exists": true,
+          "bytes": 22120568
+        }
+      },
+      "synth_log_bytes": 29464,
+      "synth_end": true,
+      "metadata_bytes": 29820,
+      "metadata_error": null,
+      "metrics": {
+        "finish__timing__setup__ws": -0.551246,
+        "finish__timing__hold__ws": 0.420976,
+        "finish__power__total": 0.0655049,
+        "finish__design__instance__area": 172822,
+        "finish__design__core__area": 256926,
+        "detailedroute__route__drc_errors": 0,
+        "finish__runtime__total": "1:27.52",
+        "total_time": "0:11:26.620000"
+      },
+      "copied": [
+        {
+          "name": "6_finish.rpt",
+          "bytes": 102561
+        },
+        {
+          "name": "5_route_drc.rpt",
+          "bytes": 0
+        },
+        {
+          "name": "5_global_route.rpt",
+          "bytes": 96909
+        },
+        {
+          "name": "metadata.json",
+          "bytes": 29820
+        }
+      ]
+    }
+  }
+}

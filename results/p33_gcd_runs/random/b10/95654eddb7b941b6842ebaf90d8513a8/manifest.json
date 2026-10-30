@@ -1,0 +1,20 @@
+{
+  "run_id": "95654eddb7b941b6842ebaf90d8513a8",
+  "design": "gcd",
+  "platform": "sky130hd",
+  "flow_variant": "p195654eddb7b941b6842ebaf90d8513a8",
+  "status": "ok",
+  "runtime": 76.357,
+  "params": {
+    "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 0.0,
+    "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 3.0,
+    "CORE_ASPECT_RATIO": 0.542521,
+    "CORE_MARGIN": 2.0,
+    "CORE_UTILIZATION": 33.0,
+    "CTS_CLUSTER_DIAMETER": 331.0,
+    "CTS_CLUSTER_SIZE": 10.0,
+    "PLACE_DENSITY_LB_ADDON": 0.139167,
+    "_SDC_CLK_PERIOD": 1.918588
+  },
+  "message": null
+}

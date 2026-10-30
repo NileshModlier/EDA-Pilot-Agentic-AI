@@ -1,0 +1,81 @@
+%% EDA Pilot AI - system architecture (Mermaid)
+%% GitHub renders this inside a ```mermaid block. CLI: mmdc -i architecture.mmd -o architecture.png
+flowchart TB
+    classDef harness fill:#f4f2fe,stroke:#5546c8,color:#1e1b4b
+    classDef advisor fill:#e3eefc,stroke:#2a78d6,color:#0b2f5b
+    classDef code fill:#ffffff,stroke:#0f172a,color:#0f172a
+    classDef tool fill:#ecf8f2,stroke:#12996c,color:#064e3b
+    classDef guard fill:#fdf1eb,stroke:#d9531f,color:#7c2d12
+    classDef exec fill:#f1f4f8,stroke:#334155,color:#0f172a
+    classDef art fill:#fdf7e6,stroke:#b77900,color:#5c3d00
+    classDef off fill:#f8fafc,stroke:#94a3b8,color:#475569,stroke-dasharray: 4 3
+
+    subgraph H["1 · Benchmark harness  (benchmarks/)"]
+        direction LR
+        DEF["Default ORFS<br/>1 run, no overrides"]:::harness
+        RND["Random search<br/>budget 10, seed 1"]:::harness
+        AGT["EDA Pilot agent<br/>budget 10"]:::harness
+        ATN["OpenROAD AutoTuner<br/>scheduled, no scored trials"]:::off
+        DEF ~~~ RND ~~~ AGT ~~~ ATN
+    end
+
+    subgraph G["2 · LangGraph agent  (agent/agent.py)"]
+        direction LR
+        AN["analyse<br/>diagnose metrics"]:::advisor
+        PR["propose<br/>≤ 3 changes + reasons"]:::advisor
+        VA["validate<br/>allowlist + ranges"]:::code
+        RU["run<br/>call run_flow"]:::code
+        CH["check<br/>signoff · best · stop"]:::code
+        AN --> PR --> VA
+        VA -- legal --> RU --> CH
+        VA -. rejected .-> PR
+        CH -. "budget left and gap ≥ 0.05 ns" .-> AN
+    end
+
+    subgraph M["3 · MCP server  (eda_pilot/server.py, stdio)"]
+        direction LR
+        LP["list_params"]:::tool
+        RF["run_flow"]:::tool
+        GM["get_metrics"]:::tool
+        RR["read_report"]:::tool
+        LP ~~~ RF ~~~ GM ~~~ RR
+    end
+
+    subgraph S["4 · Guardrails  (mcp_tools/)"]
+        direction LR
+        AL["allowlist<br/>allowed_parameters.json"]:::guard
+        AT["autotuner.json<br/>tighten-only"]:::guard
+        AV["argv builder<br/>shell=False"]:::guard
+        BU["run budget<br/>file lock"]:::guard
+        TO["timeout<br/>kill tree"]:::guard
+        AL --> AT --> AV --> BU --> TO
+    end
+
+    subgraph X["5 · Execution  (WSL Ubuntu · OpenROAD Flow Scripts)"]
+        direction LR
+        WSL["wsl.exe bash -lc<br/>. env.sh"]:::exec
+        MK["make finish<br/>+ metadata-generate"]:::exec
+        YS["Yosys<br/>synthesis"]:::exec
+        OR["OpenROAD<br/>floorplan → route"]:::exec
+        KL["KLayout<br/>GDS"]:::exec
+        WSL --> MK --> YS --> OR --> KL
+    end
+
+    subgraph D["6 · Artifacts  (per FLOW_VARIANT)"]
+        direction LR
+        MD["metadata.json<br/>METRICS2.1"]:::art
+        RP["reports<br/>timing · drc · congestion"]:::art
+        MF["run manifest<br/>+ logs"]:::art
+        DL["decision_log.jsonl"]:::art
+        MD ~~~ RP ~~~ MF ~~~ DL
+    end
+
+    LB["compare_results.py<br/>leaderboard: smallest passing clock"]:::harness
+
+    H --> G
+    G -- tool calls --> M
+    M --> S
+    S -- validated argv only --> X
+    X --> D
+    D -. "metrics + report tails" .-> M
+    D --> LB

@@ -1,0 +1,10 @@
+{
+  "run_id": "21d42ed40f0c4d41bc4edc617f3cedaa",
+  "design": "aes",
+  "platform": "sky130hd",
+  "flow_variant": "p121d42ed40f0c4d41bc4edc617f3cedaa",
+  "status": "ok",
+  "runtime": 2213.58,
+  "params": {},
+  "message": null
+}

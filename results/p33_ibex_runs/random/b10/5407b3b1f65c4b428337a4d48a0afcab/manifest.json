@@ -1,0 +1,19 @@
+{
+  "run_id": "5407b3b1f65c4b428337a4d48a0afcab",
+  "design": "ibex",
+  "platform": "sky130hd",
+  "flow_variant": "p15407b3b1f65c4b428337a4d48a0afcab",
+  "status": "ok",
+  "runtime": 1380.245,
+  "params": {
+    "CELL_PAD_IN_SITES_DETAIL_PLACEMENT": 1.0,
+    "CELL_PAD_IN_SITES_GLOBAL_PLACEMENT": 0.0,
+    "CORE_ASPECT_RATIO": 0.882604,
+    "CORE_UTILIZATION": 35.0,
+    "CTS_CLUSTER_DIAMETER": 250.0,
+    "CTS_CLUSTER_SIZE": 130.0,
+    "PLACE_DENSITY_LB_ADDON": 0.130319,
+    "_SDC_CLK_PERIOD": 14.521063
+  },
+  "message": null
+}
